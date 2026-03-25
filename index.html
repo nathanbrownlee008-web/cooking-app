@@ -1,23 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Pro</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef At Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🍳</div>
+        <div>
+          <h1>Chef At Home</h1>
+          <p>Learn like a chef, cook at home.</p>
+        </div>
+      </div>
 
-<h1 class="title">🍳 Chef Pro</h1>
+      <nav class="nav" id="mainNav"></nav>
 
-<div class="grid">
-  <div class="card" onclick="openSection('meat')">🥩 Meat</div>
-  <div class="card" onclick="openSection('heat')">🔥 Heat</div>
-  <div class="card" onclick="openSection('techniques')">🍳 Techniques</div>
-  <div class="card" onclick="openSection('meals')">🍝 Meals</div>
-</div>
+      <div class="sidebar-card">
+        <h3>Your Progress</h3>
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div id="overallProgressFill" class="progress-fill"></div>
+          </div>
+          <div id="overallProgressText" class="progress-text">0% complete</div>
+        </div>
+        <p class="muted">Mark lessons as done as you learn. Saved locally on your device.</p>
+      </div>
+    </aside>
 
-<div id="section"></div>
+    <main class="main-content">
+      <header class="hero">
+        <div>
+          <span class="eyebrow">Level System Picked For You</span>
+          <h2>Start with the foundations, then move into real cooking.</h2>
+          <p>
+            This app is built as a chef-style learning path: <strong>Tools</strong>, <strong>Ingredients</strong>, <strong>Techniques</strong>,
+            <strong>Cooking Methods</strong>, <strong>Meat Mastery</strong>, <strong>Meals</strong>, and <strong>Desserts</strong>.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button class="primary-btn" id="jumpStartBtn">Start Learning</button>
+          <button class="secondary-btn" id="savedBtn">Saved Guides</button>
+        </div>
+      </header>
 
-<script src="app.js"></script>
+      <section class="overview-grid" id="overviewGrid"></section>
+
+      <section class="section-panel">
+        <div class="section-topbar">
+          <div>
+            <span class="section-tag" id="sectionLevel">Level 1</span>
+            <h3 id="sectionTitle">Tools</h3>
+            <p id="sectionDescription" class="muted"></p>
+          </div>
+          <div class="panel-actions">
+            <input id="searchInput" class="search-input" type="text" placeholder="Search lessons, ingredients, meats, desserts..." />
+            <button class="secondary-btn small-btn" id="showSavedOnlyBtn">Saved Only</button>
+          </div>
+        </div>
+
+        <div id="sectionStats" class="section-stats"></div>
+        <div id="cardGrid" class="card-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="detailModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card">
+      <button class="close-btn" id="closeModalBtn">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
