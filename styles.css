@@ -1,41 +1,35 @@
 body {
-  margin: 0;
-  font-family: Arial;
-  background: #0f0f0f;
-  color: white;
+  margin:0;
+  font-family:Arial;
+  background:#0f0f0f;
+  color:white;
 }
 
 header {
-  padding: 20px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.filters {
-  display: flex;
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-
-button {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  background: gold;
-  font-weight: bold;
+  text-align:center;
+  padding:20px;
+  font-size:24px;
 }
 
 .card {
-  background: #1c1c1c;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 12px;
+  background:#1c1c1c;
+  margin:10px;
+  padding:15px;
+  border-radius:12px;
 }
 
-.details {
-  display: none;
-  margin-top: 10px;
-  font-size: 14px;
+button {
+  background:gold;
+  border:none;
+  padding:10px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+#recipePage {
+  padding:20px;
+}
+
+.hidden {
+  display:none;
 }
