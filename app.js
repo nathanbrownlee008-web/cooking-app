@@ -697,7 +697,36 @@ function openItem(itemId) {
           <div class="detail-box" style="margin-bottom: 14px;">
             <h4>${item.ingredients ? 'What you need' : 'What you learn'}</h4>
             <ul class="detail-list">
-              ${((item.ingredients || item.learn || []).map(entry => `<li>${entry}</li>`)).join('')}
+              ${((item.ingredients || item.learn || [
+  ,
+  {
+    id: 'recipes',
+    level: 'Recipe Book',
+    icon: '📖',
+    title: 'Recipe Book',
+    description: 'Full step-by-step recipes with exact ingredients, prep, heat, and timings like a real cookbook.',
+    items: [
+      {
+        id: 'garlic-pasta-recipe',
+        title: 'Creamy Garlic Parmesan Pasta',
+        difficulty: 'Easy',
+        time: '20 mins total',
+        summary: 'A simple creamy pasta using butter, garlic, parmesan, and pasta water.',
+        ingredients: ['200g pasta','2 tbsp butter','2 cloves garlic','50g parmesan','Salt','Black pepper','1 cup pasta water'],
+        learn: ['Prep: 5 mins','Cook: 15 mins','Heat: LOW–MEDIUM'],
+        steps: [
+          'Boil salted water and cook pasta until al dente.',
+          'Save pasta water before draining.',
+          'Melt butter on low heat and cook garlic gently.',
+          'Add pasta and water.',
+          'Add parmesan slowly and mix.',
+          'Adjust texture and serve.'
+        ],
+        tips: 'Keep heat low or sauce will break.'
+      }
+    ]
+  }
+]).map(entry => `<li>${entry}</li>`)).join('')}
             </ul>
           </div>
         ` : ''}
