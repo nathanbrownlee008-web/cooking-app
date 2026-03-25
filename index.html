@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Chef At Home PRO</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef At Home Deluxe</title>
+  <meta name="description" content="A stylish chef-at-home cookbook app with detailed step-by-step recipes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-topline">Chef training at home</div>
+      <h1>👨‍🍳 Chef At Home</h1>
+      <p class="hero-copy">
+        Learn to cook with proper chef-style recipes, step-by-step timings, heat guidance, visual cues, and kitchen tips that actually teach you what to do.
+      </p>
 
-<header>
-  <h1>👨‍🍳 Chef At Home PRO</h1>
-</header>
+      <div class="hero-stats">
+        <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
+        <div class="stat-pill">Step-by-step guides</div>
+        <div class="stat-pill">Beginner friendly</div>
+      </div>
 
-<div id="recipes"></div>
+      <div class="toolbar">
+        <label class="search-wrap">
+          <span>🔎</span>
+          <input id="searchInput" type="text" placeholder="Search recipe, ingredient, technique..." />
+        </label>
+      </div>
 
-<div id="recipePage" class="hidden"></div>
+      <div id="categoryFilters" class="chip-row"></div>
+    </header>
 
-<script src="app.js"></script>
+    <main>
+      <section class="section-header">
+        <div>
+          <p class="eyebrow">Cookbook</p>
+          <h2>Pick your next dish</h2>
+        </div>
+        <button id="surpriseBtn" class="ghost-btn">🎲 Surprise me</button>
+      </section>
+
+      <section id="recipeGrid" class="recipe-grid"></section>
+    </main>
+  </div>
+
+  <div id="recipeModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button id="closeModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
