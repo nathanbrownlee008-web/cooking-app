@@ -7,15 +7,16 @@
 </head>
 <body>
 
-<div class="sidebar">
-  <h2>🍳 Chef Pro</h2>
-  <button onclick="show('meat')">🥩 Meat</button>
-  <button onclick="show('heat')">🔥 Heat</button>
-  <button onclick="show('techniques')">🍳 Techniques</button>
-  <button onclick="show('meals')">🍝 Meals</button>
+<h1 class="title">🍳 Chef Pro</h1>
+
+<div class="grid">
+  <div class="card" onclick="openSection('meat')">🥩 Meat</div>
+  <div class="card" onclick="openSection('heat')">🔥 Heat</div>
+  <div class="card" onclick="openSection('techniques')">🍳 Techniques</div>
+  <div class="card" onclick="openSection('meals')">🍝 Meals</div>
 </div>
 
-<div class="content" id="content"></div>
+<div id="section"></div>
 
 <script src="app.js"></script>
 </body>
