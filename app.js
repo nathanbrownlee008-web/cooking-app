@@ -697,36 +697,7 @@ function openItem(itemId) {
           <div class="detail-box" style="margin-bottom: 14px;">
             <h4>${item.ingredients ? 'What you need' : 'What you learn'}</h4>
             <ul class="detail-list">
-              ${((item.ingredients || item.learn || [
-  ,
-  {
-    id: 'recipes',
-    level: 'Recipe Book',
-    icon: '📖',
-    title: 'Recipe Book',
-    description: 'Full step-by-step recipes with exact ingredients, prep, heat, and timings like a real cookbook.',
-    items: [
-      {
-        id: 'garlic-pasta-recipe',
-        title: 'Creamy Garlic Parmesan Pasta',
-        difficulty: 'Easy',
-        time: '20 mins total',
-        summary: 'A simple creamy pasta using butter, garlic, parmesan, and pasta water.',
-        ingredients: ['200g pasta','2 tbsp butter','2 cloves garlic','50g parmesan','Salt','Black pepper','1 cup pasta water'],
-        learn: ['Prep: 5 mins','Cook: 15 mins','Heat: LOW–MEDIUM'],
-        steps: [
-          'Boil salted water and cook pasta until al dente.',
-          'Save pasta water before draining.',
-          'Melt butter on low heat and cook garlic gently.',
-          'Add pasta and water.',
-          'Add parmesan slowly and mix.',
-          'Adjust texture and serve.'
-        ],
-        tips: 'Keep heat low or sauce will break.'
-      }
-    ]
-  }
-]).map(entry => `<li>${entry}</li>`)).join('')}
+              ${((item.ingredients || item.learn || []).map(entry => `<li>${entry}</li>`)).join('')}
             </ul>
           </div>
         ` : ''}
@@ -804,3 +775,119 @@ document.addEventListener('keydown', (e) => {
 });
 
 renderAll();
+
+
+/* ==== RECIPE BOOK SECTION (ADDED) ==== */
+sections.push({
+  id: 'recipes',
+  level: 'Recipe Book',
+  icon: '📖',
+  title: 'Recipe Book',
+  description: 'Full step-by-step recipes with exact ingredients, prep, heat, and timings like a real cookbook.',
+  items: [
+    {
+      id: 'garlic-pasta-recipe',
+      title: 'Creamy Garlic Parmesan Pasta',
+      difficulty: 'Easy',
+      time: '20 mins total',
+      summary: 'Silky pasta using butter, garlic, parmesan, and pasta water.',
+      ingredients: ['200g pasta','2 tbsp butter','2 cloves garlic','50g parmesan','Salt','Black pepper','1 cup pasta water'],
+      learn: ['Prep: 5 mins','Cook: 15 mins','Heat: LOW–MEDIUM'],
+      steps: [
+        'Boil heavily salted water and cook pasta until al dente.',
+        'Save 1 cup pasta water before draining.',
+        'Melt butter on LOW heat, add garlic (do NOT brown).',
+        'Add pasta + splash of pasta water.',
+        'Add parmesan gradually while mixing.',
+        'Adjust with more water until glossy and smooth.',
+        'Finish with black pepper.'
+      ],
+      tips: 'Clumpy sauce = heat too high or cheese added too fast.'
+    },
+    {
+      id: 'steak-recipe',
+      title: 'Perfect Pan-Seared Steak',
+      difficulty: 'Medium',
+      time: '20 mins total',
+      summary: 'High heat sear, butter baste, proper rest.',
+      ingredients: ['Steak','Salt','Pepper','Oil','Butter','Garlic','Thyme'],
+      learn: ['Heat: HIGH','Cook: 2–4 mins/side','Rest: 5–10 mins'],
+      steps: [
+        'Pat steak dry and season well.',
+        'Heat pan until oil shimmers (almost smoking).',
+        'Sear 2–4 mins each side (do not move early).',
+        'Add butter, garlic, thyme and baste.',
+        'Rest before slicing.'
+      ],
+      tips: 'Grey steak = pan not hot enough.'
+    },
+    {
+      id: 'chicken-breast-recipe',
+      title: 'Juicy Chicken Breast',
+      difficulty: 'Medium',
+      time: '25 mins total',
+      summary: 'Even thickness, good sear, proper finish.',
+      ingredients: ['Chicken breast','Salt','Pepper','Oil','Butter','Garlic'],
+      learn: ['Heat: MED–HIGH then MED','Cook: 5–7 mins/side'],
+      steps: [
+        'Flatten chicken slightly for even cooking.',
+        'Season well.',
+        'Cook in hot pan 5–7 mins first side.',
+        'Flip and cook 5–7 mins.',
+        'Add butter + garlic and baste.',
+        'Rest before slicing.'
+      ],
+      tips: 'No sizzle = pan too cold.'
+    },
+    {
+      id: 'bolognese-recipe',
+      title: 'Rich Bolognese',
+      difficulty: 'Medium',
+      time: '60 mins',
+      summary: 'Slow simmered meat sauce with depth.',
+      ingredients: ['Mince','Onion','Garlic','Tomato paste','Tinned tomatoes','Stock'],
+      learn: ['Brown meat first','Low simmer'],
+      steps: [
+        'Brown mince on high heat.',
+        'Add onion + garlic and cook.',
+        'Add tomato paste and cook it out.',
+        'Add tomatoes + stock.',
+        'Simmer low 45–60 mins.'
+      ],
+      tips: 'Slow cooking = better flavour.'
+    },
+    {
+      id: 'stirfry-recipe',
+      title: 'Fast Stir Fry',
+      difficulty: 'Easy',
+      time: '15 mins',
+      summary: 'High heat quick cooking.',
+      ingredients: ['Chicken or beef','Veg','Soy sauce','Oil'],
+      learn: ['Prep everything first','High heat'],
+      steps: [
+        'Prep all ingredients first.',
+        'Cook meat first, remove.',
+        'Cook veg quickly.',
+        'Add meat + sauce at end.'
+      ],
+      tips: 'Stir fry fails if you prep during cooking.'
+    },
+    {
+      id: 'brownies-recipe',
+      title: 'Fudgy Brownies',
+      difficulty: 'Easy',
+      time: '35 mins',
+      summary: 'Rich chocolate brownies.',
+      ingredients: ['Chocolate','Butter','Sugar','Eggs','Flour'],
+      learn: ['Do not overbake'],
+      steps: [
+        'Melt chocolate + butter.',
+        'Mix eggs + sugar.',
+        'Combine and add flour.',
+        'Bake until edges set, centre soft.'
+      ],
+      tips: 'Slightly underbaked = fudgy.'
+    }
+  ]
+});
+/* ==== END RECIPE BOOK ==== */
