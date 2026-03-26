@@ -5061,7 +5061,8 @@ cancelAddBtn.addEventListener("click", closeAddModal);
 if (generatorBtn) generatorBtn.addEventListener("click", openGeneratorModal);
 if (closeGeneratorModalBtn) closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
 if (generatorModal) generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
-if (makeRecipeBtn) if (cancelGeneratorBtn) cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
+if (makeRecipeBtn) makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
+if (cancelGeneratorBtn) cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
 
 favouritesBtn.addEventListener("click", () => {
   state.favouritesOnly = !state.favouritesOnly;
@@ -5092,362 +5093,57 @@ renderFilters();
 renderRecipes();
 
 
-// --- CHOPS RECIPES ADDED ---
-if (typeof starterRecipes !== "undefined") {
-  starterRecipes.push({
-    id: "chops1",
-    title: "Garlic Butter Pork Chops",
-    category: "Chops",
-    ingredients: [
-      "2 pork chops (250g each)",
-      "1 tsp salt",
-      "1/2 tsp black pepper",
-      "1 tbsp oil",
-      "2 garlic cloves",
-      "20g butter"
-    ],
-    steps: [
-      {title:"Season",heat:"No heat",time:"5 min",body:"Pat pork dry. Season both sides with salt and pepper evenly."},
-      {title:"Heat pan",heat:"Medium-high",time:"2 min",body:"Heat oil until shimmering, not smoking."},
-      {title:"Cook chops",heat:"Medium-high",time:"4-5 min each side",body:"Cook without moving to build golden crust."},
-      {title:"Butter baste",heat:"Medium",time:"2 min",body:"Add butter and garlic. Spoon over chops repeatedly."},
-      {title:"Rest",heat:"No heat",time:"5 min",body:"Rest meat before serving to keep juices inside."}
-    ]
-  });
-}
-
-
-// ===== GLOBAL RECIPE UPGRADE (SAFE) =====
-starterRecipes.forEach(r => {
-
-  if (!r.ingredients || !r.steps) return;
-
-  // Ensure realistic measurements
-  r.ingredients = r.ingredients.map(i => {
-    if (i.toLowerCase().includes("chicken") && !i.includes("g")) return "500g chicken";
-    if (i.toLowerCase().includes("beef") && !i.includes("g")) return "500g beef";
-    if (i.toLowerCase().includes("pork") && !i.includes("g")) return "2 pork chops (250g each)";
-    return i;
-  });
-
-  // Improve steps to include WHAT + HOW
-  r.steps = r.steps.map((step, i) => {
-    let text = step.body || "";
-
-    if (i === 0) {
-      text = "Prepare all ingredients first. Measure everything and cut evenly so cooking is controlled.";
-    }
-
-    if (i === 1) {
-      text = "Heat the pan properly before adding oil. Oil should shimmer, not smoke.";
-    }
-
-    if (text.length < 80) {
-      text += " Focus on colour, smell, and texture rather than just time.";
-    }
-
-    return {
-      ...step,
-      body: text
-    };
-  });
-
-});
-// ===== ULTRA PRECISE COOKING UPGRADE =====
-
-starterRecipes.forEach(r => {
-
-  if (!r.ingredients || !r.steps) return;
-
-  const ing = r.ingredients.join(" ").toLowerCase();
-
-  r.steps = r.steps.map((step, i) => {
-
-    // STEP 1 – PREP
-    if (i === 0) {
-      return {
-        ...step,
-        body: `Measure and prepare all ingredients first: ${r.ingredients.join(", ")}. Cut evenly so everything cooks at the same speed.`
-      };
-    }
-
-    // STEP 2 – HEAT PAN
-    if (i === 1) {
-      return {
-        ...step,
-        body: `Heat a pan on medium-high heat. Add 1 tbsp oil and wait until it shimmers. This means it's hot enough to cook properly.`
-      };
-    }
-
-    // PROTEIN BASE (CHICKEN / BEEF / PORK)
-    if (ing.includes("chicken") || ing.includes("beef") || ing.includes("pork")) {
-      if (i === 2) {
-        return {
-          ...step,
-          body: `Add the meat (e.g. 500g portion). Cook without moving for 3–4 minutes to build colour, then turn. Cook until golden brown on both sides.`
-        };
-      }
-
-      if (i === 3) {
-        return {
-          ...step,
-          body: `Add aromatics: 2 garlic cloves + optional onion. Lower heat slightly and cook for 1–2 minutes until fragrant (not burnt).`
-        };
-      }
-
-      if (i === 4) {
-        return {
-          ...step,
-          body: `Add any sauce or liquid (100ml stock, cream, or butter). Let it reduce slightly until thickened and glossy.`
-        };
-      }
-    }
-
-    // DESSERT / ICE CREAM
-    if (r.category === "Dessert" || r.category === "Ice Cream") {
-
-      if (i === 1) {
-        return {
-          ...step,
-          body: `Whisk eggs (if used) with sugar (e.g. 80g) until pale and smooth. This builds the base texture.`
-        };
-      }
-
-      if (i === 2) {
-        return {
-          ...step,
-          body: `Slowly add warm milk/cream (200–300ml) while whisking constantly so the mixture doesn’t scramble.`
-        };
-      }
-
-      if (i === 3) {
-        return {
-          ...step,
-          body: `Cook gently on low heat, stirring constantly, until it thickens slightly and coats the back of a spoon.`
-        };
-      }
-
-      if (i === 4) {
-        return {
-          ...step,
-          body: `Cool completely, then chill or freeze depending on recipe. Stir occasionally if freezing for smooth texture.`
-        };
-      }
-    }
-
-    // DEFAULT fallback
-    return {
-      ...step,
-      body: step.body + " Focus on colour, smell, and texture — not just time."
-    };
-
-  });
-
-});
-// ===== FORCE ADD PORK CHOPS =====
-
-starterRecipes.push({
-  title: "Pan-Seared Pork Chops",
-  category: "Pork",
-  difficulty: "Intermediate",
-  time: "20 min",
-  serves: "2",
-  ingredients: [
-    "2 pork chops (250g each)",
-    "1 tsp salt",
-    "1/2 tsp black pepper",
-    "1 tbsp oil",
-    "20g butter",
-    "2 garlic cloves"
-  ],
-  steps: [
-    {
-      title: "Prep the chops",
-      heat: "No heat",
-      time: "5 min",
-      body: "Pat pork chops dry. Season both sides evenly with salt and pepper. Let sit 5 minutes."
-    },
-    {
-      title: "Heat the pan",
-      heat: "Medium-high",
-      time: "2 min",
-      body: "Heat pan and add oil. Wait until oil shimmers."
-    },
-    {
-      title: "Sear the chops",
-      heat: "Medium-high",
-      time: "4-5 min",
-      body: "Place chops in pan. Do NOT move for 4–5 minutes until golden crust forms."
-    },
-    {
-      title: "Flip and baste",
-      heat: "Medium",
-      time: "3-4 min",
-      body: "Flip chops. Add butter + garlic. Spoon butter over chops continuously."
-    },
-    {
-      title: "Rest and serve",
-      heat: "No heat",
-      time: "3 min",
-      body: "Remove from pan and rest before cutting to keep juices inside."
-    }
-  ]
-});
-// ===== CHEF MODE =====
-
-let currentStep = 0;
-let activeRecipe = null;
-
-function startCooking(recipe) {
-  activeRecipe = recipe;
-  currentStep = 0;
-  showStep();
-}
-
-function showStep() {
-  const step = activeRecipe.steps[currentStep];
-
-  const modal = document.createElement("div");
-  modal.className = "chef-mode";
-
-  modal.innerHTML = `
-    <div class="chef-card">
-      <h2>Step ${currentStep + 1}</h2>
-      <h3>${step.title}</h3>
-      <p>${step.body}</p>
-
-      <div class="chef-controls">
-        <button onclick="nextStep()">Next</button>
-        <button onclick="closeChefMode()">Exit</button>
-      </div>
-    </div>
-  `;
-
-  document.body.appendChild(modal);
-}
-
-function nextStep() {
-  document.querySelector(".chef-mode").remove();
-  currentStep++;
-
-  if (currentStep < activeRecipe.steps.length) {
-    showStep();
-  }
-}
-
-function closeChefMode() {
-  document.querySelector(".chef-mode").remove();
-}
-// ===== FIX STEP 1 (REAL PREP INSTRUCTIONS) =====
-
-starterRecipes.forEach(r => {
-
-  if (!r.steps || !r.ingredients) return;
-
-  const ing = r.ingredients.join(" ").toLowerCase();
-
-  // CHICKEN
-  if (ing.includes("chicken")) {
-    r.steps[0].body =
-      "Pat the chicken dry with paper towels. Season evenly with 1 tsp salt, 1/2 tsp black pepper, and any spices (e.g. paprika). Rub it in well. Let it sit for 5–10 minutes to absorb flavour before cooking.";
-  }
-
-  // BEEF
-  if (ing.includes("beef")) {
-    r.steps[0].body =
-      "Bring beef to room temperature. Season with salt and pepper just before cooking. Pat dry so it sears properly.";
-  }
-
-  // PORK (CHOPS)
-  if (ing.includes("pork")) {
-    r.steps[0].body =
-      "Pat pork chops dry. Season both sides with salt and pepper. Let rest for 5 minutes so seasoning sticks and meat relaxes.";
-  }
-
-  // DESSERT
-  if (r.category === "Dessert") {
-    r.steps[0].body =
-      "Measure all ingredients exactly. For mixtures, separate wet and dry ingredients first before combining.";
-  }
-
-  // ICE CREAM
-  if (r.category === "Ice Cream") {
-    r.steps[0].body =
-      "Measure milk, cream, sugar, and eggs precisely. Keep ingredients cold until needed. Prepare whisk and pan before starting.";
-  }
-
-});
-// ===== FIX STEP 2 (PROPER HEAT + START COOKING) =====
-
-starterRecipes.forEach(r => {
-
-  if (!r.steps || r.steps.length < 2) return;
-
-  const ing = r.ingredients.join(" ").toLowerCase();
-
-  // MEAT (chicken / beef / pork)
-  if (ing.includes("chicken") || ing.includes("beef") || ing.includes("pork")) {
-    r.steps[1].body =
-      "Place pan on medium-high heat for 1–2 minutes. Add 1 tbsp oil. Wait until the oil looks loose and slightly shimmering (not smoking). Add the meat and listen for a strong sizzle — this means proper heat. Do not move it for the first few minutes so it forms a crust.";
-  }
-
-  // DESSERT
-  if (r.category === "Dessert") {
-    r.steps[1].body =
-      "Prepare your base depending on the recipe: either mix dry ingredients together first, or gently warm liquids if needed. Do not rush — smooth mixing at this stage prevents lumps later.";
-  }
-
-  // ICE CREAM
-  if (r.category === "Ice Cream") {
-    r.steps[1].body =
-      "Pour milk and cream into a pan and heat on low-medium. Do NOT boil. You want it hot enough to steam slightly, not bubble. This prepares it for mixing with eggs without scrambling them.";
-  }
-
-});
-// ===== FIX ICE CREAM STEP ORDER + TEXT =====
-
-starterRecipes.forEach(r => {
-
-  if (r.category === "Ice Cream" && r.steps.length >= 5) {
-
-    // STEP 3 - cook custard
-    r.steps[2].body =
-      "Cook gently on low heat, stirring constantly until it thickens slightly and coats the back of a spoon. Do NOT boil.";
-
-    // STEP 4 - COOL (NOT COOK)
-    r.steps[3].body =
-      "Remove from heat and let it cool completely at room temperature, then place in the fridge until fully chilled.";
-
-    // STEP 5 - FREEZE
-    r.steps[4].body =
-      "Pour into container or ice cream machine. Freeze or churn until thick and smooth. Stir every 30 minutes if freezing manually.";
-  }
-
-});
-// ===== FIX ICE CREAM HEAT LABELS =====
-
-starterRecipes.forEach(r => {
-
-  if (r.category === "Ice Cream" && r.steps.length >= 5) {
-
-    // STEP 3 = COOK (should NOT be no heat)
-    r.steps[2].heat = "Low";
-
-    // STEP 4 = COOL (no heat is correct)
-    r.steps[3].heat = "No heat";
-
-    // STEP 5 = FREEZE
-    r.steps[4].heat = "Freezer";
-
-  }
-
-});
-
-// ===== MORE RECIPES + PAN/OIL PATCH =====
+// ===== MASTER SANITY PATCH: MERGE ONLY + RAMSAY-STYLE STEP FIXES =====
 (function () {
-  const extraRecipes = [
+  if (window.__chefMasterSanityPatchDone) return;
+  window.__chefMasterSanityPatchDone = true;
+
+  const additions = [
     {
-      id: "honey-glazed-pork-chops",
+      id: "ramsey-garlic-butter-pork-chops",
+      title: "Garlic Butter Pork Chops",
+      category: "Chops",
+      difficulty: "Beginner",
+      time: "25 min",
+      serves: "2 people",
+      description: "Juicy pork chops with a proper sear, butter baste, and resting time so the meat stays tender instead of drying out.",
+      tags: ["Chops", "Premium", "Step-by-step"],
+      pan: "Heavy frying pan or cast-iron skillet",
+      oilType: "1 tbsp neutral oil such as sunflower, vegetable, or rapeseed oil",
+      ingredients: [
+        "2 pork chops (250g each)",
+        "1 tsp fine salt",
+        "1/2 tsp black pepper",
+        "1 tbsp neutral oil",
+        "20g butter",
+        "2 garlic cloves, lightly crushed",
+        "1 thyme sprig"
+      ],
+      notes: [
+        "Pat the chops dry first or they will steam instead of colour.",
+        "Do not move the chops too early or you lose the crust.",
+        "Rest before serving so the juices stay inside the meat."
+      ],
+      steps: [
+        { title:"Prep the chops", heat:"No heat", time:"5 min", body:"Pat the pork chops dry with paper towel. Season both sides with 1 tsp fine salt and 1/2 tsp black pepper, rubbing it in evenly. Leave them 5 minutes so the surface dries slightly and colours better." },
+        { title:"Heat the pan properly", heat:"Medium-high", time:"2 min", body:"Put a heavy frying pan or cast-iron skillet on medium-high heat. Add 1 tbsp neutral oil and wait until it looks loose and shimmering, not smoking aggressively." },
+        { title:"Sear the first side", heat:"Medium-high", time:"4-5 min", body:"Lay the chops into the pan and leave them alone so a real golden crust forms before turning." },
+        { title:"Flip and baste", heat:"Medium", time:"3-4 min", body:"Turn the chops, add 20g butter, the garlic, and thyme, then spoon the foaming butter over the meat repeatedly." },
+        { title:"Rest and serve", heat:"No heat", time:"3-5 min", body:"Move the chops to a plate and let them rest before serving so the juices stay in the meat." }
+      ],
+      plating: [
+        "Serve whole or slice on a slight angle for a cleaner look.",
+        "Spoon a little butter around the meat instead of flooding the top.",
+        "Finish with herbs if you want a fresher look."
+      ],
+      seasoning: {
+        core: ["1 tsp fine salt", "1/2 tsp black pepper"],
+        optional: ["Small pinch smoked paprika"],
+        how: "Pat the chops dry first, season both sides evenly, and leave them 5 minutes before cooking."
+      }
+    },
+    {
+      id: "ramsey-honey-glazed-pork-chops",
       title: "Honey Glazed Pork Chops",
       category: "Chops",
       difficulty: "Intermediate",
@@ -5457,8 +5153,21 @@ starterRecipes.forEach(r => {
       tags: ["Chops", "Premium", "Step-by-step"],
       pan: "Heavy frying pan or cast-iron skillet",
       oilType: "1 tbsp neutral oil such as sunflower or vegetable oil",
-      ingredients: ["2 pork chops (250g each)","1 tsp fine salt","1/2 tsp black pepper","1 tbsp neutral oil","15g butter","1 tbsp honey","1 tsp Dijon mustard","1 garlic clove, finely chopped"],
-      notes: ["Pat the chops dry before they hit the pan or they will steam instead of colour.","Do not glaze too early or the honey can catch and darken too fast.","Resting the chops is what keeps them juicy after cooking."],
+      ingredients: [
+        "2 pork chops (250g each)",
+        "1 tsp fine salt",
+        "1/2 tsp black pepper",
+        "1 tbsp neutral oil",
+        "15g butter",
+        "1 tbsp honey",
+        "1 tsp Dijon mustard",
+        "1 garlic clove, finely chopped"
+      ],
+      notes: [
+        "Pat the chops dry before they hit the pan or they will steam instead of colour.",
+        "Do not glaze too early or the honey can catch and darken too fast.",
+        "Resting the chops is what keeps them juicy after cooking."
+      ],
       steps: [
         { title:"Prep the chops", heat:"No heat", time:"5 min", body:"Pat the pork chops dry, then season both sides with 1 tsp fine salt and 1/2 tsp black pepper. Leave them 5 minutes so the surface dries slightly and colours better." },
         { title:"Heat the pan", heat:"Medium-high", time:"2 min", body:"Put a heavy frying pan or cast-iron skillet on medium-high heat. Add 1 tbsp neutral oil and wait until it looks loose and shimmering, not smoking aggressively." },
@@ -5466,34 +5175,19 @@ starterRecipes.forEach(r => {
         { title:"Flip and build the glaze", heat:"Medium", time:"3-4 min", body:"Turn the chops, then add 15g butter and the chopped garlic. Mix 1 tbsp honey with 1 tsp Dijon mustard and add it in the final minute so it coats the meat without burning." },
         { title:"Rest and serve", heat:"No heat", time:"3-5 min", body:"Move the chops to a plate and let them rest before serving so the juices stay in the meat." }
       ],
-      plating: ["Serve whole or slice on a slight angle for a cleaner look.","Spoon a little glaze around the chops instead of drowning the top.","Add a fresh herb or lemon edge if you want a brighter finish."],
-      seasoning: { core: ["1 tsp fine salt", "1/2 tsp black pepper"], optional: ["Small pinch smoked paprika"], how: "Pat the chops dry first, season both sides evenly, and leave them 5 minutes before cooking." }
-    },
-    {
-      id: "crispy-breadcrumb-chops",
-      title: "Crispy Breadcrumb Chops",
-      category: "Chops",
-      difficulty: "Intermediate",
-      time: "35 min",
-      serves: "2 people",
-      description: "Pork chops with a crisp breadcrumb coating and controlled pan heat so the crumb goes golden without burning.",
-      tags: ["Chops", "Premium", "Step-by-step"],
-      pan: "Wide frying pan or oven-safe sauté pan",
-      oilType: "2 tbsp vegetable or sunflower oil",
-      ingredients: ["2 pork chops (200-250g each)","1 tsp fine salt","1/2 tsp black pepper","50g plain flour","1 egg, beaten","70g breadcrumbs","2 tbsp vegetable oil"],
-      notes: ["Dry chops take a coating better than damp chops.","Do not fry on heat that is too high or the crumb colours before the pork is ready.","Let the crumb set before you move the chops around."],
-      steps: [
-        { title:"Prep and season", heat:"No heat", time:"5 min", body:"Pat the chops dry and season lightly with salt and pepper." },
-        { title:"Set up the coating", heat:"No heat", time:"3 min", body:"Put flour in one bowl, beaten egg in another, and breadcrumbs in a third so the coating process stays clean and even." },
-        { title:"Coat the chops", heat:"No heat", time:"3 min", body:"Dust the chops in flour, dip into egg, then press into breadcrumbs until coated all over." },
-        { title:"Pan-fry until golden", heat:"Medium", time:"8-10 min", body:"Heat 2 tbsp oil in a wide frying pan. Fry the chops until the crumb is deeply golden and the pork is cooked through, turning carefully once the first side has set." },
-        { title:"Rest briefly", heat:"No heat", time:"2 min", body:"Rest for a couple of minutes before serving so the juices settle and the crumb stays in place." }
+      plating: [
+        "Serve whole or slice on a slight angle for a cleaner look.",
+        "Spoon a little glaze around the chops instead of drowning the top.",
+        "Add a fresh herb or lemon edge if you want a brighter finish."
       ],
-      plating: ["Serve whole for a cleaner crisp look.","Keep sauce on the side so the crumb stays crunchy.","Finish with lemon on the side if you want to cut the richness."],
-      seasoning: { core: ["1 tsp fine salt", "1/2 tsp black pepper"], optional: ["Pinch garlic powder in the breadcrumbs"], how: "Season the pork lightly first, then let the crumb add the next layer of flavour." }
+      seasoning: {
+        core: ["1 tsp fine salt", "1/2 tsp black pepper"],
+        optional: ["Small pinch smoked paprika"],
+        how: "Pat the chops dry first, season both sides evenly, and leave them 5 minutes before cooking."
+      }
     },
     {
-      id: "mini-cheeseburger-sliders",
+      id: "ramsey-mini-cheeseburger-sliders",
       title: "Mini Cheeseburger Sliders",
       category: "Kids",
       difficulty: "Beginner",
@@ -5516,7 +5210,7 @@ starterRecipes.forEach(r => {
       seasoning: { core: ["1/2 tsp salt", "1/4 tsp black pepper"], optional: ["Tiny pinch onion powder"], how: "Keep seasoning mild and even so the sliders stay simple and kid-friendly." }
     },
     {
-      id: "ham-and-cheese-pinwheels",
+      id: "ramsey-ham-and-cheese-pinwheels",
       title: "Ham and Cheese Pinwheels",
       category: "Kids",
       difficulty: "Beginner",
@@ -5532,58 +5226,36 @@ starterRecipes.forEach(r => {
         { title:"Layer the filling", heat:"No heat", time:"4 min", body:"Lay the ham over the pastry, then scatter on the cheese evenly so every slice has filling." },
         { title:"Roll and slice", heat:"No heat", time:"3 min", body:"Roll the pastry tightly into a log, then cut into even pinwheels." },
         { title:"Brush with egg", heat:"No heat", time:"1 min", body:"Brush lightly with beaten egg so they bake golden." },
-        { title:"Bake", heat:"Oven 200°C", time:"12-15 min", body:"Bake on a lined tray until puffed and golden." },
+        { title:"Bake", heat:"180°C oven", time:"12-15 min", body:"Bake on a lined tray until puffed and golden." },
         { title:"Cool slightly", heat:"No heat", time:"2 min", body:"Let them cool for a couple of minutes before serving." }
       ],
       plating: ["Serve in a neat stack or row.","Keep sauces on the side.","Add a simple fruit or veg side if you want colour."],
       seasoning: { core: ["No extra seasoning needed if ham is salty enough"], optional: ["Tiny pinch black pepper"], how: "Taste the ham and cheese combination first before adding extra salt." }
     },
     {
-      id: "mango-passion-cooler",
-      title: "Mango Passion Cooler",
+      id: "ramsey-watermelon-mint-cooler",
+      title: "Watermelon Mint Cooler",
       category: "Summer Drinks",
       difficulty: "Beginner",
-      time: "10 min",
+      time: "8 min",
       serves: "2 glasses",
-      description: "A cold tropical-style summer drink with mango, citrus, and ice for a fresher finish.",
+      description: "A very cold watermelon drink with mint and lime for a bright summer finish.",
       tags: ["Summer Drinks", "Premium", "Step-by-step"],
       pan: "No pan needed",
       oilType: "No oil needed",
-      ingredients: ["150g mango chunks","200ml chilled orange juice","Juice of 1/2 lime","100ml cold water","Ice"],
-      notes: ["Use ripe mango for better body and sweetness.","Lime should sharpen the drink, not overpower it.","Serve very cold so it tastes bright rather than flat."],
+      ingredients: ["250g watermelon chunks","6 mint leaves","Juice of 1/2 lime","100ml cold water","Ice"],
+      notes: ["Use well-chilled watermelon for the best result.","Mint should brighten the drink, not overpower it.","Serve immediately over ice."],
       steps: [
-        { title:"Prep the fruit", heat:"No heat", time:"2 min", body:"Measure the mango and lime first so the drink comes together quickly." },
-        { title:"Blend the base", heat:"No heat", time:"1 min", body:"Blend the mango with the orange juice and cold water until smooth." },
-        { title:"Balance the drink", heat:"No heat", time:"1 min", body:"Add the lime juice and taste. Adjust with a little more water if it feels too thick." },
-        { title:"Serve over ice", heat:"Cold", time:"1 min", body:"Pour into glasses over plenty of ice and serve straight away." }
+        { title:"Prep the fruit", heat:"No heat", time:"2 min", body:"Measure the watermelon and lime first so the drink comes together quickly." },
+        { title:"Blend", heat:"No heat", time:"1 min", body:"Blend the watermelon with the cold water until smooth." },
+        { title:"Balance", heat:"No heat", time:"1 min", body:"Add the lime juice and mint, pulse briefly, then taste." },
+        { title:"Serve cold", heat:"Cold", time:"1 min", body:"Pour over plenty of ice and serve straight away." }
       ],
-      plating: ["Serve in a tall cold glass.","Add lime or mango on the rim for colour.","Pour just before serving so the drink stays lively."],
-      seasoning: { core: ["Juice of 1/2 lime"], optional: ["Tiny drizzle of honey if mango is not very sweet"], how: "Taste after blending, then adjust acidity or sweetness right at the end." }
+      plating: ["Serve very cold in a tall glass.","Add mint at the top for freshness.","Pour just before serving."],
+      seasoning: { core: ["Juice of 1/2 lime"], optional: ["Tiny drizzle of honey"], how: "Taste at the end and only sweeten if the fruit needs it." }
     },
     {
-      id: "peach-iced-tea",
-      title: "Peach Iced Tea",
-      category: "Summer Drinks",
-      difficulty: "Beginner",
-      time: "15 min",
-      serves: "2 glasses",
-      description: "A simple peach iced tea with a cleaner balance and enough chill to make it feel properly refreshing.",
-      tags: ["Summer Drinks", "Premium", "Step-by-step"],
-      pan: "Small saucepan or kettle for the tea",
-      oilType: "No oil needed",
-      ingredients: ["2 black tea bags","300ml hot water","1 ripe peach, sliced","1 tbsp sugar or honey","Ice","200ml cold water"],
-      notes: ["Do not overbrew the tea or it turns harsh.","Peach should sit long enough to gently flavour the tea.","Serve with lots of ice so the drink stays clean and fresh."],
-      steps: [
-        { title:"Brew the tea", heat:"Hot", time:"3-4 min", body:"Steep the tea bags in 300ml hot water until strong but not bitter." },
-        { title:"Sweeten and flavour", heat:"Warm", time:"2 min", body:"Stir in the sugar or honey, then add the peach slices while the tea is still warm so they lightly infuse it." },
-        { title:"Chill it down", heat:"Cold", time:"5 min", body:"Remove the tea bags, add 200ml cold water, and let it cool." },
-        { title:"Serve over ice", heat:"Cold", time:"1 min", body:"Pour over plenty of ice and serve very cold." }
-      ],
-      plating: ["Serve in a clear glass so the peach slices show.","Add extra peach at the rim if you want more colour.","Serve straight away once iced."],
-      seasoning: { core: ["1 tbsp sugar or honey"], optional: ["Small squeeze lemon"], how: "Balance sweetness only after the tea is brewed so you do not overdo it." }
-    },
-    {
-      id: "battered-sausages",
+      id: "ramsey-battered-sausages",
       title: "Battered Sausages",
       category: "Battered Foods",
       difficulty: "Intermediate",
@@ -5604,65 +5276,106 @@ starterRecipes.forEach(r => {
       ],
       plating: ["Serve with dips on the side.","Keep the battered sausages raised slightly so the base stays crisp.","Add sauce only at the table if you do not want the crust to soften."],
       seasoning: { core: ["1/2 tsp salt in batter"], optional: ["Pinch paprika"], how: "Season the batter directly and finish lightly with salt once fried." }
-    },
-    {
-      id: "tempura-vegetables",
-      title: "Tempura Vegetables",
-      category: "Battered Foods",
-      difficulty: "Intermediate",
-      time: "25 min",
-      serves: "2 people",
-      description: "Light tempura-style vegetables with a crisp batter and quick fry so they stay delicate instead of heavy.",
-      tags: ["Battered Foods", "Premium", "Step-by-step"],
-      pan: "Deep saucepan or fryer",
-      oilType: "Vegetable or sunflower oil for frying",
-      ingredients: ["1 courgette","1 carrot","6 green beans","80g plain flour","20g cornflour","120ml ice-cold water","Pinch of salt","Oil for frying"],
-      notes: ["Tempura batter should stay very cold.","Do not overmix or it gets heavy.","Fry quickly in small batches for the lightest result."],
-      steps: [
-        { title:"Prep the vegetables", heat:"No heat", time:"4 min", body:"Cut the vegetables into even strips so they cook at the same speed." },
-        { title:"Mix the batter", heat:"No heat", time:"2 min", body:"Combine the flour, cornflour, and a pinch of salt, then stir in the ice-cold water very briefly." },
-        { title:"Heat the oil", heat:"Medium-high", time:"5 min", body:"Heat the oil until a little batter rises quickly and crisps rather than sinking flat." },
-        { title:"Dip and fry", heat:"Medium-high", time:"3-4 min", body:"Dip the vegetables and fry in small batches until pale gold and crisp." },
-        { title:"Drain and serve", heat:"No heat", time:"1 min", body:"Drain well and serve straight away while still crisp." }
-      ],
-      plating: ["Stack loosely so the steam escapes.","Serve sauce on the side so the batter stays light.","Serve straight away — tempura is best at its crispest."],
-      seasoning: { core: ["Pinch of salt in batter"], optional: ["Sea salt after frying"], how: "Keep the batter lightly seasoned and finish very gently after frying." }
     }
   ];
 
-  const byId = new Set(starterRecipes.map(r => r.id));
-  extraRecipes.forEach(r => {
-    if (!byId.has(r.id)) starterRecipes.push(r);
-  });
+  const syncCollection = (target) => {
+    if (!Array.isArray(target)) return;
+    const byId = new Set(target.map(r => r && r.id).filter(Boolean));
+    additions.forEach(r => { if (!byId.has(r.id)) target.push(r); });
+  };
 
-  starterRecipes.forEach(r => {
-    if (!r.pan) {
-      if (r.category === "Chicken") r.pan = "Large frying pan or sauté pan";
-      else if (r.category === "Beef") r.pan = "Heavy frying pan or cast-iron skillet";
-      else if (r.category === "Pasta") r.pan = "Saucepan for pasta + sauté pan for sauce";
-      else if (r.category === "Dessert") r.pan = "Mixing bowl, cake tin, or baking dish depending on the recipe";
-      else if (r.category === "Ice Cream") r.pan = "Small saucepan for the custard base";
-      else if (r.category === "Breakfast") r.pan = "Non-stick frying pan or flat griddle";
-      else r.pan = "Suitable pan for the recipe";
-    }
-    if (!r.oilType) {
-      if (r.category === "Chicken" || r.category === "Beef" || r.category === "Chops") r.oilType = "Neutral oil such as sunflower, vegetable, or rapeseed oil";
-      else if (r.category === "Pasta") r.oilType = "Olive oil for the sauce or finish";
-      else if (r.category === "Summer Drinks" || r.category === "Dessert" || r.category === "Ice Cream" || r.category === "Kids") r.oilType = "No oil needed unless the recipe specifically says so";
-      else if (r.category === "Battered Foods") r.oilType = "Oil for frying such as vegetable or sunflower oil";
-      else r.oilType = "Use the oil listed in the recipe";
-    }
-  });
+  syncCollection(starterRecipes);
+  if (typeof recipes !== "undefined") syncCollection(recipes);
 
-  if (typeof openRecipe === "function" && !window.__chefPanOilPatched) {
+  const sanePan = (recipe) => {
+    if (recipe.pan) return recipe.pan;
+    if (recipe.category === "Chicken") return "Large frying pan or sauté pan";
+    if (recipe.category === "Beef") return "Heavy frying pan or cast-iron skillet";
+    if (recipe.category === "Pasta") return "Saucepan for pasta + sauté pan for sauce";
+    if (recipe.category === "Dessert") return "Mixing bowl, cake tin, or baking dish depending on the recipe";
+    if (recipe.category === "Ice Cream") return "Small saucepan for the custard base";
+    if (recipe.category === "Breakfast") return "Non-stick frying pan or flat griddle";
+    if (recipe.category === "Chops") return "Heavy frying pan or cast-iron skillet";
+    if (recipe.category === "Kids") return "Non-stick frying pan, tray, or small saucepan depending on the recipe";
+    if (recipe.category === "Summer Drinks") return "No pan needed unless the recipe says so";
+    if (recipe.category === "Battered Foods") return "Deep saucepan or fryer";
+    return "Suitable pan for the recipe";
+  };
+
+  const saneOil = (recipe) => {
+    if (recipe.oilType) return recipe.oilType;
+    if (["Chicken","Beef","Chops"].includes(recipe.category)) return "Neutral oil such as sunflower, vegetable, or rapeseed oil";
+    if (recipe.category === "Pasta") return "Olive oil for the sauce or finish";
+    if (["Dessert","Ice Cream","Kids","Summer Drinks"].includes(recipe.category)) return "No oil needed unless the recipe specifically says so";
+    if (recipe.category === "Battered Foods") return "Oil for frying such as vegetable or sunflower oil";
+    return "Use the oil listed in the recipe";
+  };
+
+  const ramseyStepFix = (recipe) => {
+    if (!recipe || !Array.isArray(recipe.steps)) return;
+
+    recipe.pan = sanePan(recipe);
+    recipe.oilType = saneOil(recipe);
+
+    // General contradiction fix: if body says cook / fry / bake / simmer but heat says No heat, fix the badge.
+    recipe.steps.forEach((step, idx) => {
+      const body = (step.body || "").toLowerCase();
+      const title = (step.title || "").toLowerCase();
+
+      if (step.heat === "No heat") {
+        if (body.includes("cook gently") || body.includes("cook ") || body.includes("simmer") || body.includes("boil")) step.heat = "Low";
+        if (body.includes("fry") || body.includes("deep fry")) step.heat = "Medium-high";
+        if (body.includes("bake") || title.includes("bake")) step.heat = "180°C oven";
+      }
+
+      // Make step titles and bodies line up better for dessert/ice cream style recipes.
+      if ((recipe.category === "Ice Cream" || recipe.category === "Dessert") && idx === 2 && title.includes("whisk eggs")) {
+        step.body = "Whisk the egg yolks and sugar until smoother and slightly lighter in colour. This is the base that helps the final texture stay richer rather than icy or grainy.";
+        step.heat = "No heat";
+      }
+      if ((recipe.category === "Ice Cream" || recipe.category === "Dessert") && idx === 3 && (title.includes("fold the batter") || title.includes("fold"))) {
+        step.title = "Cook the custard gently";
+        step.body = "Pour the warm milk and cream into the egg mixture while whisking, then return it to low heat and stir constantly until it thickens slightly and coats the back of a spoon. Do not let it boil or the eggs can scramble.";
+        step.heat = "Low";
+      }
+      if ((recipe.category === "Ice Cream" || recipe.category === "Dessert") && idx === 4 && title.includes("bake carefully")) {
+        step.title = recipe.category === "Ice Cream" ? "Chill and set" : "Bake carefully";
+        step.body = recipe.category === "Ice Cream"
+          ? "Cool the base completely, then chill it until cold before freezing or churning. Stir during freezing if needed for a smoother texture."
+          : "Bake until the centre is just set or the crumb is baked through, using colour and texture as your guide rather than blindly trusting the clock.";
+        step.heat = recipe.category === "Ice Cream" ? "Fridge / freezer" : (step.heat || "180°C oven");
+      }
+
+      // Add clearer Ramsay-style prep guidance for vague first steps
+      if (idx === 0) {
+        if (recipe.category === "Chicken" && !body.includes("pat the chicken dry")) {
+          step.body = "Pat the chicken dry first, then season it properly so you start with flavour and not just heat. Cut evenly if the recipe needs pieces rather than whole cuts.";
+        }
+        if (recipe.category === "Beef" && !body.includes("pat the beef dry")) {
+          step.body = "Pat the beef dry, season it evenly, and get everything ready before the pan gets hot so you can focus on colour and control.";
+        }
+        if (recipe.category === "Chops" && !body.includes("pat the pork chops dry")) {
+          step.body = "Pat the pork chops dry, season both sides evenly, and leave them briefly before cooking so the surface colours instead of steaming.";
+        }
+      }
+    });
+  };
+
+  starterRecipes.forEach(ramseyStepFix);
+  if (typeof recipes !== "undefined" && Array.isArray(recipes)) recipes.forEach(ramseyStepFix);
+
+  // Ensure the recipe modal shows pan/oil cleanly each time
+  if (typeof openRecipe === "function" && !window.__chefPanOilPatchedFinal) {
     const oldOpenRecipe = openRecipe;
     openRecipe = function(recipeId) {
       oldOpenRecipe(recipeId);
-      const recipe = recipes.find(r => r.id === recipeId);
+      const recipe = (typeof recipes !== "undefined" ? recipes.find(r => r.id === recipeId) : null);
       if (!recipe) return;
 
       const infoGrid = document.querySelector(".quick-info-grid");
-      if (infoGrid && !document.querySelector(".info-card.pan-card")) {
+      if (infoGrid) {
+        infoGrid.querySelectorAll(".pan-card, .oil-card").forEach(el => el.remove());
         infoGrid.insertAdjacentHTML("beforeend",
           `<div class="info-card pan-card"><span class="info-label">Best pan</span><span class="info-value info-small">${recipe.pan || "Use a suitable pan"}</span></div>
            <div class="info-card oil-card"><span class="info-label">Best oil</span><span class="info-value info-small">${recipe.oilType || "Use the oil listed in the recipe"}</span></div>`
@@ -5670,7 +5383,9 @@ starterRecipes.forEach(r => {
       }
 
       const leftPanel = document.querySelector(".recipe-layout .panel");
-      if (leftPanel && !leftPanel.querySelector(".pan-oil-box")) {
+      if (leftPanel) {
+        const existing = leftPanel.querySelector(".pan-oil-box");
+        if (existing) existing.remove();
         leftPanel.insertAdjacentHTML("afterbegin",
           `<div class="pan-oil-box">
              <h4>Pan & oil guide</h4>
@@ -5683,18 +5398,7 @@ starterRecipes.forEach(r => {
       }
     };
     window.openRecipe = openRecipe;
-    window.__chefPanOilPatched = true;
-  }
-
-  if (typeof recipes !== "undefined" && Array.isArray(recipes)) {
-    const loadedIds = new Set(recipes.map(r => r.id));
-    extraRecipes.forEach(r => {
-      if (!loadedIds.has(r.id)) recipes.push(r);
-    });
-    recipes.forEach(r => {
-      if (!r.pan) r.pan = starterRecipes.find(s => s.id === r.id)?.pan || "Suitable pan for the recipe";
-      if (!r.oilType) r.oilType = starterRecipes.find(s => s.id === r.id)?.oilType || "Use the oil listed in the recipe";
-    });
+    window.__chefPanOilPatchedFinal = true;
   }
 
   if (typeof renderFilters === "function") renderFilters();
