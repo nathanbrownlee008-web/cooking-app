@@ -37,7 +37,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, 1/2 tsp black pepper, and 1 tsp paprika. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Pat the chicken breasts very dry, then season both sides with salt, pepper, and paprika. Dry surface equals stronger browning and better flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -74,18 +74,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper",
-        "1 tsp paprika"
-      ],
-      "optional": [
-        "1/2 tsp garlic powder for deeper savoury flavour"
-      ],
-      "how": "Pat the chicken dry, sprinkle the salt, pepper, and paprika evenly over both sides, then rub it in and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "honey-mustard-chicken",
@@ -118,7 +107,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -149,18 +138,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "lemon-herb-roast-chicken",
@@ -193,7 +171,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -224,18 +202,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "chicken-stir-fry",
@@ -268,7 +235,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -299,18 +266,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "chicken-parmesan",
@@ -343,7 +299,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -374,18 +330,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "peri-peri-chicken",
@@ -418,7 +363,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -449,18 +394,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "butter-chicken",
@@ -493,7 +427,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -524,18 +458,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "crispy-chicken-wraps",
@@ -568,7 +491,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -599,18 +522,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "sticky-soy-chicken",
@@ -643,7 +555,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -674,18 +586,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "chicken-alfredo",
@@ -718,7 +619,7 @@ const starterRecipes = [
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken dry first, then season both sides with 1 tsp fine salt, and 1/2 tsp black pepper. Rub it in evenly and leave it for 5 to 10 minutes before cooking so the surface starts with proper flavour and colour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Heat the pan properly",
@@ -749,18 +650,7 @@ const starterRecipes = [
       "Slice the chicken at a slight angle so the inside stays visible and the plate looks cleaner.",
       "Spoon sauce underneath or just around the meat so the colour stays visible on top.",
       "Finish with chopped herbs or a fine dusting of seasoning right before serving."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "1/2 tsp paprika for colour",
-        "1/2 tsp garlic powder for extra depth"
-      ],
-      "how": "Pat the chicken dry first, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-    }
+    ]
   },
   {
     "id": "steak-with-garlic-butter",
@@ -794,7 +684,7 @@ const starterRecipes = [
         "title": "Dry and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Pat the steaks dry with kitchen paper, then season them well with salt and pepper. Leave them while the pan gets properly hot. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan smoking hot",
@@ -812,30 +702,20 @@ const starterRecipes = [
         "title": "Flip and baste",
         "heat": "Medium-high",
         "time": "2-3 min",
-        "body": "Flip the steak, add butter, garlic, and thyme, then tilt the pan and spoon the foaming butter repeatedly over the meat."
+        "body": "Flip the steak, add butter, garlic, and thyme, then tilt the pan and spoon the foaming butter repeatedly over the meat. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Rest and slice",
         "heat": "No heat",
         "time": "5-7 min",
-        "body": "Move the steak to a warm plate and rest it before slicing so the juices stay in the meat instead of flooding the board."
+        "body": "Move the steak to a warm plate and rest it before slicing so the juices stay in the meat instead of flooding the board. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       }
     ],
     "plating": [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "A tiny pinch of garlic powder after searing, not before"
-      ],
-      "how": "Pat the steak completely dry, season both sides evenly with salt and pepper, then leave it while the pan heats so the surface dries further."
-    }
+    ]
   },
   {
     "id": "smash-burgers",
@@ -868,7 +748,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -886,7 +766,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -899,17 +779,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch onion powder"
-      ],
-      "how": "Season the outside of the beef just before it hits the pan so it stays juicy and still gets a strong crust."
-    }
+    ]
   },
   {
     "id": "beef-stir-fry",
@@ -942,7 +812,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -960,7 +830,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -973,18 +843,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "beef-ragu",
@@ -1017,7 +876,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1035,7 +894,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1048,18 +907,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "garlic-butter-steak-bites",
@@ -1092,7 +940,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1110,7 +958,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1123,17 +971,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "A tiny pinch of garlic powder after searing, not before"
-      ],
-      "how": "Pat the steak completely dry, season both sides evenly with salt and pepper, then leave it while the pan heats so the surface dries further."
-    }
+    ]
   },
   {
     "id": "meatballs-in-tomato-sauce",
@@ -1166,7 +1004,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1184,7 +1022,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1197,18 +1035,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "chilli-con-carne",
@@ -1241,7 +1068,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1259,7 +1086,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1272,18 +1099,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "beef-tacos",
@@ -1316,7 +1132,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1334,7 +1150,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1347,18 +1163,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "shepherd-s-pie",
@@ -1391,7 +1196,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1409,7 +1214,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1422,18 +1227,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "Small pinch smoked paprika for beef strips",
-        "Tiny pinch chilli flakes if you want heat"
-      ],
-      "how": "Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-    }
+    ]
   },
   {
     "id": "peppercorn-steak",
@@ -1466,7 +1260,7 @@ const starterRecipes = [
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry, then season it evenly with 1 tsp fine salt, 1/2 tsp black pepper. Leave it briefly while the pan heats so the surface dries and takes colour faster."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Get the pan hot",
@@ -1484,7 +1278,7 @@ const starterRecipes = [
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish with control",
@@ -1497,17 +1291,7 @@ const starterRecipes = [
       "Slice steak or beef across the grain for a neater look and a softer bite.",
       "Keep the slices slightly overlapped rather than scattered so the plate feels intentional.",
       "Add sauce in a tight spooned line or small pool instead of covering the whole plate."
-    ],
-    "seasoning": {
-      "core": [
-        "1 tsp fine salt",
-        "1/2 tsp black pepper"
-      ],
-      "optional": [
-        "A tiny pinch of garlic powder after searing, not before"
-      ],
-      "how": "Pat the steak completely dry, season both sides evenly with salt and pepper, then leave it while the pan heats so the surface dries further."
-    }
+    ]
   },
   {
     "id": "spaghetti-carbonara",
@@ -1541,7 +1325,7 @@ const starterRecipes = [
         "title": "Cook the pasta",
         "heat": "High",
         "time": "9-11 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Boil well-salted water and cook the spaghetti until just al dente. Before draining, save a mug of the starchy pasta water. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Render the pancetta",
@@ -1572,18 +1356,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "chicken-alfredo-pasta",
@@ -1616,7 +1389,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -1647,18 +1420,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "pesto-pasta",
@@ -1691,7 +1453,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -1722,18 +1484,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "bolognese",
@@ -1766,7 +1517,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -1797,18 +1548,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "mac-and-cheese",
@@ -1841,7 +1581,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -1872,18 +1612,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "lasagna",
@@ -1916,7 +1645,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -1947,18 +1676,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "arrabbiata",
@@ -1991,7 +1709,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -2022,18 +1740,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "mushroom-pasta",
@@ -2066,7 +1773,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -2097,18 +1804,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "tuna-pasta-bake",
@@ -2141,7 +1837,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -2172,18 +1868,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "sausage-rigatoni",
@@ -2216,7 +1901,7 @@ const starterRecipes = [
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Measure everything before you start and make sure your pasta water is well salted. Pasta dishes are seasoned in layers, so the water, sauce, and final finish all matter."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Use a splash of pasta water if the sauce tightens too much; it should cling, not clump."
       },
       {
         "title": "Start the sauce base",
@@ -2247,18 +1932,7 @@ const starterRecipes = [
       "Twirl the pasta into a neat mound rather than dropping it flat on the plate.",
       "Finish with a small shower of cheese or herbs only at the end so it looks fresh.",
       "Wipe the rim before serving because pasta sauces show up fast on dark plates."
-    ],
-    "seasoning": {
-      "core": [
-        "Salt for the pasta water",
-        "Black pepper to finish"
-      ],
-      "optional": [
-        "Pinch chilli flakes",
-        "Small amount of garlic powder only if it suits the sauce"
-      ],
-      "how": "Season in layers: salt the pasta water well first, then adjust the final sauce with salt and pepper right at the end."
-    }
+    ]
   },
   {
     "id": "fudgy-chocolate-brownies",
@@ -2293,54 +1967,44 @@ const starterRecipes = [
         "title": "Prep the tin and oven",
         "heat": "180°C oven",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line a square tin with baking paper and heat the oven before you start mixing so the batter can go straight in. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Melt chocolate and butter",
         "heat": "Low",
         "time": "3-4 min",
-        "body": "Melt the chocolate and butter gently until completely smooth. Do not scorch the chocolate."
+        "body": "Melt the chocolate and butter gently until completely smooth. Do not scorch the chocolate. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Whisk eggs and sugar",
         "heat": "No heat",
         "time": "3 min",
-        "body": "Whisk until glossy and slightly paler. You do not need a huge foam, just a smooth mixture."
+        "body": "Whisk until glossy and slightly paler. You do not need a huge foam, just a smooth mixture. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Fold the batter",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Mix in the melted chocolate, then fold in the flour, cocoa, salt, and chocolate chunks until no dry streaks remain."
+        "body": "Mix in the melted chocolate, then fold in the flour, cocoa, salt, and chocolate chunks until no dry streaks remain. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Bake carefully",
         "heat": "180°C oven",
         "time": "22-27 min",
-        "body": "Bake until the edges are set but the centre still has a slight wobble. That is what gives you the fudgy middle."
+        "body": "Bake until the edges are set but the centre still has a slight wobble. That is what gives you the fudgy middle. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool before slicing",
         "heat": "No heat",
         "time": "20+ min",
-        "body": "Leave the brownies to cool so the texture settles, then cut into clean squares."
+        "body": "Leave the brownies to cool so the texture settles, then cut into clean squares. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       }
     ],
     "plating": [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "vanilla-cheesecake",
@@ -2373,7 +2037,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2385,13 +2049,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2404,17 +2068,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "chocolate-chip-cookies",
@@ -2447,7 +2101,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2459,13 +2113,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2478,17 +2132,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "sticky-toffee-pudding",
@@ -2521,7 +2165,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2533,13 +2177,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2552,17 +2196,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "apple-crumble",
@@ -2595,7 +2229,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2607,13 +2241,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2626,17 +2260,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "lemon-drizzle-cake",
@@ -2669,7 +2293,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2681,13 +2305,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2700,17 +2324,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "banoffee-pots",
@@ -2743,7 +2357,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2755,13 +2369,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2774,17 +2388,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "chocolate-mousse",
@@ -2817,7 +2421,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2829,13 +2433,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2848,17 +2452,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "tiramisu-cups",
@@ -2891,7 +2485,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2903,13 +2497,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2922,17 +2516,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "chocolate-cake",
@@ -2965,7 +2549,7 @@ const starterRecipes = [
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything properly before you start. Add the pinch of salt and any flavourings carefully so the sweetness stays balanced rather than flat."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Build the mixture",
@@ -2977,13 +2561,13 @@ const starterRecipes = [
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -2996,17 +2580,7 @@ const starterRecipes = [
       "Let the dessert settle before plating so the shape holds and looks deliberate.",
       "Use cream, sauce, or fruit in one clean accent rather than spreading it everywhere.",
       "Finish with a light dusting or garnish right before serving so it still looks fresh."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt"
-      ],
-      "optional": [
-        "Vanilla",
-        "Cinnamon depending on the dessert"
-      ],
-      "how": "Add the pinch of salt to sharpen the sweetness, then add any flavour spices gently so they support rather than overpower the dessert."
-    }
+    ]
   },
   {
     "id": "vanilla-ice-cream",
@@ -3039,7 +2613,7 @@ const starterRecipes = [
         "title": "Warm the dairy",
         "heat": "Low-medium",
         "time": "5 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Heat the milk, cream, vanilla, and salt until steaming but not boiling so the flavour infuses without catching. A fully chilled base always freezes into a smoother result."
       },
       {
         "title": "Whisk yolks and sugar",
@@ -3070,16 +2644,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "chocolate-ice-cream",
@@ -3111,7 +2676,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3142,16 +2707,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "strawberry-ice-cream",
@@ -3183,7 +2739,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3214,16 +2770,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "salted-caramel-ice-cream",
@@ -3255,7 +2802,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3286,16 +2833,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "mint-chocolate-ice-cream",
@@ -3327,7 +2865,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3358,16 +2896,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "cookies-and-cream-ice-cream",
@@ -3399,7 +2928,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3430,16 +2959,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "banana-ice-cream",
@@ -3471,7 +2991,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3502,16 +3022,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "pistachio-ice-cream",
@@ -3543,7 +3054,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3574,16 +3085,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "coffee-ice-cream",
@@ -3615,7 +3117,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3646,16 +3148,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "raspberry-ripple-ice-cream",
@@ -3687,7 +3180,7 @@ const starterRecipes = [
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Measure the base ingredients first, then whisk in the small pinch of salt and flavourings so the sweetness tastes fuller and more rounded."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. If the smell turns sharp or bitter, the heat is too high and the aromatics are starting to catch."
       },
       {
         "title": "Sweeten and balance",
@@ -3718,16 +3211,7 @@ const starterRecipes = [
       "Warm the scoop slightly or dip it in hot water for cleaner rounded scoops.",
       "Serve in chilled bowls or glasses so the shape holds longer.",
       "Add texture on top, like crumbs or nuts, so the plating does not look flat."
-    ],
-    "seasoning": {
-      "core": [
-        "Small pinch of salt"
-      ],
-      "optional": [
-        "Vanilla or flavour extract depending on the style"
-      ],
-      "how": "Whisk the salt and flavouring into the base so the sweetness tastes fuller rather than flat."
-    }
+    ]
   },
   {
     "id": "french-toast",
@@ -3761,19 +3245,19 @@ const starterRecipes = [
         "title": "Make the custard mix",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Whisk the eggs, milk, vanilla, sugar, and cinnamon together until smooth and fully combined. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Dip the bread briefly",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Dip each slice for just a few seconds on each side so it absorbs the mixture without collapsing."
+        "body": "Dip each slice for just a few seconds on each side so it absorbs the mixture without collapsing. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Cook gently",
         "heat": "Medium",
         "time": "3-4 min each side",
-        "body": "Melt the butter in a pan and cook the bread until each side is evenly golden with a softly set centre."
+        "body": "Melt the butter in a pan and cook the bread until each side is evenly golden with a softly set centre. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Finish and serve",
@@ -3786,18 +3270,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "fluffy-pancakes",
@@ -3830,7 +3303,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -3842,7 +3315,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -3861,18 +3334,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "cheese-omelette",
@@ -3905,7 +3367,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -3917,7 +3379,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -3936,18 +3398,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "scrambled-eggs",
@@ -3980,7 +3431,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -3992,7 +3443,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4011,18 +3462,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "waffles",
@@ -4055,7 +3495,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4067,7 +3507,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4086,18 +3526,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "breakfast-burrito",
@@ -4130,7 +3559,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4142,7 +3571,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4161,18 +3590,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "breakfast-hash",
@@ -4205,7 +3623,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4217,7 +3635,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4236,18 +3654,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "egg-muffins",
@@ -4280,7 +3687,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4292,7 +3699,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4311,18 +3718,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "avocado-toast",
@@ -4355,7 +3751,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4367,7 +3763,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4386,18 +3782,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   },
   {
     "id": "breakfast-quesadilla",
@@ -4430,7 +3815,7 @@ const starterRecipes = [
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Prep everything before the pan heats, then season lightly at the start so you can fine-tune the flavour at the end."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Pieces should be even in size and dry on the surface before cooking starts."
       },
       {
         "title": "Warm the pan or griddle",
@@ -4442,7 +3827,7 @@ const starterRecipes = [
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Use colour, smell, and texture as your guides rather than chasing the timer alone."
       },
       {
         "title": "Add the finish",
@@ -4461,18 +3846,7 @@ const starterRecipes = [
       "Stack or layer breakfast dishes neatly so they look fuller and more deliberate.",
       "Add fruit, herbs, or a final drizzle only once the main item is plated.",
       "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ],
-    "seasoning": {
-      "core": [
-        "Pinch of salt",
-        "Black pepper if savoury"
-      ],
-      "optional": [
-        "Cinnamon for sweet breakfasts",
-        "Chilli flakes for savoury ones"
-      ],
-      "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
-    }
+    ]
   }
 ];
 
@@ -4490,12 +3864,17 @@ function writeStore(key, value) {
 }
 
 function loadRecipes() {
-  return [...starterRecipes, ...readStore("chef_deluxe_custom_recipes")];
+  const custom = readStore("chef_deluxe_custom_recipes");
+  return [...starterRecipes, ...custom];
 }
 
 let recipes = loadRecipes();
 
-const state = { category: "All", search: "", favouritesOnly: false };
+const state = {
+  category: "All",
+  search: "",
+  favouritesOnly: false
+};
 
 const grid = document.getElementById("recipeGrid");
 const searchInput = document.getElementById("searchInput");
@@ -4532,7 +3911,14 @@ function toggleFavourite(id) {
   const next = current.includes(id) ? current.filter(x => x !== id) : [id, ...current];
   writeStore("chef_deluxe_favourites", next);
   renderRecipes();
-  if (!modal.classList.contains("hidden")) openRecipe(id);
+  if (!modal.classList.contains("hidden")) {
+    openRecipe(id);
+  }
+}
+
+function getCategories() {
+  const categories = recipes.map(r => r.category).filter(Boolean);
+  return ["All", ...new Set(categories)];
 }
 
 function saveCustomRecipe(recipe) {
@@ -4540,10 +3926,6 @@ function saveCustomRecipe(recipe) {
   current.unshift(recipe);
   writeStore("chef_deluxe_custom_recipes", current);
   recipes = loadRecipes();
-}
-
-function getCategories() {
-  return ["All", ...new Set(recipes.map(r => r.category).filter(Boolean))];
 }
 
 function renderFilters() {
@@ -4576,9 +3958,6 @@ function matchesRecipe(recipe) {
     ...(recipe.ingredients || []),
     ...(recipe.notes || []),
     ...(recipe.plating || []),
-    ...(((recipe.seasoning && recipe.seasoning.core) || [])),
-    ...(((recipe.seasoning && recipe.seasoning.optional) || [])),
-    ((recipe.seasoning && recipe.seasoning.how) || ""),
     ...((recipe.steps || []).map(step => `${step.title} ${step.body}`))
   ].join(" ").toLowerCase();
 
@@ -4625,23 +4004,6 @@ function renderRecipes() {
   `).join("");
 }
 
-function seasoningHTML(recipe) {
-  const seasoning = recipe.seasoning || {};
-  const core = seasoning.core || [];
-  const optional = seasoning.optional || [];
-  const how = seasoning.how || "";
-  return `
-    <div class="seasoning-box">
-      <h4>Seasoning guide</h4>
-      <div class="seasoning-list">
-        <div class="seasoning-item"><div class="seasoning-label">Core</div><div>${core.length ? core.join("<br>") : "Season to taste"}</div></div>
-        ${optional.length ? `<div class="seasoning-item"><div class="seasoning-label">Optional</div><div>${optional.join("<br>")}</div></div>` : ""}
-      </div>
-      ${how ? `<p>${how}</p>` : ""}
-    </div>
-  `;
-}
-
 function openRecipe(recipeId) {
   const recipe = recipes.find(r => r.id === recipeId);
   if (!recipe) return;
@@ -4666,8 +4028,6 @@ function openRecipe(recipeId) {
         <div class="ingredients-grid">
           ${(recipe.ingredients || []).map(item => `<div class="ingredient-item"><span class="bullet"></span><div>${item}</div></div>`).join("")}
         </div>
-
-        ${seasoningHTML(recipe)}
 
         <div class="notes-grid">
           <h3>Pro tips</h3>
@@ -4745,199 +4105,10 @@ function getLines(id) {
   return document.getElementById(id).value.split("\n").map(x => x.trim()).filter(Boolean);
 }
 
-function normaliseItems(items) {
-  return items.map(x => x.toLowerCase().trim()).filter(Boolean);
-}
-
-function hasAny(items, words) {
-  return words.some(word => items.some(item => item.includes(word)));
-}
-
-function inferCategory(items, providedCategory) {
-  if (providedCategory && providedCategory.trim()) return providedCategory.trim();
-  if (hasAny(items, ["sugar", "chocolate", "cocoa", "flour", "berries", "strawberry", "banana", "vanilla", "honey"])) return "Dessert";
-  if (hasAny(items, ["pasta", "spaghetti", "rigatoni", "penne", "tagliatelle", "noodles"])) return "Pasta";
-  if (hasAny(items, ["egg", "eggs", "bread", "oats", "yogurt", "granola"])) return "Breakfast";
-  if (hasAny(items, ["chicken", "thigh", "breast", "drumstick"])) return "Chicken";
-  if (hasAny(items, ["beef", "steak", "mince", "burger"])) return "Beef";
-  return "Custom";
-}
-
-function generatedSeasoning(category) {
-  if (category === "Chicken") return {
-    core:["1 tsp fine salt","1/2 tsp black pepper"],
-    optional:["1/2 tsp paprika","1/2 tsp garlic powder"],
-    how:"Pat the chicken dry, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
-  };
-  if (category === "Beef") return {
-    core:["1 tsp fine salt","1/2 tsp black pepper"],
-    optional:["Small pinch chilli flakes or smoked paprika"],
-    how:"Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
-  };
-  if (category === "Pasta") return {
-    core:["Salt for the pasta water","Black pepper to finish"],
-    optional:["Pinch chilli flakes"],
-    how:"Season in layers: salt the pasta water first, then correct the final sauce right before serving."
-  };
-  if (category === "Dessert") return {
-    core:["Pinch of salt"],
-    optional:["Vanilla or cinnamon depending on the dessert"],
-    how:"Use a small pinch of salt to make the sweetness taste fuller, then add flavourings gently."
-  };
-  if (category === "Breakfast") return {
-    core:["Pinch of salt","Black pepper if savoury"],
-    optional:["Cinnamon for sweet breakfasts"],
-    how:"Season lightly at the start, then taste and adjust at the end because breakfast dishes can lose balance fast."
-  };
-  return {
-    core:["Salt to taste","Black pepper to taste"],
-    optional:[],
-    how:"Season in small layers as you cook, then taste and adjust before serving."
-  };
-}
-
-function buildSmartTitle(items, category, style) {
-  const first = items[0] || "Kitchen";
-  const prettyFirst = first.charAt(0).toUpperCase() + first.slice(1);
-  if (style && style.trim()) {
-    const prettyStyle = style.trim().split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-    return `${prettyStyle} ${prettyFirst}`;
-  }
-  if (category === "Dessert") return hasAny(items, ["strawberry","berries","raspberry"]) ? "Berry Dessert Pot" : `${prettyFirst} Sweet Bowl`;
-  if (category === "Pasta") return `${prettyFirst} Pasta Bowl`;
-  if (category === "Breakfast") return `${prettyFirst} Breakfast Plate`;
-  if (category === "Chicken") return `${prettyFirst} Chicken Skillet`;
-  if (category === "Beef") return `${prettyFirst} Beef Pan`;
-  return `${prettyFirst} Kitchen Special`;
-}
-
-function buildSmartRecipe(category, ingredients, style, difficulty, time, serves) {
-  const items = normaliseItems(ingredients);
-  const title = buildSmartTitle(items, category, style);
-  let description = "";
-  let notes = [];
-  let steps = [];
-  let plating = [];
-  let tags = [category, "Generated", "Step-by-step"];
-  const seasoning = generatedSeasoning(category);
-
-  if (category === "Dessert") {
-    description = `A custom dessert built from ${ingredients.join(", ")}, designed around chilling, layering, folding, or baking rather than random frying instructions.`;
-    notes = [
-      "Sweet dishes usually improve when you balance sweetness with a pinch of salt or a little acidity.",
-      "If the mixture feels loose, chill it before serving so the texture tightens up.",
-      "Fresh fruit should stay bright and soft, not cooked into mush unless you want a compote."
-    ];
-    steps = [
-      {title:"Prep the dessert ingredients", heat:"No heat", time:"5 min", body:"Wash, slice, measure, or crush everything first so you can build the dessert cleanly and without rushing."},
-      {title:"Build the base", heat:"No heat", time:"3-5 min", body:`Use ${ingredients[0].toLowerCase()} as the lead ingredient, then combine or layer it with the rest depending on texture. Think fold, whisk, crush, chill, or layer rather than forcing everything into a hot pan.`},
-      {title:"Adjust sweetness and texture", heat:"No heat", time:"2-3 min", body:"Taste the mixture. If it feels too sharp, add a little sweetness. If it feels too sweet or flat, add something fresh or slightly tangy to balance it."},
-      {title:"Chill, set, or finish", heat:"Fridge / no heat", time:"10-30 min", body:"Let the dessert chill if it needs structure, or serve straight away if the texture already feels right."}
-    ];
-    plating = [
-      "Use a bowl or glass that frames the dessert instead of spreading it too wide.",
-      "Layer or spoon the dessert neatly so you can see colour contrast between ingredients.",
-      "Finish with fruit, crumbs, chocolate, or a light drizzle right before serving."
-    ];
-  } else if (category === "Pasta") {
-    description = `A custom pasta dish built from ${ingredients.join(", ")}, using the ingredients you already have and turning them into a proper sauce-led meal.`;
-    notes = [
-      "Save pasta water before draining because it helps the sauce cling properly.",
-      "A sauce that looks too thick can usually be fixed with a splash of pasta water.",
-      "Finish pasta in the sauce when possible so the whole dish tastes joined-up."
-    ];
-    steps = [
-      {title:"Prep and boil", heat:"High", time:"8-12 min", body:"Get salted water boiling and prep the rest of the ingredients while the pasta cooks. Save some pasta water before draining."},
-      {title:"Start the flavour base", heat:"Medium", time:"3-5 min", body:`Cook your base ingredients gently first. With ${ingredients[0].toLowerCase()}, think about whether it needs softening, browning, or only a short warm-through.`},
-      {title:"Build the sauce", heat:"Medium", time:"4-6 min", body:"Add the ingredients that will create the sauce or main flavour. The goal is a smooth, balanced coating rather than something dry or watery."},
-      {title:"Combine and finish", heat:"Low-medium", time:"2-3 min", body:"Toss the pasta through the sauce and use reserved pasta water if needed until everything looks glossy and evenly coated."}
-    ];
-    plating = [
-      "Twirl the pasta into a neat mound instead of dropping it flat onto the plate.",
-      "Keep the topping focused in the centre so the dish looks tidy and intentional.",
-      "Finish with cheese, herbs, or pepper only once plated."
-    ];
-  } else if (category === "Breakfast") {
-    description = `A quick breakfast-style dish built from ${ingredients.join(", ")}, designed around gentle heat and fast finishing instead of generic dinner instructions.`;
-    notes = [
-      "Breakfast dishes usually cook fast, so prep before the pan heats up.",
-      "Medium heat gives you far more control than blasting the pan too hard.",
-      "Serve breakfast straight away because texture drops quickly once it sits."
-    ];
-    steps = [
-      {title:"Prep everything first", heat:"No heat", time:"3-5 min", body:"Slice, whisk, toast, or portion everything before cooking starts because breakfast dishes move quickly."},
-      {title:"Cook the base", heat:"Medium", time:"4-6 min", body:`Start with the ingredient that needs the most cooking. With ${ingredients[0].toLowerCase()}, watch for a gentle set, soft colour, or light crispness depending on the item.`},
-      {title:"Add the rest and balance", heat:"Low-medium", time:"2-4 min", body:"Bring in the remaining ingredients in the order they need cooking, keeping the texture soft, fluffy, or lightly crisp rather than overdone."},
-      {title:"Plate and finish", heat:"No heat", time:"1 min", body:"Serve as soon as the texture looks right and finish with anything fresh, creamy, sweet, or savoury that lifts the plate."}
-    ];
-    plating = [
-      "Stack or layer the breakfast elements rather than spreading them randomly.",
-      "Add fruit, herbs, syrup, or a final topping only once the main item is plated.",
-      "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
-    ];
-  } else if (category === "Chicken") {
-    description = `A custom chicken dish built from ${ingredients.join(", ")}, with proper browning, controlled heat, and a cleaner finish based on what you already have at home.`;
-    notes = [
-      "Pat chicken dry before cooking or it will steam instead of colour.",
-      "If the pan gets too crowded, cook in batches so the meat still browns properly.",
-      "Chicken should feel cooked through but still juicy when cut."
-    ];
-    steps = [
-      {title:"Prep the chicken", heat:"No heat", time:"5 min", body:seasoning.how},
-      {title:"Brown the chicken", heat:"Medium-high", time:"6-8 min", body:"Cook the chicken long enough to build real golden colour before moving it around too much."},
-      {title:"Build the dish", heat:"Medium", time:"4-6 min", body:`Add the rest of the ingredients in a sensible order. With ${ingredients[0].toLowerCase()} plus your other items, think in terms of browning first, then building flavour, then finishing gently.`},
-      {title:"Finish and glaze", heat:"Low-medium", time:"3-5 min", body:"Stop when the chicken looks glossy, smells rounded, and feels fully cooked rather than tight and dry."}
-    ];
-    plating = [
-      "Slice chicken at a slight angle so the inside stays visible.",
-      "Spoon sauce or juices around the meat rather than drowning the top if you want the colour to stay visible.",
-      "Finish with herbs or a final contrast for freshness."
-    ];
-  } else if (category === "Beef") {
-    description = `A custom beef dish built from ${ingredients.join(", ")}, using colour, crust, and controlled finishing rather than random one-size-fits-all steps.`;
-    notes = [
-      "A dark crust matters more than constant flipping, so leave the beef still long enough to colour.",
-      "If the beef goes grey, your pan is not hot enough or too crowded.",
-      "Rest larger pieces briefly before slicing so the juices stay in the meat."
-    ];
-    steps = [
-      {title:"Prep and season", heat:"No heat", time:"5 min", body:seasoning.how},
-      {title:"Sear for colour", heat:"High", time:"4-7 min", body:`Use strong heat first. With ${ingredients[0].toLowerCase()}, the goal is proper browning rather than pale cooking.`},
-      {title:"Add supporting ingredients", heat:"Medium", time:"4-6 min", body:"Add the rest of the ingredients and build depth without knocking all the colour out of the pan."},
-      {title:"Finish with control", heat:"Low-medium", time:"3-5 min", body:"Stop when the beef looks rich, smells balanced, and feels cooked to the point you actually want."}
-    ];
-    plating = [
-      "Slice beef across the grain if slicing is needed.",
-      "Keep the slices or pieces grouped together so the plate looks deliberate.",
-      "Use sauce in a neat spooned line or small pool rather than flooding the whole plate."
-    ];
-  } else {
-    description = `A custom dish built from ${ingredients.join(", ")}, using the ingredients you already have and turning them into a practical meal instead of a random template.`;
-    notes = [
-      "Work out which ingredient needs the most cooking and let that lead the order.",
-      "If the dish feels flat, use salt, acid, or a fresh finishing ingredient to wake it up.",
-      "Good cooking is usually about better order and heat control rather than fancy ingredients."
-    ];
-    steps = [
-      {title:"Prep the ingredients", heat:"No heat", time:"5 min", body:"Cut and organise everything first so you can build the dish without guessing halfway through."},
-      {title:"Start the flavour base", heat:"Medium-high", time:"3-5 min", body:`Begin with the ingredients that benefit from early colour or softening. With ${ingredients[0].toLowerCase()}, look at what the ingredient actually needs rather than forcing it into one cooking style.`},
-      {title:"Build the dish", heat:"Medium", time:"6-10 min", body:"Add the rest of the ingredients in the order they need cooking, keeping an eye on texture as the dish comes together."},
-      {title:"Finish and balance", heat:"Low-medium", time:"2-4 min", body:"Taste, correct the seasoning, and stop only when the dish looks settled, smells rounded, and feels properly cooked."}
-    ];
-    plating = [
-      "Keep the plate tidy and wipe the rim before serving.",
-      "Use height or a neat central placement so the dish looks intentional.",
-      "Finish with a fresh element, herb, or final drizzle for contrast."
-    ];
-  }
-
-  return { title, description, notes, steps, plating, tags, seasoning };
-}
-
 function buildGeneratedRecipe() {
   const ingredients = getLines("gIngredients");
-  const style = document.getElementById("gStyle").value.trim() || "";
-  const providedCategory = document.getElementById("gCategory").value.trim();
+  const style = document.getElementById("gStyle").value.trim() || "Chef special";
+  const category = document.getElementById("gCategory").value.trim() || "Custom";
   const difficulty = document.getElementById("gDifficulty").value.trim() || "Custom";
   const time = document.getElementById("gTime").value.trim() || "30 min";
   const serves = document.getElementById("gServes").value.trim() || "2 people";
@@ -4947,27 +4118,60 @@ function buildGeneratedRecipe() {
     return;
   }
 
-  const category = inferCategory(normaliseItems(ingredients), providedCategory);
-  const smart = buildSmartRecipe(category, ingredients, style, difficulty, time, serves);
+  const lead = ingredients[0];
+  const styleWord = style.split(" ")[0];
+  const title = `${styleWord.charAt(0).toUpperCase() + styleWord.slice(1)} ${lead.charAt(0).toUpperCase() + lead.slice(1)}`;
+  const lowerList = ingredients.join(", ");
 
   const recipe = {
-    id: slug(smart.title + "-" + Date.now()),
-    title: smart.title,
+    id: slug(title + "-" + Date.now()),
+    title,
     category,
     difficulty,
     time,
     serves,
-    description: smart.description,
-    tags: smart.tags,
+    description: `A custom ${style.toLowerCase()} recipe built from ${lowerList} and saved straight into your cookbook.`,
+    tags: [category || "Custom", "Generated", "Step-by-step"],
     ingredients,
-    notes: smart.notes,
-    steps: smart.steps,
-    plating: smart.plating,
-    seasoning: smart.seasoning
+    notes: [
+      "Prep everything before the heat goes on so you can cook with control.",
+      "Taste before serving and use salt or acid to wake up flat flavour.",
+      "If colour builds too fast, lower the heat slightly and steady the pan."
+    ],
+    steps: [
+      {
+        title: "Prep the ingredients",
+        heat: "No heat",
+        time: "5 min",
+        body: "Cut and organise everything first so the cooking flow stays calm and deliberate."
+      },
+      {
+        title: "Start the flavour base",
+        heat: "Medium-high",
+        time: "3-5 min",
+        body: `Warm the pan, add your first flavour ingredients, and build some colour without burning anything. With ${lead.toLowerCase()}, look for a lively sizzle rather than a pale start.`
+      },
+      {
+        title: "Build the dish",
+        heat: "Medium",
+        time: "6-10 min",
+        body: "Add the rest of the ingredients in the order they need cooking, keeping an eye on texture as the dish comes together. The goal is balanced flavour, not just speed."
+      },
+      {
+        title: "Finish and balance",
+        heat: "Low-medium",
+        time: "2-4 min",
+        body: "Taste, correct the seasoning, and stop only when the dish looks glossy, smells rounded, and feels properly cooked."
+      }
+    ],
+    plating: [
+      "Keep the plate tidy and wipe the rim before serving.",
+      "Use height or a neat central placement so the dish looks intentional.",
+      "Finish with a fresh element, herb, or final drizzle for contrast."
+    ]
   };
 
   saveCustomRecipe(recipe);
-  recipes = loadRecipes();
   renderFilters();
   renderRecipes();
   closeGeneratorModal();
@@ -5011,8 +4215,6 @@ function saveNewRecipe() {
     return;
   }
 
-  const seasoning = generatedSeasoning(category);
-
   const newRecipe = {
     id: slug(title + "-" + Date.now()),
     title,
@@ -5029,12 +4231,10 @@ function saveNewRecipe() {
       "Use a clean plate and wipe the rim before serving.",
       "Keep the food grouped neatly rather than spread out randomly.",
       "Finish with a final garnish or contrast if the dish needs colour."
-    ],
-    seasoning
+    ]
   };
 
   saveCustomRecipe(newRecipe);
-  recipes = loadRecipes();
   renderFilters();
   renderRecipes();
   closeAddModal();
@@ -5058,11 +4258,11 @@ addModal.querySelector(".modal-backdrop").addEventListener("click", closeAddModa
 saveRecipeBtn.addEventListener("click", saveNewRecipe);
 cancelAddBtn.addEventListener("click", closeAddModal);
 
-if (generatorBtn) generatorBtn.addEventListener("click", openGeneratorModal);
-if (closeGeneratorModalBtn) closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
-if (generatorModal) generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
-if (makeRecipeBtn) makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
-if (cancelGeneratorBtn) cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
+generatorBtn.addEventListener("click", openGeneratorModal);
+closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
+generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
+makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
+cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
 
 favouritesBtn.addEventListener("click", () => {
   state.favouritesOnly = !state.favouritesOnly;
@@ -5093,93 +4293,96 @@ renderFilters();
 renderRecipes();
 
 
-// ===== CLEAN RESTART BASE =====
-(function () {
-  if (window.__chefCleanRestartBaseDone) return;
-  window.__chefCleanRestartBaseDone = true;
+// ===== CHEF SMART PARSER SYSTEM =====
 
-  const CLEAN_CATEGORIES = ["All", "Meats", "Salads", "Desserts", "Drinks", "Kids Menu"];
+// FORCE CLEAN CATEGORIES
+function getCategories() {
+  return ["All", "Meats", "Salads", "Desserts", "Drinks", "Kids Menu"];
+}
 
-  function wipeRecipes() {
-    try { localStorage.removeItem("chef_deluxe_custom_recipes"); } catch (e) {}
+// SMART PARSER
+function parseRecipeFromText(raw) {
+  const lines = raw.split("\n").map(l => l.trim()).filter(Boolean);
 
-    if (Array.isArray(starterRecipes)) {
-      starterRecipes.length = 0;
+  let title = lines[0] || "Custom Recipe";
+  let ingredients = [];
+  let steps = [];
+
+  let mode = "ingredients";
+
+  lines.forEach(line => {
+    const lower = line.toLowerCase();
+
+    if (lower.includes("step") || lower.match(/^\d+\./)) {
+      mode = "steps";
     }
 
-    try { recipes = []; } catch (e) {}
-    try { window.recipes = []; } catch (e) {}
-
-    if (typeof recipeCount !== "undefined" && recipeCount) {
-      recipeCount.textContent = "0";
+    // INGREDIENT DETECTION
+    if (mode === "ingredients") {
+      if (
+        line.match(/\d/) || 
+        lower.includes("g") || 
+        lower.includes("ml") ||
+        lower.includes("tsp") ||
+        lower.includes("tbsp")
+      ) {
+        ingredients.push(line);
+      }
     }
-  }
 
-  function renderCleanFilters() {
-    const wrap = document.getElementById("categoryFilters");
-    if (!wrap) return;
+    // STEP DETECTION
+    if (mode === "steps") {
+      if (line.match(/^\d+/)) {
+        let heat = "No heat";
 
-    wrap.innerHTML = CLEAN_CATEGORIES.map((cat, i) => `
-      <button class="chip ${i === 0 ? 'active' : ''}" type="button" data-clean-category="${cat}">
-        ${cat}
-      </button>
-    `).join("");
+        if (lower.includes("oven")) heat = "180°C oven";
+        else if (lower.includes("fry") || lower.includes("pan")) heat = "Medium heat";
+        else if (lower.includes("boil")) heat = "High heat";
+        else if (lower.includes("fridge")) heat = "Fridge";
+        else if (lower.includes("freeze")) heat = "Freezer";
 
-    wrap.querySelectorAll("[data-clean-category]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        wrap.querySelectorAll(".chip").forEach(x => x.classList.remove("active"));
-        btn.classList.add("active");
-      });
-    });
-  }
-
-  function hideOldExtras() {
-    ["generatorBtn", "favouritesBtn", "surpriseBtn"].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.style.display = "none";
-    });
-  }
-
-  function renderCleanEmptyState() {
-    const grid = document.getElementById("recipeGrid");
-    if (!grid) return;
-    grid.innerHTML = `
-      <div class="empty-state clean-restart-empty">
-        <h3>Clean base ready</h3>
-        <p>All old recipes have been removed. Start rebuilding with new recipes in:</p>
-        <p><strong>Meats</strong> · <strong>Salads</strong> · <strong>Desserts</strong> · <strong>Drinks</strong> · <strong>Kids Menu</strong></p>
-      </div>
-    `;
-  }
-
-  wipeRecipes();
-
-  if (typeof renderFilters === "function") {
-    const oldRenderFilters = renderFilters;
-    renderFilters = function () {
-      renderCleanFilters();
-      return;
-    };
-    window.renderFilters = renderFilters;
-  }
-
-  if (typeof renderRecipes === "function") {
-    const oldRenderRecipes = renderRecipes;
-    renderRecipes = function () {
-      renderCleanEmptyState();
-      return;
-    };
-    window.renderRecipes = renderRecipes;
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    wipeRecipes();
-    hideOldExtras();
-    renderCleanFilters();
-    renderCleanEmptyState();
+        steps.push({
+          title: line.replace(/^\d+\.\s*/, ""),
+          heat: heat,
+          time: "—",
+          body: line
+        });
+      }
+    }
   });
 
-  hideOldExtras();
-  renderCleanFilters();
-  renderCleanEmptyState();
-})();
+  return {
+    id: "r_" + Date.now(),
+    title,
+    category: "Custom",
+    ingredients,
+    steps,
+    notes: ["Generated from pasted recipe"]
+  };
+}
+
+
+// OVERRIDE ADD BUTTON
+if (typeof addRecipeBtn !== "undefined") {
+  addRecipeBtn.onclick = () => {
+    const raw = prompt("Paste your full recipe:");
+    if (!raw) return;
+
+    const recipe = parseRecipeFromText(raw);
+
+    if (typeof saveCustomRecipe === "function") saveCustomRecipe(recipe);
+    if (typeof loadRecipes === "function") recipes = loadRecipes();
+
+    if (typeof renderFilters === "function") renderFilters();
+    if (typeof renderRecipes === "function") renderRecipes();
+  };
+}
+
+// CLEAN EMPTY START
+try {
+  localStorage.removeItem("chef_deluxe_custom_recipes");
+} catch(e){}
+
+if (typeof starterRecipes !== "undefined") starterRecipes = [];
+if (typeof recipes !== "undefined") recipes = [];
+
