@@ -5153,3 +5153,94 @@ starterRecipes.forEach(r => {
   });
 
 });
+// ===== ULTRA PRECISE COOKING UPGRADE =====
+
+starterRecipes.forEach(r => {
+
+  if (!r.ingredients || !r.steps) return;
+
+  const ing = r.ingredients.join(" ").toLowerCase();
+
+  r.steps = r.steps.map((step, i) => {
+
+    // STEP 1 – PREP
+    if (i === 0) {
+      return {
+        ...step,
+        body: `Measure and prepare all ingredients first: ${r.ingredients.join(", ")}. Cut evenly so everything cooks at the same speed.`
+      };
+    }
+
+    // STEP 2 – HEAT PAN
+    if (i === 1) {
+      return {
+        ...step,
+        body: `Heat a pan on medium-high heat. Add 1 tbsp oil and wait until it shimmers. This means it's hot enough to cook properly.`
+      };
+    }
+
+    // PROTEIN BASE (CHICKEN / BEEF / PORK)
+    if (ing.includes("chicken") || ing.includes("beef") || ing.includes("pork")) {
+      if (i === 2) {
+        return {
+          ...step,
+          body: `Add the meat (e.g. 500g portion). Cook without moving for 3–4 minutes to build colour, then turn. Cook until golden brown on both sides.`
+        };
+      }
+
+      if (i === 3) {
+        return {
+          ...step,
+          body: `Add aromatics: 2 garlic cloves + optional onion. Lower heat slightly and cook for 1–2 minutes until fragrant (not burnt).`
+        };
+      }
+
+      if (i === 4) {
+        return {
+          ...step,
+          body: `Add any sauce or liquid (100ml stock, cream, or butter). Let it reduce slightly until thickened and glossy.`
+        };
+      }
+    }
+
+    // DESSERT / ICE CREAM
+    if (r.category === "Dessert" || r.category === "Ice Cream") {
+
+      if (i === 1) {
+        return {
+          ...step,
+          body: `Whisk eggs (if used) with sugar (e.g. 80g) until pale and smooth. This builds the base texture.`
+        };
+      }
+
+      if (i === 2) {
+        return {
+          ...step,
+          body: `Slowly add warm milk/cream (200–300ml) while whisking constantly so the mixture doesn’t scramble.`
+        };
+      }
+
+      if (i === 3) {
+        return {
+          ...step,
+          body: `Cook gently on low heat, stirring constantly, until it thickens slightly and coats the back of a spoon.`
+        };
+      }
+
+      if (i === 4) {
+        return {
+          ...step,
+          body: `Cool completely, then chill or freeze depending on recipe. Stir occasionally if freezing for smooth texture.`
+        };
+      }
+    }
+
+    // DEFAULT fallback
+    return {
+      ...step,
+      body: step.body + " Focus on colour, smell, and texture — not just time."
+    };
+
+  });
+
+});
