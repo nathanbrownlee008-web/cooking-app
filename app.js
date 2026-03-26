@@ -3799,16 +3799,19 @@ renderFilters();
 renderRecipes();
 
 
-// ===== FINAL BROWNIE INGREDIENT FIX (USER EXACT GRAMS) =====
+// ===== FULL CLEAN BROWNIE REBUILD =====
 (function(){
- if(window.__brownieExactFixDone) return;
- window.__brownieExactFixDone = true;
+ if(window.__brownieFullCleanDone) return;
+ window.__brownieFullCleanDone = true;
 
- function fix(recipe){
-  if(!recipe || !recipe.title) return;
-  if(!recipe.title.toLowerCase().includes("brownie")) return;
-
-  recipe.ingredients = [
+ const brownieRecipe = {
+  id: "brownie-clean",
+  title: "Fudge Brownies",
+  category: "Dessert",
+  difficulty: "Beginner",
+  time: "25 min + chill",
+  serves: "9-12",
+  ingredients: [
     "BROWNIES",
     "200g dark chocolate",
     "150g butter",
@@ -3823,35 +3826,43 @@ renderRecipes();
     "100ml double cream",
     "1 tbsp butter",
     "1–2 tbsp golden syrup"
-  ];
+  ],
+  steps: [
+    {title:"Prep", heat:"180°C oven", time:"5 min", body:"Preheat oven to 180°C (160 fan). Line tray with baking paper (cover bottom + sides, leave overhang). Place tray on middle oven shelf."},
+    {title:"Melt chocolate + butter", heat:"Low / microwave", time:"2-3 min", body:"Add 200g chocolate + 150g butter to bowl. Microwave in 20 second bursts, stirring each time until smooth."},
+    {title:"Cool slightly", heat:"No heat", time:"2-3 min", body:"Leave mixture 2–3 minutes. Do NOT add eggs while hot."},
+    {title:"Add sugar", heat:"No heat", time:"1 min", body:"Add 200g sugar and mix until combined."},
+    {title:"Add eggs", heat:"No heat", time:"2 min", body:"Add 3 eggs one at a time, mixing well after each."},
+    {title:"Add dry ingredients", heat:"No heat", time:"1-2 min", body:"Add 100g flour, 30g cocoa powder, pinch of salt (+ vanilla optional). Fold gently until thick batter."},
+    {title:"Into tray", heat:"No heat", time:"1 min", body:"Pour into lined tray and spread evenly."},
+    {title:"Bake", heat:"180°C oven", time:"20-25 min", body:"Bake 20–25 minutes. Check at 20 min. Centre should wobble slightly. Do NOT overbake."},
+    {title:"Cool slightly", heat:"No heat", time:"10-15 min", body:"Remove and rest 10–15 minutes. Should be warm, not hot."},
+    {title:"Heat cream", heat:"Hob level 3", time:"2-3 min", body:"Heat 100ml cream until hot (not boiling)."},
+    {title:"Add chocolate", heat:"Low/off", time:"1 min", body:"Turn heat low/off. Add 100g chocolate and stir smooth."},
+    {title:"Add butter + syrup", heat:"Low", time:"1 min", body:"Add butter + golden syrup. Stir until glossy."},
+    {title:"Add sauce", heat:"No heat", time:"1 min", body:"Pour over brownies and spread evenly."},
+    {title:"Fridge", heat:"Fridge", time:"1-2 hr", body:"Chill whole tray 1–2 hours. Do NOT cover airtight while warm."},
+    {title:"Slice", heat:"No heat", time:"5 min", body:"Cut into squares. Use hot knife for clean cuts."}
+  ],
+  notes:[
+    "Eggs go into chocolate mixture, not flour",
+    "Do NOT use foil",
+    "Middle shelf only",
+    "Slight wobble = perfect",
+    "Sauce before fridge",
+    "Warm not hot before chilling"
+  ]
+ };
 
-  // also fix key steps so they MATCH ingredients
-  if(recipe.steps){
-    recipe.steps.forEach(step=>{
-      if(step.title.toLowerCase().includes("melt")){
-        step.body = "Melt 200g dark chocolate with 150g butter in a bowl using 20 second microwave bursts or low heat, stirring until smooth.";
-      }
-      if(step.title.toLowerCase().includes("sugar")){
-        step.body = "Add 200g sugar and mix until fully combined.";
-      }
-      if(step.title.toLowerCase().includes("dry")){
-        step.body = "Add 100g flour, 30g cocoa powder, a pinch of salt, and optional 1 tsp vanilla. Fold gently until just combined.";
-      }
-      if(step.title.toLowerCase().includes("cream")){
-        step.body = "Heat 100ml double cream gently until hot but not boiling.";
-      }
-      if(step.title.toLowerCase().includes("chocolate") && step.body.includes("Add")){
-        step.body = "Add 100g chocolate and stir until smooth.";
-      }
-    });
-  }
+ // inject into both arrays
+ if(typeof recipes !== "undefined" && Array.isArray(recipes)){
+   recipes.push({...brownieRecipe, id:"brownie-custom", category:"Custom"});
+   recipes.push(brownieRecipe);
  }
 
- const lists = [];
- if(Array.isArray(starterRecipes)) lists.push(starterRecipes);
- if(typeof recipes !== "undefined" && Array.isArray(recipes)) lists.push(recipes);
-
- lists.forEach(l=>l.forEach(fix));
+ if(typeof starterRecipes !== "undefined" && Array.isArray(starterRecipes)){
+   starterRecipes.push(brownieRecipe);
+ }
 
  if(typeof renderRecipes==="function") renderRecipes();
 })();
