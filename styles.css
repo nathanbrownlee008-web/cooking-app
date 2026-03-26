@@ -133,3 +133,31 @@ body.modal-open{overflow:hidden}
 .seasoning-item{display:flex;gap:10px;align-items:flex-start}
 .seasoning-label{font-size:12px;font-weight:800;color:var(--gold2);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;min-width:66px}
 @media (max-width:860px){.toolbar-actions{width:100%}}
+.chef-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.chef-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  color: white;
+}
+
+.chef-controls button {
+  margin-top: 10px;
+  padding: 10px;
+  background: gold;
+  border: none;
+  border-radius: 8px;
+}
