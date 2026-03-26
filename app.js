@@ -1,5 +1,7 @@
-const STORAGE_KEY = "chef_deluxe_fixed_recipes_v4";
+
+const STORAGE_KEY = "chef_deluxe_fixed_recipes_v5";
 const LEGACY_KEYS = [
+  "chef_deluxe_fixed_recipes_v4",
   "chef_deluxe_custom_recipes",
   "chefRecipes",
   "myRecipes"
@@ -28,9 +30,7 @@ const fixRecipeBtn = document.getElementById("fixRecipeBtn");
 const pasteArea = document.getElementById("pasteArea");
 
 for (const key of LEGACY_KEYS) {
-  if (key !== STORAGE_KEY) {
-    try { localStorage.removeItem(key); } catch (_) {}
-  }
+  try { localStorage.removeItem(key); } catch (_) {}
 }
 
 let recipes = readStore(STORAGE_KEY);
@@ -59,10 +59,6 @@ function saveRecipe(recipe) {
   writeStore(STORAGE_KEY, recipes);
 }
 
-function getCategories() {
-  return FIXED_CATEGORIES;
-}
-
 function escapeHtml(text = "") {
   return String(text)
     .replace(/&/g, "&amp;")
@@ -87,7 +83,7 @@ function closeModal(element) {
 }
 
 function renderFilters() {
-  categoryFilters.innerHTML = getCategories().map(category => `
+  categoryFilters.innerHTML = FIXED_CATEGORIES.map(category => `
     <button class="chip ${state.category === category ? "active" : ""}" data-category="${escapeHtml(category)}">
       ${escapeHtml(category)}
     </button>
@@ -102,13 +98,33 @@ function renderFilters() {
   });
 }
 
+function renderIngredientSections(recipe) {
+  const sections = Array.isArray(recipe.ingredientSections) && recipe.ingredientSections.length
+    ? recipe.ingredientSections
+    : [{ title: "Ingredients", items: recipe.ingredients || [] }];
+
+  return sections.map((section, index) => `
+    <section class="panel" style="${index ? "margin-top:16px;" : ""}">
+      <h3>${escapeHtml(section.title)}</h3>
+      ${(section.items || []).length ? section.items.map(item => `
+        <div class="ingredient-item">
+          <span class="bullet"></span>
+          <div>${escapeHtml(item)}</div>
+        </div>
+      `).join("") : `<div class="ingredient-item"><span class="bullet"></span><div>None added.</div></div>`}
+    </section>
+  `).join("");
+}
+
 function matchesRecipe(recipe) {
+  const ingredientText = (recipe.ingredientSections || []).flatMap(section => section.items || []);
   const haystack = [
     recipe.title,
     recipe.category,
     recipe.description,
     ...(recipe.tags || []),
     ...(recipe.ingredients || []),
+    ...ingredientText,
     ...(recipe.notes || []),
     ...((recipe.steps || []).map(step => `${step.title} ${step.heat} ${step.time} ${step.body}`))
   ].join(" ").toLowerCase();
@@ -183,15 +199,7 @@ function openRecipe(id) {
 
     <div class="recipe-layout">
       <div>
-        <section class="panel">
-          <h3>Ingredients</h3>
-          ${(recipe.ingredients || []).length ? recipe.ingredients.map(item => `
-            <div class="ingredient-item">
-              <span class="bullet"></span>
-              <div>${escapeHtml(item)}</div>
-            </div>
-          `).join("") : `<div class="ingredient-item"><span class="bullet"></span><div>None added.</div></div>`}
-        </section>
+        ${renderIngredientSections(recipe)}
 
         <section class="panel" style="margin-top:16px;">
           <h3>Chef notes</h3>
@@ -244,167 +252,312 @@ function cleanLine(line) {
     .trim();
 }
 
-function isSectionHeading(line) {
+function normaliseSectionTitle(title) {
+  const lower = title.toLowerCase().replace(/:$/, "").trim();
+  if (/(fudge sauce|sauce|ganache|topping|icing)/.test(lower)) return "Fudge Sauce Ingredients";
+  if (/(brownie batter|batter|brownies|main|base)/.test(lower)) return "Brownie Batter Ingredients";
+  if (/(ingredients|ingredient)/.test(lower)) return "Ingredients";
+  return title.replace(/:$/, "").trim();
+}
+
+function isIngredientHeading(line) {
   const lower = line.toLowerCase().replace(/:$/, "").trim();
-  return [
-    "ingredients", "ingredient", "method", "steps", "step", "instructions", "instruction",
-    "fudge sauce", "sauce", "brownies", "brownie", "for the sauce", "for the brownies",
-    "topping", "filling", "icing", "ganache"
-  ].includes(lower);
+  return /^(ingredients|ingredient|brownie batter|batter|brownies|fudge sauce|sauce|ganache|icing|topping|for the brownies|for the sauce)$/.test(lower);
+}
+
+function isMethodHeading(line) {
+  const lower = line.toLowerCase().replace(/:$/, "").trim();
+  return /^(method|steps|step|instructions|instruction|method for brownies|method for sauce)$/.test(lower);
 }
 
 function isIngredientLine(line) {
   const lower = line.toLowerCase();
-  return /\d/.test(lower) && /(g|kg|ml|l|tbsp|tsp|teaspoon|tablespoon|cup|cups|oz|egg|eggs)/.test(lower)
-    || /^(pinch|handful)\b/.test(lower)
-    || /^(salt|pepper|butter|sugar|flour|cream|milk|oil)\b/.test(lower);
+  return (
+    (/\d/.test(lower) && /(g|kg|ml|l|tbsp|tsp|teaspoon|tablespoon|cup|cups|oz|egg|eggs)/.test(lower)) ||
+    /^(pinch|handful)\b/.test(lower) ||
+    /^(salt|pepper|butter|sugar|flour|cream|milk|oil|vanilla|chocolate)\b/.test(lower)
+  );
 }
 
-function looksLikeInstruction(line) {
-  const lower = line.toLowerCase();
-  return /^(preheat|line|grease|melt|mix|whisk|beat|fold|stir|add|pour|bake|cook|heat|simmer|boil|fry|rest|cool|chill|serve|place|remove|microwave|combine|spread|slice|season|turn|flip|cover|leave|put)\b/.test(lower)
-    || /(oven|hob|pan|bake|microwave|fridge|freezer)/.test(lower);
-}
-
-function extractTime(line) {
-  const lower = line.toLowerCase();
-  const match = lower.match(/\b(\d+\s*(?:-|to)\s*\d+|\d+)\s*(seconds?|secs?|minutes?|mins?|hours?|hrs?)\b/);
-  if (match) {
-    return `${match[1].replace(/\s*to\s*/g, "–")} ${match[2].replace("secs", "sec").replace("seconds", "sec").replace("minutes", "min").replace("mins", "min").replace("hours", "hr").replace("hrs", "hr")}`;
-  }
-  if (/20 second bursts?/.test(lower)) return "20 sec bursts";
-  if (/few minutes?/.test(lower)) return "2–3 min";
-  if (/until smooth|until melted/.test(lower)) return "2–4 min";
-  if (/cool|rest|chill/.test(lower)) return "20–30 min";
-  if (/preheat|prep|line/.test(lower)) return "3–5 min";
-  if (/bake/.test(lower)) return "20–25 min";
-  if (/boil|fry|simmer|cook/.test(lower)) return "5–8 min";
-  return "As needed";
-}
-
-function extractHeat(line) {
-  const lower = line.toLowerCase();
-  if (/microwave/.test(lower)) return "Microwave";
-  if (/fridge|chill|cool|rest/.test(lower)) return "No heat";
-  const ovenTemp = lower.match(/(\d{3})\s*°?c/);
-  if (ovenTemp) {
-    const fan = lower.match(/\((\d{3})\s*fan\)/);
-    return fan ? `Oven ${ovenTemp[1]}°C (${fan[1]} fan)` : `Oven ${ovenTemp[1]}°C`;
-  }
-  if (/oven|bake|roast/.test(lower)) return "Oven 180°C (160 fan)";
-  if (/boil|rapid/.test(lower)) return "Hob 5–6 high";
-  if (/fry|sear|medium-high|medium high/.test(lower)) return "Hob 4–5 medium-high";
-  if (/medium/.test(lower)) return "Hob 3–4 medium";
-  if (/low|gentle|melt|simmer/.test(lower)) return "Hob 1–2 low";
-  return "No heat";
-}
-
-function buildStepTitle(line, index) {
-  const cleaned = cleanLine(line).replace(/[.!?]$/, "");
-  const parts = cleaned.split(/[,:]/)[0].trim().split(/\s+/).slice(0, 6);
-  const title = parts.join(" ");
-  if (!title) return `Step ${index + 1}`;
-  return title.charAt(0).toUpperCase() + title.slice(1);
-}
-
-function normaliseInstructionText(line) {
-  const cleaned = cleanLine(line);
-  return cleaned.endsWith(".") ? cleaned : `${cleaned}.`;
-}
-
-function buildDescription(title, category) {
-  return `${title} cleaned up with Fix Recipe mode and saved into your ${category.toLowerCase()} cookbook.`;
-}
-
-function parseRecipeFromText(raw) {
+function splitIntoSections(raw) {
   const lines = raw.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
   const title = lines[0] || "Custom Recipe";
-  const category = inferCategory(raw);
-  const ingredients = [];
-  const steps = [];
-  const notes = [
-    "Electric hob guide: 1–2 low, 3–4 medium, 5–6 high.",
-    "Times are guide times — use texture and colour as your final check."
-  ];
+  const items = lines.slice(1);
 
+  const ingredientSections = [];
+  const methodLines = [];
+  let currentIngredientSection = "Ingredients";
   let mode = "auto";
-  let currentSection = "";
 
-  for (let i = 1; i < lines.length; i += 1) {
-    const original = lines[i];
+  function getOrCreateSection(title) {
+    const existing = ingredientSections.find(section => section.title === title);
+    if (existing) return existing;
+    const section = { title, items: [] };
+    ingredientSections.push(section);
+    return section;
+  }
+
+  for (const original of items) {
     const line = cleanLine(original);
     if (!line) continue;
 
-    if (isSectionHeading(line)) {
-      currentSection = line.replace(/:$/, "");
-      const lower = currentSection.toLowerCase();
-      if (["ingredients", "ingredient", "brownies", "fudge sauce", "sauce", "topping", "filling", "icing", "ganache", "for the sauce", "for the brownies"].includes(lower)) {
+    if (isIngredientHeading(line)) {
+      currentIngredientSection = normaliseSectionTitle(line);
+      mode = "ingredients";
+      getOrCreateSection(currentIngredientSection);
+      continue;
+    }
+
+    if (isMethodHeading(line)) {
+      mode = "method";
+      continue;
+    }
+
+    if (line.endsWith(":") && !isIngredientLine(line)) {
+      const possibleSection = normaliseSectionTitle(line);
+      if (/Ingredients$/i.test(possibleSection)) {
+        currentIngredientSection = possibleSection;
         mode = "ingredients";
-      }
-      if (["method", "steps", "step", "instructions", "instruction"].includes(lower)) {
-        mode = "steps";
+        getOrCreateSection(currentIngredientSection);
+      } else {
+        methodLines.push({ section: line.replace(/:$/, ""), text: "" });
+        mode = "method";
       }
       continue;
     }
 
-    if (line.includes("|") && line.split("|").length >= 4) {
-      const [rawTitle, rawHeat, rawTime, ...bodyParts] = line.split("|");
-      steps.push({
-        title: cleanLine(rawTitle),
-        heat: cleanLine(rawHeat),
-        time: cleanLine(rawTime),
-        body: normaliseInstructionText(bodyParts.join("|").trim())
-      });
-      mode = "steps";
-      continue;
-    }
-
-    if (isIngredientLine(line) && mode !== "steps") {
-      ingredients.push(line);
+    if (isIngredientLine(line) && mode !== "method") {
+      getOrCreateSection(currentIngredientSection).items.push(line);
       mode = "ingredients";
       continue;
     }
 
-    if (looksLikeInstruction(line) || mode === "steps") {
-      const prefix = currentSection && !["ingredients", "ingredient", "method", "steps", "step", "instructions", "instruction"].includes(currentSection.toLowerCase())
-        ? `${currentSection}: `
-        : "";
-      steps.push({
-        title: buildStepTitle(line, steps.length),
-        heat: extractHeat(line),
-        time: extractTime(line),
-        body: normaliseInstructionText(prefix + line)
-      });
-      mode = "steps";
-      continue;
-    }
-
-    if (isIngredientLine(line)) {
-      ingredients.push(line);
-      continue;
-    }
+    methodLines.push({ section: "", text: line });
+    mode = "method";
   }
 
-  const uniqueIngredients = Array.from(new Set(ingredients));
-  const totalTime = steps.find(step => /\d/.test(step.time || "") && /(min|hr|sec)/.test(step.time || ""))?.time || "See steps";
+  const cleanedSections = ingredientSections
+    .map(section => ({ title: section.title, items: Array.from(new Set(section.items)) }))
+    .filter(section => section.items.length);
+
+  return { title, ingredientSections: cleanedSections, methodLines };
+}
+
+function getSectionItems(ingredientSections, matcher) {
+  const result = [];
+  ingredientSections.forEach(section => {
+    section.items.forEach(item => {
+      if (matcher(item.toLowerCase(), section.title.toLowerCase())) result.push(item);
+    });
+  });
+  return Array.from(new Set(result));
+}
+
+function joinItems(items) {
+  if (!items.length) return "";
+  if (items.length === 1) return items[0];
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`;
+}
+
+function buildMergedSteps(title, ingredientSections, methodLines, category) {
+  const fullText = methodLines.map(item => item.text).join(" ").toLowerCase();
+
+  const batterChocolate = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("batter") && item.includes("chocolate")
+  );
+  const batterButter = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("batter") && item.includes("butter")
+  );
+  const batterSugar = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("batter") && item.includes("sugar")
+  );
+  const batterEggs = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("batter") && item.includes("egg")
+  );
+  const batterDry = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("batter") && /(flour|cocoa|salt|vanilla)/.test(item)
+  );
+
+  const sauceItems = getSectionItems(ingredientSections, (item, section) =>
+    section.includes("sauce")
+  );
+
+  const allIngredients = ingredientSections.flatMap(section => section.items);
+  const anySauce = sauceItems.length > 0 || /fudge sauce|sauce|ganache|icing|topping/.test(fullText);
+  const isBrownieStyle = /brownie/.test(title.toLowerCase()) || /brownie/.test(fullText);
+
+  if (isBrownieStyle) {
+    const steps = [];
+
+    steps.push({
+      title: "Prep the oven and tin",
+      heat: "No heat",
+      time: "5 min",
+      body: "Preheat the oven to 180°C (160 fan) and line your tin with baking paper, leaving some overhang so the brownies lift out cleanly."
+    });
+
+    const meltText = [];
+    if (batterChocolate.length || batterButter.length) {
+      meltText.push(`Gently melt ${joinItems([...batterChocolate, ...batterButter])} until smooth.`);
+    } else {
+      meltText.push("Gently melt the chocolate and butter until smooth.");
+    }
+    meltText.push("Use hob 1–2 on an electric hob or short microwave bursts, then let it cool slightly so it does not scramble the eggs.");
+    steps.push({
+      title: "Melt the chocolate and butter",
+      heat: "Hob 1–2 low",
+      time: "3–5 min",
+      body: meltText.join(" ")
+    });
+
+    const batterBits = [];
+    if (batterSugar.length) batterBits.push(joinItems(batterSugar));
+    if (batterEggs.length) batterBits.push(joinItems(batterEggs));
+    if (batterDry.length) batterBits.push(joinItems(batterDry));
+    const batterBody = batterBits.length
+      ? `Stir in ${batterBits[0] || "the sugar"}, then add ${batterBits[1] || "the eggs"} and mix until glossy. Fold in ${batterBits[2] || "the dry ingredients"} just until combined so the brownies stay fudgy.`
+      : "Stir the sugar into the melted chocolate, add the eggs, then fold in the dry ingredients just until combined so the brownies stay fudgy.";
+    steps.push({
+      title: "Make the brownie batter",
+      heat: "No heat",
+      time: "3–4 min",
+      body: batterBody
+    });
+
+    steps.push({
+      title: "Bake",
+      heat: "Oven 180°C (160 fan)",
+      time: "20–25 min",
+      body: "Pour the batter into the lined tin and bake until the edges are set and the centre still has a slight wobble. Do not overbake."
+    });
+
+    if (anySauce) {
+      const sauceBody = sauceItems.length
+        ? `Warm ${joinItems(sauceItems)} gently, stirring until smooth and glossy. Keep the heat low so the sauce stays silky and does not split.`
+        : "Warm the cream, butter, chocolate, and syrup gently, stirring until the sauce is smooth and glossy.";
+      steps.push({
+        title: "Make the fudge sauce",
+        heat: "Hob 1–2 low",
+        time: "2–4 min",
+        body: sauceBody
+      });
+    }
+
+    steps.push({
+      title: "Cool and serve",
+      heat: "No heat",
+      time: "30–60 min",
+      body: anySauce
+        ? "Let the brownies cool before slicing so the centre sets properly, then spoon over the warm sauce when serving."
+        : "Let the brownies cool before slicing so the centre sets properly and the texture turns fudgy."
+    });
+
+    return steps;
+  }
+
+  const genericSteps = [];
+  const joined = methodLines
+    .filter(item => item.text)
+    .map(item => item.text)
+    .join(" ");
+
+  const sentences = joined
+    .split(/(?<=[.!?])\s+/)
+    .map(item => item.trim())
+    .filter(Boolean);
+
+  const buckets = [
+    { key: "prep", title: "Prep", heat: "No heat", time: "5 min", test: /preheat|line|grease|trim|pat dry|measure|prepare|prep/ },
+    { key: "start", title: "Start cooking", heat: "Hob 3–4 medium", time: "4–6 min", test: /melt|heat|fry|cook|boil|sear|brown/ },
+    { key: "combine", title: "Bring it together", heat: "Hob 2–3 low-medium", time: "3–5 min", test: /mix|whisk|beat|stir|fold|combine|add/ },
+    { key: "finish", title: "Finish", heat: "No heat", time: "As needed", test: /rest|cool|serve|slice|leave|chill/ }
+  ];
+
+  const grouped = {};
+  buckets.forEach(bucket => { grouped[bucket.key] = []; });
+
+  sentences.forEach(sentence => {
+    const bucket = buckets.find(item => item.test.test(sentence.toLowerCase()));
+    if (bucket) grouped[bucket.key].push(sentence);
+    else grouped.combine.push(sentence);
+  });
+
+  buckets.forEach(bucket => {
+    if (grouped[bucket.key].length) {
+      genericSteps.push({
+        title: bucket.title,
+        heat: bucket.heat,
+        time: bucket.time,
+        body: grouped[bucket.key].join(" ")
+      });
+    }
+  });
+
+  return genericSteps.length ? genericSteps : [{
+    title: "Method",
+    heat: "No heat",
+    time: "As needed",
+    body: "Paste a recipe with a clearer ingredients section and a clearer method section for a better Fix Recipe result."
+  }];
+}
+
+function buildDescription(title, category, ingredientSections) {
+  const extra = ingredientSections.length > 1 ? "with split ingredient sections" : "with cleaner grouped steps";
+  return `${title} cleaned up with Fix Recipe mode and saved into your ${category.toLowerCase()} cookbook ${extra}.`;
+}
+
+function parseRecipeFromText(raw) {
+  const category = inferCategory(raw);
+  const { title, ingredientSections, methodLines } = splitIntoSections(raw);
+
+  let fixedSections = ingredientSections;
+  if (!fixedSections.length) {
+    fixedSections = [{ title: "Ingredients", items: [] }];
+  }
+
+  if (
+    fixedSections.length === 1 &&
+    fixedSections[0].title === "Ingredients" &&
+    /brownie/i.test(title) &&
+    fixedSections[0].items.length > 8
+  ) {
+    const batter = [];
+    const sauce = [];
+    fixedSections[0].items.forEach(item => {
+      const lower = item.toLowerCase();
+      if (/cream|golden syrup/.test(lower)) sauce.push(item);
+      else if (/100g dark chocolate/.test(lower) && sauce.length === 0 && batter.some(existing => /dark chocolate/.test(existing.toLowerCase()))) sauce.push(item);
+      else if (/butter/.test(lower) && sauce.length && sauce.every(existing => !/butter/.test(existing.toLowerCase()))) sauce.push(item);
+      else batter.push(item);
+    });
+
+    const rebuilt = [];
+    if (batter.length) rebuilt.push({ title: "Brownie Batter Ingredients", items: batter });
+    if (sauce.length) rebuilt.push({ title: "Fudge Sauce Ingredients", items: sauce });
+    fixedSections = rebuilt.length ? rebuilt : fixedSections;
+  }
+
+  const steps = buildMergedSteps(title, fixedSections, methodLines, category);
+  const totalTime = steps.map(step => step.time).find(time => /\d/.test(time)) || "See steps";
 
   return {
     id: slug(`${title}-${Date.now()}`),
     title,
     category,
     difficulty: "Chef Fix",
-    time: totalTime,
+    time: category === "Desserts" && /brownie/i.test(title) ? "35–45 min" : totalTime,
     serves: "Custom",
-    description: buildDescription(title, category),
+    description: buildDescription(title, category, fixedSections),
     tags: [category, "Fixed", "Step-by-step"],
-    ingredients: uniqueIngredients,
-    notes,
-    steps: steps.length ? steps : [{
-      title: "Add method",
-      heat: "No heat",
-      time: "As needed",
-      body: "This paste did not include clear method lines. Paste the cooking instructions underneath the ingredients and fix it again."
-    }]
+    ingredients: fixedSections.flatMap(section => section.items),
+    ingredientSections: fixedSections,
+    notes: [
+      "Electric hob guide: 1–2 low, 3–4 medium, 5–6 high.",
+      "Times are guide times — use texture and colour as your final check.",
+      "Fix Recipe now groups small actions into fuller steps and tries to split sauce ingredients from the main mix."
+    ],
+    steps
   };
 }
 
@@ -449,7 +602,6 @@ fixRecipeBtn.addEventListener("click", () => {
 
   const recipe = parseRecipeFromText(raw);
   saveRecipe(recipe);
-  renderFilters();
   renderRecipes();
   closeModal(addModal);
   pasteArea.value = "";
