@@ -1,18 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Deluxe PRO</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef At Home Deluxe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-topline">Chef training at home</div>
+      <h1>👨‍🍳 Chef At Home</h1>
+      <p class="hero-copy">
+        Premium cookbook design with chef-style step-by-step recipes, proper heat guidance, and a layout built to feel like a real app instead of a plain list.
+      </p>
 
-<div class="hero">
-  <h1>👨‍🍳 Chef Deluxe PRO</h1>
-</div>
+      <div class="hero-stats">
+        <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
+        <div class="stat-pill">Deluxe layout</div>
+        <div class="stat-pill">Add recipes + pro tips</div>
+      </div>
 
-<div id="recipes"></div>
+      <div class="toolbar">
+        <label class="search-wrap">
+          <span>🔎</span>
+          <input id="searchInput" type="text" placeholder="Search recipe, ingredient, category..." />
+        </label>
+        <div class="toolbar-actions"><button id="favouritesBtn" class="ghost-btn top-btn">⭐ Favourites</button><button id="generatorBtn" class="ghost-btn top-btn">✨ Recipe Generator</button><button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button></div>
+      </div>
 
-<script src="app.js"></script>
+      <div id="categoryFilters" class="chip-row"></div>
+    </header>
+
+    <main>
+      <section class="section-header">
+        <div>
+          <p class="eyebrow">Cookbook</p>
+          <h2>Pick your next dish</h2>
+        </div>
+        <button id="surpriseBtn" class="ghost-btn">🎲 Surprise me</button>
+      </section>
+
+      <section id="recipeGrid" class="recipe-grid"></section>
+    </main>
+  </div>
+
+  <div id="recipeModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button id="closeModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="addModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel modal-small">
+      <button id="closeAddModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div class="form-wrap">
+        <div class="hero-topline">Create recipe</div>
+        <h2 class="form-title">Add your own recipe</h2>
+        <p class="form-copy">This saves on your device so it stays after refresh.</p>
+
+        <div class="form-grid">
+          <label><span>Recipe name</span><input id="fTitle" placeholder="Example: Garlic Prawns" /></label>
+          <label><span>Category</span><input id="fCategory" placeholder="Example: Seafood" /></label>
+          <label><span>Difficulty</span><input id="fDifficulty" placeholder="Example: Beginner" /></label>
+          <label><span>Total time</span><input id="fTime" placeholder="Example: 20 min" /></label>
+          <label><span>Serves</span><input id="fServes" placeholder="Example: 2 people" /></label>
+          <label class="full"><span>Short description</span><textarea id="fDescription" placeholder="What makes this recipe good?"></textarea></label>
+          <label class="full"><span>Tags (comma separated)</span><input id="fTags" placeholder="Quick, Garlic, Creamy" /></label>
+          <label class="full"><span>Ingredients (one per line)</span><textarea id="fIngredients" placeholder="200g pasta&#10;2 garlic cloves&#10;1 tbsp butter"></textarea></label>
+          <label class="full"><span>Pro tips (one per line)</span><textarea id="fNotes" placeholder="Lower the heat before garlic goes in&#10;Sauce should lightly coat the back of a spoon"></textarea></label>
+          <label class="full"><span>Steps (one per line: Title | Heat | Time | Instruction)</span><textarea id="fSteps" placeholder="Prep ingredients | No heat | 5 min | Measure and prep everything first&#10;Cook sauce | Low | 6 min | Stir gently until glossy"></textarea></label>
+        </div>
+
+        <div class="footer-actions">
+          <button id="saveRecipeBtn" class="primary-btn">Save recipe</button>
+          <button id="cancelAddBtn" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="generatorModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel modal-small">
+      <button id="closeGeneratorModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div class="form-wrap">
+        <div class="hero-topline">Create from ingredients</div>
+        <h2 class="form-title">Recipe generator</h2>
+        <p class="form-copy">Type in the ingredients you already have at home and the app will work out what kind of dish makes sense, then build a custom recipe in the same deluxe format and save it to your device.</p>
+        <div class="form-grid">
+          <label class="full"><span>Ingredients you have</span><textarea id="gIngredients" placeholder="Strawberries&#10;Greek yogurt&#10;Honey&#10;Granola"></textarea></label>
+          <label><span>Style</span><input id="gStyle" placeholder="Optional style: quick lunch, creamy pasta, traybake, dessert" /></label>
+          <label><span>Category</span><input id="gCategory" placeholder="Example: Chicken, Pasta, Dessert" /></label>
+          <label><span>Difficulty</span><input id="gDifficulty" placeholder="Example: Beginner" /></label>
+          <label><span>Total time</span><input id="gTime" placeholder="Example: 25 min" /></label>
+          <label><span>Serves</span><input id="gServes" placeholder="Example: 2 people" /></label>
+        </div>
+        <div class="footer-actions">
+          <button id="makeRecipeBtn" class="primary-btn">Generate recipe</button>
+          <button id="cancelGeneratorBtn" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
