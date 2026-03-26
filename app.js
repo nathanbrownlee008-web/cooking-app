@@ -134,3 +134,93 @@ document.getElementById("pasteRecipeBtn")?.addEventListener("click", () => {
 
   document.getElementById("recipePasteInput").value = "";
 });
+/* =========================
+   PASTE RECIPE SYSTEM
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ===== DETECT HEAT =====
+  function detectHeat(text) {
+    text = text.toLowerCase();
+
+    if (text.includes("oven")) return "180°C oven";
+    if (text.includes("fry") || text.includes("pan")) return "medium heat";
+    if (text.includes("boil")) return "high heat";
+    if (text.includes("fridge")) return "fridge";
+    if (text.includes("freeze")) return "freezer";
+
+    return "no heat";
+  }
+
+  // ===== DETECT TIME =====
+  function detectTime(text) {
+    const match = text.match(/\d+\s?(min|minutes|hr|hours)/i);
+    return match ? match[0] : "";
+  }
+
+  // ===== PARSER =====
+  function parseRecipeFromText(text) {
+    const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
+
+    let title = lines[0];
+    let ingredients = [];
+    let steps = [];
+
+    lines.forEach(line => {
+
+      // ingredients
+      if (line.match(/\d+(g|ml|tsp|tbsp)/i)) {
+        ingredients.push(line);
+        return;
+      }
+
+      // steps
+      if (line.match(/^\d+\./)) {
+        const clean = line.replace(/^\d+\.\s*/, "");
+
+        steps.push({
+          title: clean,
+          body: clean,
+          heat: detectHeat(clean),
+          time: detectTime(clean)
+        });
+      }
+
+    });
+
+    return {
+      id: "r_" + Date.now(),
+      title,
+      category: "Custom",
+      ingredients,
+      steps
+    };
+  }
+
+  // ===== BUTTON =====
+  const pasteBtn = document.getElementById("pasteRecipeBtn");
+
+  if (!pasteBtn) return;
+
+  pasteBtn.addEventListener("click", () => {
+
+    const input = document.getElementById("recipePasteInput");
+    const raw = input.value.trim();
+
+    if (!raw) {
+      alert("Paste a recipe first");
+      return;
+    }
+
+    const recipe = parseRecipeFromText(raw);
+
+    recipes.push(recipe);
+    saveRecipes();
+    renderRecipes();
+
+    input.value = "";
+
+  });
+
+});
