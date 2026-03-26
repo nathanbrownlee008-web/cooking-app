@@ -7,55 +7,67 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Golden seared chicken finished in a silky garlic cream sauce, with proper browning, clearer sauce texture, and a more chef-like finish.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "500g chicken",
+      "2 chicken breasts",
       "1 tsp salt",
       "1/2 tsp black pepper",
-      "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "1 tsp paprika",
+      "1 tbsp olive oil",
+      "20g butter",
+      "4 garlic cloves, finely chopped",
+      "200ml double cream",
+      "80ml chicken stock",
+      "25g parmesan",
+      "1 tsp lemon juice",
+      "1 tbsp chopped parsley"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken completely dry before seasoning or it will steam instead of colour.",
+      "Lower the heat before the garlic goes in. Garlic only needs 30 to 45 seconds.",
+      "The finished sauce should lightly coat the back of a spoon, not sit watery in the pan."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Pat the chicken breasts very dry, then season both sides with salt, pepper, and paprika. Dry surface equals stronger browning and better flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm a frying pan fully before adding the oil. The oil should loosen and shimmer, but it should not be smoking aggressively."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Sear the first side",
         "heat": "Medium-high",
-        "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "time": "5-6 min",
+        "body": "Lay the chicken into the pan and leave it alone. Do not keep nudging it. Let a rich golden crust develop before you even think about turning it."
       },
       {
-        "title": "Build the flavour",
+        "title": "Flip and finish the chicken",
         "heat": "Medium",
-        "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "time": "4-5 min",
+        "body": "Turn the chicken and cook the second side until almost done. Remove it to a plate so you can use the same pan for the sauce."
       },
       {
-        "title": "Finish gently",
+        "title": "Build the garlic cream sauce",
         "heat": "Low-medium",
-        "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "time": "3-4 min",
+        "body": "Add the butter, then the garlic for 30 to 45 seconds until fragrant. Pour in the cream and stock, stir in the parmesan, and let the sauce bubble gently until it thickens slightly."
+      },
+      {
+        "title": "Glaze and finish",
+        "heat": "Low",
+        "time": "2-3 min",
+        "body": "Return the chicken with any juices. Spoon the sauce over the top until the meat is fully cooked and glossy. Finish with lemon juice and parsley before serving."
       }
     ]
   },
@@ -66,10 +78,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Honey Mustard Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -77,44 +89,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -125,10 +137,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Lemon Herb Roast Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -136,44 +148,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -184,10 +196,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Chicken Stir-Fry with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -195,44 +207,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -243,10 +255,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Chicken Parmesan with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -254,44 +266,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -302,10 +314,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Peri Peri Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -313,44 +325,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -361,10 +373,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Butter Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -372,44 +384,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -420,10 +432,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Crispy Chicken Wraps with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -431,44 +443,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -479,10 +491,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Sticky Soy Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -490,44 +502,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -538,10 +550,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A proper chef-at-home chicken recipe with clear heat control, timing, texture cues, and finishing tips.",
+    "description": "Chicken Alfredo with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
     "tags": [
       "Chicken",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -549,44 +561,44 @@ const starterRecipes = [
       "1 tsp salt",
       "1/2 tsp black pepper",
       "1 tbsp oil",
-      "2 garlic cloves",
-      "Main sauce or seasoning"
+      "2 garlic cloves or 1 small onion",
+      "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat chicken dry before cooking for better browning.",
-      "Do not crowd the pan or the meat will steam.",
-      "Rest briefly before slicing to keep juices in."
+      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
+      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
+      "The chicken should feel firm and cooked through, but still juicy when sliced."
     ],
     "steps": [
       {
-        "title": "Prep the ingredients",
+        "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Measure everything first, pat the chicken dry, and season it well so the pan work stays calm and controlled."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want a hot pan, not a smoking disaster."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
       },
       {
-        "title": "Brown the chicken",
+        "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook in a single layer and leave it alone long enough to take on colour before turning."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
       },
       {
-        "title": "Build the flavour",
+        "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add aromatics, vegetables, or sauce ingredients and cook until the dish smells rich and balanced."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has the right texture."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
       }
     ]
   },
@@ -597,55 +609,56 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "A pan-seared steak guide built around crust, butter basting, and proper resting so the final slices stay juicy instead of leaking onto the board.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "500g beef",
-      "1 tsp salt",
+      "2 sirloin or ribeye steaks",
+      "1 tsp fine salt",
       "1/2 tsp black pepper",
-      "1 tbsp oil",
-      "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "1 tbsp neutral oil",
+      "30g butter",
+      "2 garlic cloves, lightly crushed",
+      "2 thyme sprigs"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Moisture is the enemy of crust, so dry the steaks properly before they go near the pan.",
+      "A dark brown crust gives you flavour; pale grey beef means the pan was not hot enough.",
+      "Rest the steak before slicing or the juices will run onto the plate."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Dry and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Pat the steaks dry with kitchen paper, then season them well with salt and pepper. Leave them while the pan gets properly hot."
       },
       {
-        "title": "Get the pan hot",
+        "title": "Get the pan smoking hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use a heavy pan and let it heat until very hot before adding the oil. The goal is immediate contact and strong colour."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Sear the first side",
         "heat": "High",
-        "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "time": "2 min",
+        "body": "Lay the steak away from you in the pan. Press lightly once for full contact, then leave it alone so the crust can build."
       },
       {
-        "title": "Add depth",
-        "heat": "Medium",
-        "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "title": "Flip and baste",
+        "heat": "Medium-high",
+        "time": "2-3 min",
+        "body": "Flip the steak, add butter, garlic, and thyme, then tilt the pan and spoon the foaming butter repeatedly over the meat."
       },
       {
-        "title": "Finish with control",
-        "heat": "Low-medium",
-        "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "title": "Rest and slice",
+        "heat": "No heat",
+        "time": "5-7 min",
+        "body": "Move the steak to a warm plate and rest it before slicing so the juices stay in the meat instead of flooding the board."
       }
     ]
   },
@@ -656,10 +669,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Smash Burgers built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -668,43 +681,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -715,10 +728,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Beef Stir-Fry built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -727,43 +740,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -774,10 +787,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Beef Ragu built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -786,43 +799,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -833,10 +846,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Garlic Butter Steak Bites built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -845,43 +858,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -892,10 +905,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Meatballs in Tomato Sauce built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -904,43 +917,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -951,10 +964,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Chilli Con Carne built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -963,43 +976,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -1010,10 +1023,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Beef Tacos built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1022,43 +1035,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -1069,10 +1082,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Shepherd's Pie built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1081,43 +1094,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -1128,10 +1141,10 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A rich beef dish built around colour, crust, and controlled cooking so the meat stays juicy and full of flavour.",
+    "description": "Peppercorn Steak built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
     "tags": [
       "Beef",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1140,43 +1153,43 @@ const starterRecipes = [
       "1/2 tsp black pepper",
       "1 tbsp oil",
       "1 onion or garlic base",
-      "Main sauce or seasoning"
+      "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown properly.",
-      "Strong heat is useful early, but finish with control.",
-      "Rest larger cuts before slicing."
+      "Colour equals flavour, so let the beef brown before moving it around.",
+      "High heat is useful at the start, but finishing with control gives you better texture.",
+      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
     ],
     "steps": [
       {
-        "title": "Season and prep",
+        "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the beef dry if needed, trim it, and season well so the surface is ready for colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use strong heat at the start so the beef browns instead of going grey."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
       },
       {
-        "title": "Build a crust or colour",
+        "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a proper brown finish."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, or herbs and cook until the base becomes richer and more rounded."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
       }
     ]
   },
@@ -1187,55 +1200,56 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Silky carbonara with no scrambled eggs, clearer residual-heat handling, and stronger pasta-water guidance so the sauce stays glossy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "200g pasta",
-      "Salt for water",
-      "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "200g spaghetti",
+      "120g pancetta or streaky bacon",
+      "2 whole eggs",
+      "2 egg yolks",
+      "60g parmesan or pecorino",
+      "Fresh black pepper",
+      "Salt for the pasta water"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "The egg mixture should never hit fierce direct heat or it will scramble.",
+      "Save pasta water before draining. That starch is what makes the sauce glossy.",
+      "Work quickly once the eggs go in so the sauce emulsifies instead of clumping."
     ],
     "steps": [
       {
-        "title": "Boil the pasta",
+        "title": "Cook the pasta",
         "heat": "High",
-        "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "time": "9-11 min",
+        "body": "Boil well-salted water and cook the spaghetti until just al dente. Before draining, save a mug of the starchy pasta water."
       },
       {
-        "title": "Start the sauce base",
+        "title": "Render the pancetta",
         "heat": "Medium",
-        "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "time": "5-6 min",
+        "body": "Cook the pancetta slowly until the fat renders and the edges turn lightly crisp. You want rich flavour, not burnt bits."
       },
       {
-        "title": "Build the sauce",
-        "heat": "Medium",
-        "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "title": "Mix the sauce base",
+        "heat": "No heat",
+        "time": "2 min",
+        "body": "Whisk the eggs, yolks, cheese, and plenty of black pepper in a bowl until thick and creamy."
       },
       {
-        "title": "Combine pasta and sauce",
-        "heat": "Low-medium",
-        "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "title": "Combine off the heat",
+        "heat": "Residual heat",
+        "time": "1-2 min",
+        "body": "Turn the pan off, add the pasta to the pancetta, then stir through the egg mixture quickly. Add tiny splashes of pasta water until the sauce turns silky and coats every strand."
       },
       {
-        "title": "Finish and serve",
+        "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Plate straight away while the sauce is glossy and loose, then finish with extra cheese and black pepper."
       }
     ]
   },
@@ -1246,55 +1260,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Chicken Alfredo Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1305,55 +1319,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Pesto Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1364,55 +1378,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Bolognese with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1423,55 +1437,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Mac and Cheese with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1482,55 +1496,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Lasagna with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1541,55 +1555,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Arrabbiata with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1600,55 +1614,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Mushroom Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1659,55 +1673,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Tuna Pasta Bake with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1718,55 +1732,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A silky pasta recipe with strong sauce texture, proper seasoning, and easy step-by-step guidance.",
+    "description": "Sausage Rigatoni with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
     "tags": [
       "Pasta",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "200g pasta",
-      "Salt for water",
+      "Salt for the pasta water",
       "1 tbsp butter or oil",
-      "2 garlic cloves",
-      "Main sauce ingredients",
-      "Cheese or herbs to finish"
+      "2 garlic cloves or a small onion base",
+      "Main sauce ingredients for this dish",
+      "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water properly.",
-      "Keep back pasta water for sauce texture.",
-      "Finish the pasta in the sauce when possible."
+      "Salt the pasta water well or the whole dish starts bland.",
+      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
+      "Finish the pasta in the sauce when possible so the flavour coats every piece."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and reserve some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients until fragrant without burning them."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
       },
       {
-        "title": "Build the sauce",
+        "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the main sauce ingredients and let them come together into a smooth, balanced mixture."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until every piece is coated, loosening with pasta water if needed."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste, adjust the seasoning, and finish with cheese, herbs, or pepper before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
       }
     ]
   },
@@ -1777,55 +1791,63 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Deep chocolate brownies with a shinier top, fudgy centre, and clearer baking cues so you do not accidentally turn them cakey.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "Main dessert base ingredient",
-      "Sugar",
-      "Butter or cream",
-      "Eggs if needed",
-      "Flavouring ingredient",
-      "Pinch of salt"
+      "200g dark chocolate",
+      "170g unsalted butter",
+      "220g caster sugar",
+      "3 eggs",
+      "100g plain flour",
+      "30g cocoa powder",
+      "1/2 tsp salt",
+      "80g chocolate chunks"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not overbake them. The centre should still have a slight wobble when you pull the tin out.",
+      "Cool fully before cutting or the middle will fall apart.",
+      "A skewer should come out with moist crumbs, not wet batter and not totally dry."
     ],
     "steps": [
       {
-        "title": "Prepare the tin or dish",
-        "heat": "No heat",
+        "title": "Prep the tin and oven",
+        "heat": "180°C oven",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line a square tin with baking paper and heat the oven before you start mixing so the batter can go straight in."
       },
       {
-        "title": "Make the mixture",
+        "title": "Melt chocolate and butter",
+        "heat": "Low",
+        "time": "3-4 min",
+        "body": "Melt the chocolate and butter gently until completely smooth. Do not scorch the chocolate."
+      },
+      {
+        "title": "Whisk eggs and sugar",
         "heat": "No heat",
-        "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "time": "3 min",
+        "body": "Whisk until glossy and slightly paler. You do not need a huge foam, just a smooth mixture."
       },
       {
-        "title": "Bake or cook gently",
-        "heat": "Oven or hob",
-        "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
-      },
-      {
-        "title": "Cool and settle",
-        "heat": "No heat",
-        "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
-      },
-      {
-        "title": "Finish the dessert",
+        "title": "Fold the batter",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Mix in the melted chocolate, then fold in the flour, cocoa, salt, and chocolate chunks until no dry streaks remain."
+      },
+      {
+        "title": "Bake carefully",
+        "heat": "180°C oven",
+        "time": "22-27 min",
+        "body": "Bake until the edges are set but the centre still has a slight wobble. That is what gives you the fudgy middle."
+      },
+      {
+        "title": "Cool before slicing",
+        "heat": "No heat",
+        "time": "20+ min",
+        "body": "Leave the brownies to cool so the texture settles, then cut into clean squares."
       }
     ]
   },
@@ -1836,10 +1858,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Vanilla Cheesecake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1847,44 +1869,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -1895,10 +1917,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Chocolate Chip Cookies with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1906,44 +1928,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -1954,10 +1976,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Sticky Toffee Pudding with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -1965,44 +1987,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2013,10 +2035,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Apple Crumble with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2024,44 +2046,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2072,10 +2094,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Lemon Drizzle Cake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2083,44 +2105,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2131,10 +2153,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Banoffee Pots with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2142,44 +2164,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2190,10 +2212,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Chocolate Mousse with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2201,44 +2223,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2249,10 +2271,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Tiramisu Cups with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2260,44 +2282,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2308,10 +2330,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "A sweet recipe with clear baking or setting guidance so you know exactly what the texture should be.",
+    "description": "Chocolate Cake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
     "tags": [
       "Dessert",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -2319,44 +2341,44 @@ const starterRecipes = [
       "Sugar",
       "Butter or cream",
       "Eggs if needed",
-      "Flavouring ingredient",
+      "Main flavour ingredient",
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling time.",
-      "Texture matters more than just baking time.",
-      "Measure ingredients carefully for best results."
+      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
+      "Look for the right feel and finish, not just the timer.",
+      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill your serving dish before you start so the mixture is ready to go in."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
       },
       {
-        "title": "Make the mixture",
+        "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly without overworking the mixture if the recipe needs a soft texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the right set, rise, or thickened texture rather than blindly chasing the timer."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the texture settle properly before cutting, topping, or serving."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
       },
       {
-        "title": "Finish the dessert",
+        "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it looks and tastes complete."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
       }
     ]
   },
@@ -2367,54 +2389,55 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "A smoother vanilla ice cream base with better custard guidance and clearer freezing notes so the scoops feel more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "Milk or cream base",
-      "Sugar",
-      "Main flavour ingredient",
-      "Pinch of salt",
-      "Optional yolks or thickener"
+      "300ml whole milk",
+      "300ml double cream",
+      "4 egg yolks",
+      "100g caster sugar",
+      "1 vanilla pod or 2 tsp vanilla extract",
+      "Pinch of salt"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Never boil the custard or the yolks can split.",
+      "Chill the base fully before churning for a smoother texture.",
+      "A tiny pinch of salt makes vanilla taste fuller instead of flat."
     ],
     "steps": [
       {
-        "title": "Build the base",
+        "title": "Warm the dairy",
         "heat": "Low-medium",
-        "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "time": "5 min",
+        "body": "Heat the milk, cream, vanilla, and salt until steaming but not boiling so the flavour infuses without catching."
       },
       {
-        "title": "Sweeten and balance",
-        "heat": "Low",
-        "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
-      },
-      {
-        "title": "Chill completely",
+        "title": "Whisk yolks and sugar",
         "heat": "No heat",
-        "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "time": "2 min",
+        "body": "Whisk until smoother and slightly lighter in colour so the custard starts evenly."
       },
       {
-        "title": "Freeze or churn",
-        "heat": "Freezer",
-        "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "title": "Temper the yolks",
+        "heat": "No heat",
+        "time": "2 min",
+        "body": "Slowly pour a little hot dairy into the yolks while whisking so they warm gradually instead of scrambling."
       },
       {
-        "title": "Set before serving",
-        "heat": "Freezer",
-        "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "title": "Cook the custard",
+        "heat": "Low",
+        "time": "5-7 min",
+        "body": "Return everything to the pan and stir constantly until the mixture lightly coats the back of a spoon."
+      },
+      {
+        "title": "Chill and churn",
+        "heat": "Fridge / freezer",
+        "time": "4 hr + churn",
+        "body": "Cool the base completely, then churn or freeze using your preferred method until the texture turns smooth and scoopable."
       }
     ]
   },
@@ -2425,54 +2448,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Chocolate Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2483,54 +2506,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Strawberry Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2541,54 +2564,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Salted Caramel Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2599,54 +2622,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Mint Chocolate Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2657,54 +2680,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Cookies and Cream Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2715,54 +2738,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Banana Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2773,54 +2796,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Pistachio Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2831,54 +2854,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Coffee Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2889,54 +2912,54 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A frozen dessert with flavour-building notes, chill guidance, and freezer tips for a smoother finish.",
+    "description": "Raspberry Ripple Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
     "tags": [
       "Ice Cream",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
       "Milk or cream base",
       "Sugar",
-      "Main flavour ingredient",
+      "Main flavour ingredient for this ice cream",
       "Pinch of salt",
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill fully before freezing for smoother texture.",
-      "Keep the mixture covered so it does not pick up freezer smell.",
-      "A little salt sharpens sweet flavours."
+      "Chill the mixture fully before freezing for a smoother result.",
+      "Cover the base well so it does not pick up freezer smells.",
+      "A small pinch of salt makes sweet flavours taste rounder and less flat."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the dairy or base mixture gently so the flavour ingredients infuse properly."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add sugar and a pinch of salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
       },
       {
-        "title": "Chill completely",
+        "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Cool the base fully before churning or freezing to improve texture."
+        "body": "Chill the base until completely cold so the texture freezes more evenly."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze using your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
       },
       {
-        "title": "Set before serving",
+        "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before scooping so the texture holds neatly."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape."
       }
     ]
   },
@@ -2947,55 +2970,50 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Golden French toast with better custard handling and clearer heat control so the outside colours while the middle stays soft rather than soggy.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
-      "Main breakfast ingredient",
-      "Butter or oil",
-      "Salt",
-      "Pepper",
-      "Optional extras",
-      "Fresh topping or garnish"
+      "4 thick slices brioche or soft bread",
+      "2 eggs",
+      "80ml milk",
+      "1 tsp vanilla extract",
+      "1 tbsp sugar",
+      "Pinch of cinnamon",
+      "20g butter"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Do not soak the bread too long or it becomes soggy and fragile.",
+      "Cook over medium heat so the middle sets before the outside burns.",
+      "Serve immediately while the outside is still lightly crisp."
     ],
     "steps": [
       {
-        "title": "Prep everything first",
+        "title": "Make the custard mix",
         "heat": "No heat",
-        "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
-      },
-      {
-        "title": "Warm the pan or griddle",
-        "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Whisk the eggs, milk, vanilla, sugar, and cinnamon together until smooth and fully combined."
       },
       {
-        "title": "Cook the main dish",
-        "heat": "Medium",
-        "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
-      },
-      {
-        "title": "Add the finish",
-        "heat": "Low",
-        "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
-      },
-      {
-        "title": "Serve immediately",
+        "title": "Dip the bread briefly",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Dip each slice for just a few seconds on each side so it absorbs the mixture without collapsing."
+      },
+      {
+        "title": "Cook gently",
+        "heat": "Medium",
+        "time": "3-4 min each side",
+        "body": "Melt the butter in a pan and cook the bread until each side is evenly golden with a softly set centre."
+      },
+      {
+        "title": "Finish and serve",
+        "heat": "No heat",
+        "time": "1 min",
+        "body": "Serve while hot with berries, maple syrup, or a dusting of icing sugar."
       }
     ]
   },
@@ -3006,10 +3024,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Fluffy Pancakes with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3017,44 +3035,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3065,10 +3083,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Cheese Omelette with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3076,44 +3094,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3124,10 +3142,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Scrambled Eggs with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3135,44 +3153,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3183,10 +3201,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Waffles with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3194,44 +3212,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3242,10 +3260,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Breakfast Burrito with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3253,44 +3271,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3301,10 +3319,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Breakfast Hash with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3312,44 +3330,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3360,10 +3378,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Egg Muffins with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3371,44 +3389,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3419,10 +3437,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Avocado Toast with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3430,44 +3448,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   },
@@ -3478,10 +3496,10 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "A fast but proper breakfast recipe with better technique than the usual rushed home version.",
+    "description": "Breakfast Quesadilla with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
     "tags": [
       "Breakfast",
-      "Chef style",
+      "Premium",
       "Step-by-step"
     ],
     "ingredients": [
@@ -3489,44 +3507,44 @@ const starterRecipes = [
       "Butter or oil",
       "Salt",
       "Pepper",
-      "Optional extras",
+      "Optional extras or filling",
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Prep everything first because breakfast recipes move fast.",
-      "Medium heat usually gives a better texture than blasting it.",
-      "Serve straight away while fresh."
+      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
+      "Medium heat usually gives a better finish than blasting the pan too hard.",
+      "Serve straight away while the texture is at its best."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise all ingredients because breakfast dishes move fast once heat starts."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use steady heat rather than blasting the pan too hard at the beginning."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until golden, fluffy, or softly set depending on the recipe."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, cheese, or fruit once the base is almost ready."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and serve while the texture is still at its best."
+        "body": "Plate and eat straight away while the dish still has its best texture."
       }
     ]
   }
@@ -3657,7 +3675,7 @@ function openRecipe(recipeId) {
         </div>
 
         <div class="notes-grid">
-          <h3>Chef notes</h3>
+          <h3>Pro tips</h3>
           ${recipe.notes.map(note => `<div class="note-item"><span class="bullet"></span><div>${note}</div></div>`).join("")}
         </div>
       </div>
