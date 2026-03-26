@@ -5115,3 +5115,41 @@ if (typeof starterRecipes !== "undefined") {
     ]
   });
 }
+
+
+// ===== GLOBAL RECIPE UPGRADE (SAFE) =====
+starterRecipes.forEach(r => {
+
+  if (!r.ingredients || !r.steps) return;
+
+  // Ensure realistic measurements
+  r.ingredients = r.ingredients.map(i => {
+    if (i.toLowerCase().includes("chicken") && !i.includes("g")) return "500g chicken";
+    if (i.toLowerCase().includes("beef") && !i.includes("g")) return "500g beef";
+    if (i.toLowerCase().includes("pork") && !i.includes("g")) return "2 pork chops (250g each)";
+    return i;
+  });
+
+  // Improve steps to include WHAT + HOW
+  r.steps = r.steps.map((step, i) => {
+    let text = step.body || "";
+
+    if (i === 0) {
+      text = "Prepare all ingredients first. Measure everything and cut evenly so cooking is controlled.";
+    }
+
+    if (i === 1) {
+      text = "Heat the pan properly before adding oil. Oil should shimmer, not smoke.";
+    }
+
+    if (text.length < 80) {
+      text += " Focus on colour, smell, and texture rather than just time.";
+    }
+
+    return {
+      ...step,
+      body: text
+    };
+  });
+
+});
