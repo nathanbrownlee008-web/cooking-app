@@ -3799,108 +3799,161 @@ renderFilters();
 renderRecipes();
 
 
-
-// ===== PROPER WORKING RESTORE PATCH =====
+// ===== USER BROWNIE RECIPE UPDATE PATCH =====
 (function () {
-  if (window.__chefProperWorkingRestoreDone) return;
-  window.__chefProperWorkingRestoreDone = true;
+  if (window.__chefBrownieUserRecipePatchDone) return;
+  window.__chefBrownieUserRecipePatchDone = true;
 
-  function safeReadCustomRecipes() {
-    try {
-      const raw = localStorage.getItem("chef_deluxe_custom_recipes");
-      const parsed = raw ? JSON.parse(raw) : [];
-      return Array.isArray(parsed) ? parsed : [];
-    } catch (e) {
-      console.warn("Custom recipes could not be parsed, resetting to empty list.", e);
-      return [];
-    }
-  }
+  function applyUserBrownieRecipe(recipe) {
+    if (!recipe || !recipe.title) return;
+    const name = recipe.title.toLowerCase();
+    if (!name.includes("brownie")) return;
 
-  function dedupeRecipes(list) {
-    const seen = new Set();
-    return (Array.isArray(list) ? list : []).filter(r => {
-      if (!r || !r.id) return false;
-      if (seen.has(r.id)) return false;
-      seen.add(r.id);
-      return true;
-    });
-  }
-
-  function ensureRecipesLoaded() {
-    const starter = Array.isArray(starterRecipes) ? starterRecipes : [];
-    const custom = safeReadCustomRecipes();
-    const merged = dedupeRecipes([...starter, ...custom]);
-
-    if (!Array.isArray(window.recipes) || !window.recipes.length) {
-      window.recipes = merged;
-      try { recipes = merged; } catch (e) {}
-    } else {
-      const repaired = dedupeRecipes([...window.recipes, ...starter, ...custom]);
-      window.recipes = repaired;
-      try { recipes = repaired; } catch (e) {}
-    }
-
-    if (typeof recipeCount !== "undefined" && recipeCount) {
-      recipeCount.textContent = window.recipes.length;
-    }
-  }
-
-  // harden the existing load/save behaviour without removing anything
-  window.loadRecipes = function () {
-    const starter = Array.isArray(starterRecipes) ? starterRecipes : [];
-    const custom = safeReadCustomRecipes();
-    return dedupeRecipes([...starter, ...custom]);
-  };
-
-  window.saveCustomRecipe = function (recipe) {
-    const current = safeReadCustomRecipes();
-    current.unshift(recipe);
-    const clean = dedupeRecipes(current);
-    localStorage.setItem("chef_deluxe_custom_recipes", JSON.stringify(clean));
-    ensureRecipesLoaded();
-  };
-
-  // patch the in-scope functions too
-  try { loadRecipes = window.loadRecipes; } catch (e) {}
-  try { saveCustomRecipe = window.saveCustomRecipe; } catch (e) {}
-
-  if (typeof renderFilters === "function" && !window.__chefRenderFiltersWrapped) {
-    const oldRenderFilters = renderFilters;
-    renderFilters = function () {
-      ensureRecipesLoaded();
-      return oldRenderFilters();
+    recipe.category = "Dessert";
+    recipe.difficulty = "Beginner";
+    recipe.time = "25 min bake + 1-2 hr chill";
+    recipe.serves = "9-12 squares";
+    recipe.description = "Fudgy brownies finished with warm fudge sauce, then chilled in the tray so they cut into clean rich squares.";
+    recipe.pan = "Brownie tray or square baking tin lined with baking paper";
+    recipe.oilType = "No oil needed; use butter in the brownie batter and fudge sauce";
+    recipe.ingredients = [
+      "Brownie batter ingredients",
+      "Chocolate",
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Flour",
+      "Cocoa powder",
+      "Salt",
+      "Fudge sauce ingredients",
+      "Cream",
+      "Chocolate",
+      "Butter",
+      "Golden syrup"
+    ];
+    recipe.notes = [
+      "Eggs go into the chocolate mixture, not the flour.",
+      "Do NOT use foil when baking.",
+      "Use the middle oven shelf.",
+      "Slight wobble in the centre = perfect.",
+      "Sauce goes on BEFORE fridge.",
+      "Brownies should be warm, not hot, before fridging."
+    ];
+    recipe.steps = [
+      {
+        title: "Prep",
+        heat: "180°C oven",
+        time: "5 min",
+        body: "Preheat oven to 180°C (160 fan). Line the tray with baking paper, covering the bottom and sides and leaving overhang. Place the tray on the middle oven shelf."
+      },
+      {
+        title: "Melt chocolate + butter",
+        heat: "Microwave / low heat",
+        time: "2-3 min",
+        body: "Add the chocolate and butter to a bowl. Microwave in 20 second bursts, stirring each time. Stop when smooth."
+      },
+      {
+        title: "Cool slightly",
+        heat: "No heat",
+        time: "2-3 min",
+        body: "Leave the chocolate and butter mixture for 2-3 minutes. Do NOT add eggs while it is hot."
+      },
+      {
+        title: "Add sugar",
+        heat: "No heat",
+        time: "1 min",
+        body: "Stir the sugar into the chocolate mixture until combined."
+      },
+      {
+        title: "Add eggs",
+        heat: "No heat",
+        time: "2 min",
+        body: "Add the eggs one at a time, mixing well after each one."
+      },
+      {
+        title: "Add dry ingredients",
+        heat: "No heat",
+        time: "1-2 min",
+        body: "Add the flour, cocoa powder, and salt. Fold gently until combined. The batter should be thick."
+      },
+      {
+        title: "Into tray",
+        heat: "No heat",
+        time: "1 min",
+        body: "Pour the mixture into the lined tray and spread it evenly."
+      },
+      {
+        title: "Bake",
+        heat: "180°C oven",
+        time: "20-25 min",
+        body: "Bake for 20-25 minutes and start checking around 20 minutes. The middle should still have a slight wobble. Do NOT overbake."
+      },
+      {
+        title: "Cool slightly",
+        heat: "No heat",
+        time: "10-15 min",
+        body: "Remove from the oven and leave for 10-15 minutes. The brownies should be warm, not hot."
+      },
+      {
+        title: "Heat cream",
+        heat: "Hob level 3",
+        time: "2-3 min",
+        body: "Add the cream to a saucepan and heat until hot but not boiling."
+      },
+      {
+        title: "Add chocolate",
+        heat: "Hob level 1 / off",
+        time: "1 min",
+        body: "Turn the hob to level 1 or OFF. Add the chocolate and stir until smooth."
+      },
+      {
+        title: "Add butter + syrup",
+        heat: "Low",
+        time: "1 min",
+        body: "Add the butter and golden syrup. Stir until thick and glossy."
+      },
+      {
+        title: "Add sauce",
+        heat: "No heat",
+        time: "1 min",
+        body: "Pour the sauce over the brownies and spread it evenly."
+      },
+      {
+        title: "Fridge",
+        heat: "Fridge",
+        time: "1-2 hr",
+        body: "Place the entire tray, brownies and sauce, into the fridge. Leave for 1-2 hours. Do NOT cover airtight while warm. Leave uncovered or loosely covered."
+      },
+      {
+        title: "Slice",
+        heat: "No heat",
+        time: "5 min",
+        body: "Once fully cold, remove from the fridge and cut into squares. For clean cuts, run the knife under hot water, wipe it dry, then cut."
+      },
+      {
+        title: "Storage",
+        heat: "Fridge",
+        time: "3-5 days",
+        body: "Once fully cooled, store in an airtight container in the fridge. They last 3-5 days."
+      }
+    ];
+    recipe.plating = [
+      "Cut into neat squares once fully cold.",
+      "Use a hot clean knife for sharp edges.",
+      "Let the glossy fudge topping stay visible instead of adding too much extra on top."
+    ];
+    recipe.seasoning = {
+      core: ["Salt in the brownie batter"],
+      optional: [],
+      how: "Keep the salt in the dry ingredients so it spreads evenly through the batter."
     };
-    window.renderFilters = renderFilters;
-    window.__chefRenderFiltersWrapped = true;
   }
 
-  if (typeof renderRecipes === "function" && !window.__chefRenderRecipesWrapped) {
-    const oldRenderRecipes = renderRecipes;
-    renderRecipes = function () {
-      ensureRecipesLoaded();
-      return oldRenderRecipes();
-    };
-    window.renderRecipes = renderRecipes;
-    window.__chefRenderRecipesWrapped = true;
-  }
+  const allCollections = [];
+  if (Array.isArray(starterRecipes)) allCollections.push(starterRecipes);
+  if (typeof recipes !== "undefined" && Array.isArray(recipes)) allCollections.push(recipes);
 
-  if (typeof openRecipe === "function" && !window.__chefOpenRecipeWrapped) {
-    const oldOpenRecipe = openRecipe;
-    openRecipe = function (recipeId) {
-      ensureRecipesLoaded();
-      return oldOpenRecipe(recipeId);
-    };
-    window.openRecipe = openRecipe;
-    window.__chefOpenRecipeWrapped = true;
-  }
+  allCollections.forEach(col => col.forEach(applyUserBrownieRecipe));
 
-  ensureRecipesLoaded();
-  if (typeof renderFilters === "function") renderFilters();
   if (typeof renderRecipes === "function") renderRecipes();
-
-  document.addEventListener("DOMContentLoaded", () => {
-    ensureRecipesLoaded();
-    if (typeof renderFilters === "function") renderFilters();
-    if (typeof renderRecipes === "function") renderRecipes();
-  });
 })();
