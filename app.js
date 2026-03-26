@@ -4473,83 +4473,7 @@ const starterRecipes = [
       ],
       "how": "Season lightly at the start, then taste and correct at the end because breakfast dishes can lose balance fast."
     }
-  },
-{
-  "id": "pork-chops",
-  "title": "Pork Chops",
-  "category": "Pork",
-  "difficulty": "Intermediate",
-  "time": "35 min",
-  "serves": "2 people",
-  "description": "Pork Chops cooked with chef-style control so the outside gets proper colour while the inside stays juicy. This version teaches heat control, resting, and finishing instead of just giving vague timings.",
-  "tags": [
-    "Pork",
-    "Premium",
-    "Step-by-step"
-  ],
-  "ingredients": [
-    "2 pork chops",
-    "1 tsp fine salt",
-    "1/2 tsp black pepper",
-    "1 tbsp oil",
-    "20g butter",
-    "2 garlic cloves, lightly crushed",
-    "1 thyme sprig"
-  ],
-  "notes": [
-    "Pat the chops dry before cooking or they will steam instead of colour.",
-    "Do not keep turning them too early — let one side build real colour first.",
-    "Rest the chops before slicing so the juices stay in the meat."
-  ],
-  "steps": [
-    {
-      "title": "Prep the pork chops",
-      "heat": "No heat",
-      "time": "5 min",
-      "body": "Pat the pork chops dry, then season both sides evenly with salt and black pepper. Leave them for 5 minutes while the pan heats so the surface dries and takes colour better."
-    },
-    {
-      "title": "Heat the pan properly",
-      "heat": "Medium-high",
-      "time": "2 min",
-      "body": "Warm the pan fully before adding the oil. The oil should loosen and shimmer, but it should not be smoking aggressively."
-    },
-    {
-      "title": "Sear the first side",
-      "heat": "Medium-high",
-      "time": "4-5 min",
-      "body": "Lay the chops into the pan and leave them alone until a deep golden crust forms. That colour is where much of the flavour comes from."
-    },
-    {
-      "title": "Flip and baste",
-      "heat": "Medium",
-      "time": "3-4 min",
-      "body": "Turn the chops, add butter, garlic, and thyme, then spoon the foaming butter over the meat so it finishes with more flavour and stays glossy."
-    },
-    {
-      "title": "Rest and serve",
-      "heat": "No heat",
-      "time": "5 min",
-      "body": "Rest the pork chops before slicing so the juices stay inside the meat instead of running across the plate."
-    }
-  ],
-  "plating": [
-    "Serve the pork chops whole or sliced on a slight angle for a cleaner look.",
-    "Spoon a little butter and pan juice around the meat rather than flooding the top.",
-    "Finish with herbs right before serving if you want a fresher look."
-  ],
-  "seasoning": {
-    "core": [
-      "1 tsp fine salt",
-      "1/2 tsp black pepper"
-    ],
-    "optional": [
-      "1/2 tsp garlic powder for deeper savoury flavour",
-      "Small pinch smoked paprika for warmth"
-    ],
-    "how": "Pat the pork chops dry first, season both sides evenly, rub it in lightly, and leave them for 5 minutes before cooking."
   }
-}
 ];
 
 function slug(text) {
@@ -4590,337 +4514,470 @@ const closeAddModalBtn = document.getElementById("closeAddModalBtn");
 const saveRecipeBtn = document.getElementById("saveRecipeBtn");
 const cancelAddBtn = document.getElementById("cancelAddBtn");
 
-
 const generatorModal = document.getElementById("generatorModal");
 const closeGeneratorModalBtn = document.getElementById("closeGeneratorModalBtn");
 const cancelGeneratorBtn = document.getElementById("cancelGeneratorBtn");
 const makeRecipeBtn = document.getElementById("makeRecipeBtn");
-const ideasModal = document.getElementById("ideasModal");
-const closeIdeasModalBtn = document.getElementById("closeIdeasModalBtn");
-const ideasList = document.getElementById("ideasList");
+
+function getFavourites() {
+  return readStore("chef_deluxe_favourites");
+}
+
+function isFavourite(id) {
+  return getFavourites().includes(id);
+}
+
+function toggleFavourite(id) {
+  const current = getFavourites();
+  const next = current.includes(id) ? current.filter(x => x !== id) : [id, ...current];
+  writeStore("chef_deluxe_favourites", next);
+  renderRecipes();
+  if (!modal.classList.contains("hidden")) openRecipe(id);
+}
+
+function saveCustomRecipe(recipe) {
+  const current = readStore("chef_deluxe_custom_recipes");
+  current.unshift(recipe);
+  writeStore("chef_deluxe_custom_recipes", current);
+  recipes = loadRecipes();
+}
+
+function getCategories() {
+  return ["All", ...new Set(recipes.map(r => r.category).filter(Boolean))];
+}
+
+function renderFilters() {
+  const categories = getCategories();
+  categoryFilters.innerHTML = categories.map(category => `
+    <button class="chip ${state.category === category ? "active" : ""}" data-category="${category}">
+      ${category}
+    </button>
+  `).join("");
+
+  categoryFilters.querySelectorAll(".chip").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.category = btn.dataset.category;
+      renderFilters();
+      renderRecipes();
+    });
+  });
+
+  favouritesBtn.classList.toggle("active", state.favouritesOnly);
+  favouritesBtn.textContent = state.favouritesOnly ? "⭐ Favourites on" : "⭐ Favourites";
+}
+
+function matchesRecipe(recipe) {
+  const haystack = [
+    recipe.title,
+    recipe.category,
+    recipe.description,
+    recipe.difficulty,
+    ...(recipe.tags || []),
+    ...(recipe.ingredients || []),
+    ...(recipe.notes || []),
+    ...(recipe.plating || []),
+    ...(((recipe.seasoning && recipe.seasoning.core) || [])),
+    ...(((recipe.seasoning && recipe.seasoning.optional) || [])),
+    ((recipe.seasoning && recipe.seasoning.how) || ""),
+    ...((recipe.steps || []).map(step => `${step.title} ${step.body}`))
+  ].join(" ").toLowerCase();
+
+  const searchOk = !state.search || haystack.includes(state.search.toLowerCase());
+  const categoryOk = state.category === "All" || recipe.category === state.category;
+  const favouriteOk = !state.favouritesOnly || isFavourite(recipe.id);
+  return searchOk && categoryOk && favouriteOk;
+}
+
+function renderRecipes() {
+  const filtered = recipes.filter(matchesRecipe);
+  recipeCount.textContent = recipes.length;
+
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="empty-state"><h3>No recipes found</h3><p>Try another category, switch off favourites, or search for a different ingredient or dish.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(recipe => `
+    <article class="recipe-card" id="${recipe.id}">
+      <div class="recipe-top">
+        <span class="category-badge">${recipe.category}</span>
+        <span class="level-badge">${recipe.difficulty}</span>
+      </div>
+      <h3>${recipe.title}</h3>
+      <p class="recipe-desc short">${recipe.description}</p>
+
+      <div class="recipe-meta-row">
+        <div class="time-badge">⏱ ${recipe.time}</div>
+        <div class="serving-badge">🍽 ${recipe.serves}</div>
+      </div>
+
+      <div class="recipe-tags">
+        ${(recipe.tags || []).map(tag => `<span class="tag">${tag}</span>`).join("")}
+      </div>
+
+      <div class="recipe-card-actions">
+        <button class="primary-btn" onclick="openRecipe('${recipe.id}')">Open full recipe</button>
+        <button class="ghost-btn favorite-btn ${isFavourite(recipe.id) ? "active" : ""}" onclick="toggleFavourite('${recipe.id}')">
+          ${isFavourite(recipe.id) ? "★ Saved" : "☆ Save"}
+        </button>
+      </div>
+    </article>
+  `).join("");
+}
+
+function seasoningHTML(recipe) {
+  const seasoning = recipe.seasoning || {};
+  const core = seasoning.core || [];
+  const optional = seasoning.optional || [];
+  const how = seasoning.how || "";
+  return `
+    <div class="seasoning-box">
+      <h4>Seasoning guide</h4>
+      <div class="seasoning-list">
+        <div class="seasoning-item"><div class="seasoning-label">Core</div><div>${core.length ? core.join("<br>") : "Season to taste"}</div></div>
+        ${optional.length ? `<div class="seasoning-item"><div class="seasoning-label">Optional</div><div>${optional.join("<br>")}</div></div>` : ""}
+      </div>
+      ${how ? `<p>${how}</p>` : ""}
+    </div>
+  `;
+}
+
+function openRecipe(recipeId) {
+  const recipe = recipes.find(r => r.id === recipeId);
+  if (!recipe) return;
+
+  modalContent.innerHTML = `
+    <section class="recipe-hero">
+      <div class="hero-topline">${recipe.category} recipe</div>
+      <h2>${recipe.title}</h2>
+      <p>${recipe.description}</p>
+
+      <div class="quick-info-grid">
+        <div class="info-card"><span class="info-label">Difficulty</span><span class="info-value">${recipe.difficulty}</span></div>
+        <div class="info-card"><span class="info-label">Cook time</span><span class="info-value">${recipe.time}</span></div>
+        <div class="info-card"><span class="info-label">Serves</span><span class="info-value">${recipe.serves}</span></div>
+        <div class="info-card"><span class="info-label">Style</span><span class="info-value">${recipe.tags && recipe.tags.length ? recipe.tags[0] : "Chef at home"}</span></div>
+      </div>
+    </section>
+
+    <section class="recipe-layout">
+      <div class="panel">
+        <h3>Ingredients</h3>
+        <div class="ingredients-grid">
+          ${(recipe.ingredients || []).map(item => `<div class="ingredient-item"><span class="bullet"></span><div>${item}</div></div>`).join("")}
+        </div>
+
+        ${seasoningHTML(recipe)}
+
+        <div class="notes-grid">
+          <h3>Pro tips</h3>
+          ${(recipe.notes || []).map(note => `<div class="note-item"><span class="bullet"></span><div>${note}</div></div>`).join("")}
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Step-by-step method</h3>
+        <div class="steps-list">
+          ${(recipe.steps || []).map((step, index) => `
+            <article class="step-card">
+              <div class="step-head">
+                <div class="step-number">${index + 1}</div>
+                <div class="step-title">${step.title}</div>
+                <div class="step-badges">
+                  <span class="badge">🔥 ${step.heat}</span>
+                  <span class="badge">⏱ ${step.time}</span>
+                </div>
+              </div>
+              <div class="step-body">${step.body}</div>
+            </article>
+          `).join("")}
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Plating & finishing</h3>
+      ${(recipe.plating || []).map(item => `<div class="note-item"><span class="bullet"></span><div>${item}</div></div>`).join("")}
+    </section>
+
+    <div class="footer-actions">
+      <button class="primary-btn" onclick="toggleFavourite('${recipe.id}')">${isFavourite(recipe.id) ? "★ Remove from saved" : "☆ Save recipe"}</button>
+      <button class="secondary-btn" onclick="window.print()">Print recipe</button>
+      <button class="secondary-btn" onclick="closeRecipe()">Done</button>
+    </div>
+  `;
+  modal.classList.remove("hidden");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeRecipe() {
+  modal.classList.add("hidden");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+function openAddModal() {
+  addModal.classList.remove("hidden");
+  addModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeAddModal() {
+  addModal.classList.add("hidden");
+  addModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
 
 function openGeneratorModal() {
-  if (!generatorModal) return;
   generatorModal.classList.remove("hidden");
   generatorModal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
 }
+
 function closeGeneratorModal() {
-  if (!generatorModal) return;
   generatorModal.classList.add("hidden");
   generatorModal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
 }
-function openIdeasModal() {
-  if (!ideasModal) return;
-  ideasModal.classList.remove("hidden");
-  ideasModal.setAttribute("aria-hidden", "false");
-  document.body.classList.add("modal-open");
-}
-function closeIdeasModal() {
-  if (!ideasModal) return;
-  ideasModal.classList.add("hidden");
-  ideasModal.setAttribute("aria-hidden", "true");
-  document.body.classList.remove("modal-open");
-}
+
 function getLines(id) {
-  const el = document.getElementById(id);
-  return el ? el.value.split("\n").map(x => x.trim()).filter(Boolean) : [];
+  return document.getElementById(id).value.split("\n").map(x => x.trim()).filter(Boolean);
 }
+
 function normaliseItems(items) {
   return items.map(x => x.toLowerCase().trim()).filter(Boolean);
 }
+
 function hasAny(items, words) {
   return words.some(word => items.some(item => item.includes(word)));
 }
+
 function inferCategory(items, providedCategory) {
   if (providedCategory && providedCategory.trim()) return providedCategory.trim();
-
-  if (hasAny(items, ["pork", "pork chop", "pork chops", "bacon", "sausage"])) return "Pork";
-  if (hasAny(items, ["sugar", "chocolate", "cocoa", "berries", "strawberry", "banana", "vanilla", "yogurt", "granola", "honey"])) return "Dessert";
+  if (hasAny(items, ["sugar", "chocolate", "cocoa", "flour", "berries", "strawberry", "banana", "vanilla", "honey"])) return "Dessert";
   if (hasAny(items, ["pasta", "spaghetti", "rigatoni", "penne", "tagliatelle", "noodles"])) return "Pasta";
-  if (hasAny(items, ["egg", "eggs", "bread", "toast", "oats"])) return "Breakfast";
+  if (hasAny(items, ["egg", "eggs", "bread", "oats", "yogurt", "granola"])) return "Breakfast";
   if (hasAny(items, ["chicken", "thigh", "breast", "drumstick"])) return "Chicken";
   if (hasAny(items, ["beef", "steak", "mince", "burger"])) return "Beef";
   return "Custom";
 }
-function titleFromLead(word) {
-  if (!word) return "Kitchen Special";
-  return word.charAt(0).toUpperCase() + word.slice(1);
-}
 
-function buildDishIdeas(ingredients, style, providedCategory) {
-  const items = normaliseItems(ingredients);
-  const category = inferCategory(items, providedCategory);
-  const lead = titleFromLead(items[0] || "kitchen");
-  const chosenStyle = style && style.trim() ? style.trim() : "";
-
-  if (category === "Pork") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} pork chops` : "Pork Chops", category: "Pork", reason: "Best if your ingredients suit pan-seared chops with proper browning and a butter or sauce finish.", method: "Sear / baste / rest", heat: "Medium-high then medium" },
-      { title: `${lead} pork skillet`, category: "Pork", reason: "Best if you want a one-pan pork dish built around the ingredients you already have.", method: "Brown / build / finish", heat: "Medium heat" },
-      { title: `${lead} pork traybake`, category: "Pork", reason: "Best if you want an easier oven-led version with less pan work.", method: "Season / roast", heat: "Oven cooking" }
-    ];
-  }
-  if (category === "Dessert") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} ${lead} bowl` : `${lead} dessert bowl`, category: "Dessert", reason: "Best if your ingredients are soft, sweet, fresh, or more suited to layering, chilling, folding, or spooning rather than frying.", method: "Layer / mix / chill", heat: "Little or no heat" },
-      { title: `${lead} compote pot`, category: "Dessert", reason: "Best if you want something softer, spoonable, or jammy from fruit and sweet ingredients.", method: "Cook down lightly or chill", heat: "Low or no heat" },
-      { title: `${lead} breakfast parfait`, category: "Breakfast", reason: "Best if the ingredients work as a quick breakfast as well as a dessert, especially with yogurt, oats, or granola.", method: "Layer and serve", heat: "No heat" }
-    ];
-  }
-  if (category === "Pasta") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} pasta bowl` : `${lead} pasta bowl`, category: "Pasta", reason: "Best if your ingredients can form a sauce, coating, or pasta topping.", method: "Boil / build sauce / combine", heat: "Medium hob cooking" },
-      { title: `${lead} pasta skillet`, category: "Pasta", reason: "Best if you want a slightly richer pan-finished pasta rather than a looser sauce.", method: "Pan finish", heat: "Medium heat" },
-      { title: `${lead} pasta bake`, category: "Pasta", reason: "Best if your ingredients would work better with a thicker finish and a more comforting texture.", method: "Boil / bake", heat: "Oven finish" }
-    ];
-  }
-  if (category === "Chicken") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} chicken skillet` : `${lead} chicken skillet`, category: "Chicken", reason: "Best if the ingredients need searing, controlled heat, and a sauce or glaze built around the chicken.", method: "Sear / build / finish", heat: "Medium-high then lower" },
-      { title: `${lead} chicken traybake`, category: "Chicken", reason: "Best if you want a simpler oven-led meal with less hands-on pan work.", method: "Season / roast", heat: "Oven cooking" },
-      { title: `${lead} chicken wrap filling`, category: "Chicken", reason: "Best if the ingredients are better as a cooked filling than a plated main dish.", method: "Cook and fold into wraps", heat: "Fast hob cooking" }
-    ];
-  }
-  if (category === "Beef") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} beef pan` : `${lead} beef pan`, category: "Beef", reason: "Best if you want proper browning and a richer pan-cooked finish.", method: "Brown / build / finish", heat: "High then medium" },
-      { title: `${lead} beef tacos`, category: "Beef", reason: "Best if the ingredients would make a stronger filling than a plated beef dish.", method: "Cook as filling", heat: "Medium-high" },
-      { title: `${lead} beef bake`, category: "Beef", reason: "Best if you want a heavier, more comforting oven-finished dish.", method: "Brown / bake", heat: "Hob then oven" }
-    ];
-  }
-  if (category === "Breakfast") {
-    return [
-      { title: chosenStyle ? `${chosenStyle} breakfast plate` : `${lead} breakfast plate`, category: "Breakfast", reason: "Best if the ingredients suit a quick morning-style dish.", method: "Fast cook / assemble", heat: "Gentle to medium" },
-      { title: `${lead} breakfast bowl`, category: "Breakfast", reason: "Best if the ingredients are better layered, mixed, or spooned rather than fried hard.", method: "Assemble / warm if needed", heat: "Low or no heat" },
-      { title: `${lead} breakfast toast`, category: "Breakfast", reason: "Best if the ingredients suit a topping or loaded toast-style idea.", method: "Toast / top / finish", heat: "Light cooking" }
-    ];
-  }
-  return [
-    { title: chosenStyle ? `${chosenStyle} kitchen special` : `${lead} kitchen special`, category: "Custom", reason: "Best if you want the app to turn your ingredients into one balanced main dish.", method: "Build in stages", heat: "Depends on ingredients" },
-    { title: `${lead} quick bowl`, category: "Custom", reason: "Best if your ingredients work better as a quicker, simpler version with less cooking.", method: "Mix / cook lightly / serve", heat: "Low to medium" },
-    { title: `${lead} leftovers plate`, category: "Custom", reason: "Best if you want the easiest possible way to use what you already have up without overcomplicating it.", method: "Assemble around the strongest ingredient", heat: "As needed" }
-  ];
-}
-
-function smartRecipeFromIdea(chosenIdea, ingredients) {
-  const category = chosenIdea.category;
-  const title = chosenIdea.title;
-  const difficulty = (document.getElementById("gDifficulty") || { value: "" }).value.trim() || "Custom";
-  const time = (document.getElementById("gTime") || { value: "" }).value.trim() || "30 min";
-  const serves = (document.getElementById("gServes") || { value: "" }).value.trim() || "2 people";
-  const items = normaliseItems(ingredients);
-
-  let seasoning = {
-    core: ["Salt", "Black pepper"],
-    optional: [],
-    how: "Season the main ingredient first, then taste again at the end."
+function generatedSeasoning(category) {
+  if (category === "Chicken") return {
+    core:["1 tsp fine salt","1/2 tsp black pepper"],
+    optional:["1/2 tsp paprika","1/2 tsp garlic powder"],
+    how:"Pat the chicken dry, season both sides evenly, rub it in lightly, and leave it for 5 to 10 minutes before cooking."
   };
-  let notes = [
-    "Work out which ingredient needs the most cooking and let that lead the order.",
-    "If the dish feels flat, use salt, acid, or a fresh finishing ingredient to wake it up.",
-    "Good cooking is usually about better order and heat control rather than fancy ingredients."
-  ];
-  let steps = [
-    { title: "Prep the ingredients", heat: "No heat", time: "5 min", body: "Cut and organise everything first so you can build the dish without guessing halfway through." },
-    { title: "Start the flavour base", heat: "Medium-high", time: "3-5 min", body: "Begin with the ingredients that benefit from early colour or softening. Look at what the lead ingredient actually needs rather than forcing it into one cooking style." },
-    { title: "Build the dish", heat: "Medium", time: "6-10 min", body: "Add the rest of the ingredients in the order they need cooking, keeping an eye on texture as the dish comes together." },
-    { title: "Finish and balance", heat: "Low-medium", time: "2-4 min", body: "Taste, correct the seasoning, and stop only when the dish looks settled, smells rounded, and feels properly cooked." }
-  ];
-  let plating = [
-    "Use a clean plate and wipe the rim before serving.",
-    "Keep the food grouped neatly so the dish looks intentional.",
-    "Finish with a final garnish or contrast if the dish needs colour."
-  ];
+  if (category === "Beef") return {
+    core:["1 tsp fine salt","1/2 tsp black pepper"],
+    optional:["Small pinch chilli flakes or smoked paprika"],
+    how:"Season the beef just before cooking, unless it is a larger cut that can sit for a few minutes while the pan heats."
+  };
+  if (category === "Pasta") return {
+    core:["Salt for the pasta water","Black pepper to finish"],
+    optional:["Pinch chilli flakes"],
+    how:"Season in layers: salt the pasta water first, then correct the final sauce right before serving."
+  };
+  if (category === "Dessert") return {
+    core:["Pinch of salt"],
+    optional:["Vanilla or cinnamon depending on the dessert"],
+    how:"Use a small pinch of salt to make the sweetness taste fuller, then add flavourings gently."
+  };
+  if (category === "Breakfast") return {
+    core:["Pinch of salt","Black pepper if savoury"],
+    optional:["Cinnamon for sweet breakfasts"],
+    how:"Season lightly at the start, then taste and adjust at the end because breakfast dishes can lose balance fast."
+  };
+  return {
+    core:["Salt to taste","Black pepper to taste"],
+    optional:[],
+    how:"Season in small layers as you cook, then taste and adjust before serving."
+  };
+}
 
-  if (category === "Pork") {
-    seasoning = {
-      core: ["1 tsp fine salt", "1/2 tsp black pepper"],
-      optional: ["1/2 tsp garlic powder", "Small pinch smoked paprika"],
-      how: "Pat the pork dry, season both sides evenly, rub it in lightly, and leave it for 5 minutes before cooking."
-    };
+function buildSmartTitle(items, category, style) {
+  const first = items[0] || "Kitchen";
+  const prettyFirst = first.charAt(0).toUpperCase() + first.slice(1);
+  if (style && style.trim()) {
+    const prettyStyle = style.trim().split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+    return `${prettyStyle} ${prettyFirst}`;
+  }
+  if (category === "Dessert") return hasAny(items, ["strawberry","berries","raspberry"]) ? "Berry Dessert Pot" : `${prettyFirst} Sweet Bowl`;
+  if (category === "Pasta") return `${prettyFirst} Pasta Bowl`;
+  if (category === "Breakfast") return `${prettyFirst} Breakfast Plate`;
+  if (category === "Chicken") return `${prettyFirst} Chicken Skillet`;
+  if (category === "Beef") return `${prettyFirst} Beef Pan`;
+  return `${prettyFirst} Kitchen Special`;
+}
+
+function buildSmartRecipe(category, ingredients, style, difficulty, time, serves) {
+  const items = normaliseItems(ingredients);
+  const title = buildSmartTitle(items, category, style);
+  let description = "";
+  let notes = [];
+  let steps = [];
+  let plating = [];
+  let tags = [category, "Generated", "Step-by-step"];
+  const seasoning = generatedSeasoning(category);
+
+  if (category === "Dessert") {
+    description = `A custom dessert built from ${ingredients.join(", ")}, designed around chilling, layering, folding, or baking rather than random frying instructions.`;
     notes = [
-      "Pat pork dry before cooking or it will steam instead of colour.",
-      "Do not move the meat too early or you lose the crust.",
-      "Rest pork before slicing so the juices stay inside the meat."
-    ];
-    steps = [
-      { title: "Prep the pork", heat: "No heat", time: "5 min", body: "Pat the pork dry, then season it evenly so the flavour starts before the pan gets hot." },
-      { title: "Brown for flavour", heat: "Medium-high", time: "4-6 min", body: "Cook until proper colour develops before turning. That colour is where much of the flavour comes from." },
-      { title: "Build the dish", heat: "Medium", time: "4-6 min", body: "Add the other ingredients in the order they need cooking, building flavour without knocking out the colour you already made." },
-      { title: "Finish and rest", heat: "Low-medium", time: "3-5 min", body: "Stop when the pork looks glossy, smells balanced, and feels cooked through, then rest briefly before serving." }
-    ];
-    plating = [
-      "Slice the pork on a slight angle if serving sliced.",
-      "Spoon any pan juices around the meat instead of flooding the top.",
-      "Finish with herbs right before serving if you want a fresher look."
-    ];
-  } else if (category === "Dessert") {
-    seasoning = {
-      core: ["Pinch of salt"],
-      optional: ["Vanilla", "Cinnamon", "Citrus zest"],
-      how: "Use sweetness gradually and add a small pinch of salt to make the main flavour stand out more clearly."
-    };
-    notes = [
-      "Soft fruit and sweet ingredients are usually better layered, folded, crushed, or chilled than thrown into a frying pan.",
-      "If the dessert feels loose, chill it before serving so the texture tightens.",
+      "Sweet dishes usually improve when you balance sweetness with a pinch of salt or a little acidity.",
+      "If the mixture feels loose, chill it before serving so the texture tightens up.",
       "Fresh fruit should stay bright and soft, not cooked into mush unless you want a compote."
     ];
     steps = [
-      { title: "Prep the dessert ingredients", heat: "No heat", time: "5 min", body: "Wash, slice, measure, or crush everything first so you can build the dessert cleanly and without rushing." },
-      { title: "Build the base", heat: "No heat", time: "3-5 min", body: `Use ${items[0] || "the main ingredient"} as the lead ingredient, then combine or layer it with the rest depending on texture. Think fold, whisk, crush, chill, or layer rather than forcing everything into a hot pan.` },
-      { title: "Adjust sweetness and balance", heat: "No heat", time: "2-3 min", body: "Taste the mixture. If it feels too sharp, add a little sweetness. If it feels too sweet or flat, add something fresh or slightly tangy to balance it." },
-      { title: "Chill, set, or finish", heat: "Fridge / no heat", time: "10-30 min", body: "Let the dessert chill if it needs structure, or serve straight away if the texture already feels right." }
+      {title:"Prep the dessert ingredients", heat:"No heat", time:"5 min", body:"Wash, slice, measure, or crush everything first so you can build the dessert cleanly and without rushing."},
+      {title:"Build the base", heat:"No heat", time:"3-5 min", body:`Use ${ingredients[0].toLowerCase()} as the lead ingredient, then combine or layer it with the rest depending on texture. Think fold, whisk, crush, chill, or layer rather than forcing everything into a hot pan.`},
+      {title:"Adjust sweetness and texture", heat:"No heat", time:"2-3 min", body:"Taste the mixture. If it feels too sharp, add a little sweetness. If it feels too sweet or flat, add something fresh or slightly tangy to balance it."},
+      {title:"Chill, set, or finish", heat:"Fridge / no heat", time:"10-30 min", body:"Let the dessert chill if it needs structure, or serve straight away if the texture already feels right."}
     ];
     plating = [
-      "Use a bowl, glass, or small plate that frames the dessert instead of spreading it too wide.",
-      "Layer or spoon it neatly so you can see colour contrast between ingredients.",
+      "Use a bowl or glass that frames the dessert instead of spreading it too wide.",
+      "Layer or spoon the dessert neatly so you can see colour contrast between ingredients.",
       "Finish with fruit, crumbs, chocolate, or a light drizzle right before serving."
     ];
   } else if (category === "Pasta") {
-    seasoning = {
-      core: ["Salt for the pasta water"],
-      optional: ["Black pepper", "Cheese", "Herbs"],
-      how: "Season the pasta water heavily with salt before boiling, then taste the sauce at the end and adjust."
-    };
+    description = `A custom pasta dish built from ${ingredients.join(", ")}, using the ingredients you already have and turning them into a proper sauce-led meal.`;
     notes = [
       "Save pasta water before draining because it helps the sauce cling properly.",
-      "If the sauce feels heavy, loosen it with a splash of pasta water rather than extra oil.",
-      "Finish pasta in the sauce when you can so it tastes joined-up."
+      "A sauce that looks too thick can usually be fixed with a splash of pasta water.",
+      "Finish pasta in the sauce when possible so the whole dish tastes joined-up."
     ];
     steps = [
-      { title: "Prep and boil", heat: "High", time: "8-12 min", body: "Get salted water boiling and prep the rest of the ingredients while the pasta cooks. Save some pasta water before draining." },
-      { title: "Start the flavour base", heat: "Medium", time: "3-5 min", body: "Cook your base ingredients gently first. Think about whether they need softening, browning, or only a short warm-through." },
-      { title: "Build the sauce", heat: "Medium", time: "4-6 min", body: "Add the ingredients that will create the sauce or main flavour. The goal is a smooth, balanced coating rather than something dry or watery." },
-      { title: "Combine and finish", heat: "Low-medium", time: "2-3 min", body: "Toss the pasta through the sauce and use reserved pasta water if needed until everything looks glossy and evenly coated." }
+      {title:"Prep and boil", heat:"High", time:"8-12 min", body:"Get salted water boiling and prep the rest of the ingredients while the pasta cooks. Save some pasta water before draining."},
+      {title:"Start the flavour base", heat:"Medium", time:"3-5 min", body:`Cook your base ingredients gently first. With ${ingredients[0].toLowerCase()}, think about whether it needs softening, browning, or only a short warm-through.`},
+      {title:"Build the sauce", heat:"Medium", time:"4-6 min", body:"Add the ingredients that will create the sauce or main flavour. The goal is a smooth, balanced coating rather than something dry or watery."},
+      {title:"Combine and finish", heat:"Low-medium", time:"2-3 min", body:"Toss the pasta through the sauce and use reserved pasta water if needed until everything looks glossy and evenly coated."}
     ];
     plating = [
       "Twirl the pasta into a neat mound instead of dropping it flat onto the plate.",
       "Keep the topping focused in the centre so the dish looks tidy and intentional.",
       "Finish with cheese, herbs, or pepper only once plated."
     ];
-  } else if (category === "Chicken") {
-    seasoning = {
-      core: ["1 tsp fine salt", "1/2 tsp black pepper"],
-      optional: ["Paprika for warmth", "Garlic powder for depth", "Chilli flakes for heat"],
-      how: "Pat the chicken dry, season both sides evenly, rub it in lightly, and leave it for 5 minutes before cooking."
-    };
-    notes = [
-      "Pat chicken dry before cooking or it will steam instead of colour.",
-      "If the pan gets too crowded, cook in batches so the meat still browns properly.",
-      "Chicken should feel cooked through but still juicy when cut."
-    ];
-    steps = [
-      { title: "Prep the chicken", heat: "No heat", time: "5 min", body: "Trim, dry, and season the chicken well so it is ready for strong colour from the start. Rub the seasoning in and give it a few minutes to settle." },
-      { title: "Brown the chicken", heat: "Medium-high", time: "6-8 min", body: "Cook the chicken long enough to build real golden colour before moving it around too much." },
-      { title: "Build the dish", heat: "Medium", time: "4-6 min", body: "Add the rest of the ingredients in a sensible order. Think in terms of browning first, then building flavour, then finishing gently." },
-      { title: "Finish and glaze", heat: "Low-medium", time: "3-5 min", body: "Stop when the chicken looks glossy, smells rounded, and feels fully cooked rather than tight and dry." }
-    ];
-    plating = [
-      "Slice the chicken at a slight angle so the inside stays visible.",
-      "Spoon sauce or juices around the meat rather than drowning the top if you want the colour to stay visible.",
-      "Finish with herbs or a final contrast for freshness."
-    ];
-  } else if (category === "Beef") {
-    seasoning = {
-      core: ["1 tsp fine salt", "1/2 tsp black pepper"],
-      optional: ["Garlic powder", "Smoked paprika", "Little mustard depending on the style you want"],
-      how: "Season beef well before it hits the pan so the crust develops with the flavour already in place."
-    };
-    notes = [
-      "A dark crust matters more than constant flipping, so leave the beef still long enough to colour.",
-      "If the beef goes grey, your pan is not hot enough or too crowded.",
-      "Rest larger pieces briefly before slicing so the juices stay in the meat."
-    ];
-    steps = [
-      { title: "Prep and season", heat: "No heat", time: "5 min", body: "Dry and season the beef so it is ready to take colour straight away." },
-      { title: "Sear for colour", heat: "High", time: "4-7 min", body: "Use strong heat first. The goal is proper browning rather than pale cooking." },
-      { title: "Add supporting ingredients", heat: "Medium", time: "4-6 min", body: "Add the rest of the ingredients and build depth without knocking all the colour out of the pan." },
-      { title: "Finish with control", heat: "Low-medium", time: "3-5 min", body: "Stop when the beef looks rich, smells balanced, and feels cooked to the point you actually want." }
-    ];
-    plating = [
-      "Slice beef across the grain if slicing is needed.",
-      "Keep the slices or pieces grouped together so the plate looks deliberate.",
-      "Use sauce in a neat spooned line or small pool rather than flooding the whole plate."
-    ];
   } else if (category === "Breakfast") {
-    seasoning = {
-      core: ["Light seasoning at the start"],
-      optional: ["Fresh pepper", "Herbs", "Syrup", "Fruit", "Citrus"],
-      how: "For savoury breakfast dishes, season lightly at the start and adjust at the end. For sweet ones, a pinch of salt helps stop the flavour tasting flat."
-    };
+    description = `A quick breakfast-style dish built from ${ingredients.join(", ")}, designed around gentle heat and fast finishing instead of generic dinner instructions.`;
     notes = [
       "Breakfast dishes usually cook fast, so prep before the pan heats up.",
       "Medium heat gives you far more control than blasting the pan too hard.",
       "Serve breakfast straight away because texture drops quickly once it sits."
     ];
     steps = [
-      { title: "Prep everything first", heat: "No heat", time: "3-5 min", body: "Slice, whisk, toast, or portion everything before cooking starts because breakfast dishes move quickly." },
-      { title: "Cook the base", heat: "Medium", time: "4-6 min", body: "Start with the ingredient that needs the most cooking. Watch for a gentle set, soft colour, or light crispness depending on the item." },
-      { title: "Add the rest and balance", heat: "Low-medium", time: "2-4 min", body: "Bring in the remaining ingredients in the order they need cooking, keeping the texture soft, fluffy, or lightly crisp rather than overdone." },
-      { title: "Plate and finish", heat: "No heat", time: "1 min", body: "Serve as soon as the texture looks right and finish with anything fresh, creamy, sweet, or savoury that lifts the plate." }
+      {title:"Prep everything first", heat:"No heat", time:"3-5 min", body:"Slice, whisk, toast, or portion everything before cooking starts because breakfast dishes move quickly."},
+      {title:"Cook the base", heat:"Medium", time:"4-6 min", body:`Start with the ingredient that needs the most cooking. With ${ingredients[0].toLowerCase()}, watch for a gentle set, soft colour, or light crispness depending on the item.`},
+      {title:"Add the rest and balance", heat:"Low-medium", time:"2-4 min", body:"Bring in the remaining ingredients in the order they need cooking, keeping the texture soft, fluffy, or lightly crisp rather than overdone."},
+      {title:"Plate and finish", heat:"No heat", time:"1 min", body:"Serve as soon as the texture looks right and finish with anything fresh, creamy, sweet, or savoury that lifts the plate."}
     ];
     plating = [
       "Stack or layer the breakfast elements rather than spreading them randomly.",
       "Add fruit, herbs, syrup, or a final topping only once the main item is plated.",
-      "Keep the edges clean because simple breakfast food looks better when it is tidy."
+      "Keep the plate edges clean because simple breakfast food looks better when it is tidy."
+    ];
+  } else if (category === "Chicken") {
+    description = `A custom chicken dish built from ${ingredients.join(", ")}, with proper browning, controlled heat, and a cleaner finish based on what you already have at home.`;
+    notes = [
+      "Pat chicken dry before cooking or it will steam instead of colour.",
+      "If the pan gets too crowded, cook in batches so the meat still browns properly.",
+      "Chicken should feel cooked through but still juicy when cut."
+    ];
+    steps = [
+      {title:"Prep the chicken", heat:"No heat", time:"5 min", body:seasoning.how},
+      {title:"Brown the chicken", heat:"Medium-high", time:"6-8 min", body:"Cook the chicken long enough to build real golden colour before moving it around too much."},
+      {title:"Build the dish", heat:"Medium", time:"4-6 min", body:`Add the rest of the ingredients in a sensible order. With ${ingredients[0].toLowerCase()} plus your other items, think in terms of browning first, then building flavour, then finishing gently.`},
+      {title:"Finish and glaze", heat:"Low-medium", time:"3-5 min", body:"Stop when the chicken looks glossy, smells rounded, and feels fully cooked rather than tight and dry."}
+    ];
+    plating = [
+      "Slice chicken at a slight angle so the inside stays visible.",
+      "Spoon sauce or juices around the meat rather than drowning the top if you want the colour to stay visible.",
+      "Finish with herbs or a final contrast for freshness."
+    ];
+  } else if (category === "Beef") {
+    description = `A custom beef dish built from ${ingredients.join(", ")}, using colour, crust, and controlled finishing rather than random one-size-fits-all steps.`;
+    notes = [
+      "A dark crust matters more than constant flipping, so leave the beef still long enough to colour.",
+      "If the beef goes grey, your pan is not hot enough or too crowded.",
+      "Rest larger pieces briefly before slicing so the juices stay in the meat."
+    ];
+    steps = [
+      {title:"Prep and season", heat:"No heat", time:"5 min", body:seasoning.how},
+      {title:"Sear for colour", heat:"High", time:"4-7 min", body:`Use strong heat first. With ${ingredients[0].toLowerCase()}, the goal is proper browning rather than pale cooking.`},
+      {title:"Add supporting ingredients", heat:"Medium", time:"4-6 min", body:"Add the rest of the ingredients and build depth without knocking all the colour out of the pan."},
+      {title:"Finish with control", heat:"Low-medium", time:"3-5 min", body:"Stop when the beef looks rich, smells balanced, and feels cooked to the point you actually want."}
+    ];
+    plating = [
+      "Slice beef across the grain if slicing is needed.",
+      "Keep the slices or pieces grouped together so the plate looks deliberate.",
+      "Use sauce in a neat spooned line or small pool rather than flooding the whole plate."
+    ];
+  } else {
+    description = `A custom dish built from ${ingredients.join(", ")}, using the ingredients you already have and turning them into a practical meal instead of a random template.`;
+    notes = [
+      "Work out which ingredient needs the most cooking and let that lead the order.",
+      "If the dish feels flat, use salt, acid, or a fresh finishing ingredient to wake it up.",
+      "Good cooking is usually about better order and heat control rather than fancy ingredients."
+    ];
+    steps = [
+      {title:"Prep the ingredients", heat:"No heat", time:"5 min", body:"Cut and organise everything first so you can build the dish without guessing halfway through."},
+      {title:"Start the flavour base", heat:"Medium-high", time:"3-5 min", body:`Begin with the ingredients that benefit from early colour or softening. With ${ingredients[0].toLowerCase()}, look at what the ingredient actually needs rather than forcing it into one cooking style.`},
+      {title:"Build the dish", heat:"Medium", time:"6-10 min", body:"Add the rest of the ingredients in the order they need cooking, keeping an eye on texture as the dish comes together."},
+      {title:"Finish and balance", heat:"Low-medium", time:"2-4 min", body:"Taste, correct the seasoning, and stop only when the dish looks settled, smells rounded, and feels properly cooked."}
+    ];
+    plating = [
+      "Keep the plate tidy and wipe the rim before serving.",
+      "Use height or a neat central placement so the dish looks intentional.",
+      "Finish with a fresh element, herb, or final drizzle for contrast."
     ];
   }
 
-  return {
-    id: slug(title + "-" + Date.now()),
-    title,
+  return { title, description, notes, steps, plating, tags, seasoning };
+}
+
+function buildGeneratedRecipe() {
+  const ingredients = getLines("gIngredients");
+  const style = document.getElementById("gStyle").value.trim() || "";
+  const providedCategory = document.getElementById("gCategory").value.trim();
+  const difficulty = document.getElementById("gDifficulty").value.trim() || "Custom";
+  const time = document.getElementById("gTime").value.trim() || "30 min";
+  const serves = document.getElementById("gServes").value.trim() || "2 people";
+
+  if (!ingredients.length) {
+    alert("Add at least one ingredient first.");
+    return;
+  }
+
+  const category = inferCategory(normaliseItems(ingredients), providedCategory);
+  const smart = buildSmartRecipe(category, ingredients, style, difficulty, time, serves);
+
+  const recipe = {
+    id: slug(smart.title + "-" + Date.now()),
+    title: smart.title,
     category,
     difficulty,
     time,
     serves,
-    description: `A custom ${category.toLowerCase()} recipe built from ${ingredients.join(", ")}, based on the style of dish that best fits what you already have at home.`,
-    tags: [category, "Generated", "From your ingredients"],
+    description: smart.description,
+    tags: smart.tags,
     ingredients,
-    seasoning,
-    notes,
-    steps,
-    plating
+    notes: smart.notes,
+    steps: smart.steps,
+    plating: smart.plating,
+    seasoning: smart.seasoning
   };
-}
 
-function renderIdeas(ideas, ingredients) {
-  if (!ideasList) return;
-  ideasList.innerHTML = ideas.map((idea, index) => `
-    <article class="idea-card">
-      <h3>${idea.title}</h3>
-      <p>${idea.reason}</p>
-      <div class="idea-tags">
-        <span class="idea-chip">${idea.category}</span>
-        <span class="idea-chip">${idea.method}</span>
-        <span class="idea-chip">${idea.heat}</span>
-      </div>
-      <button class="primary-btn" data-build-index="${index}">Build this recipe</button>
-    </article>
-  `).join("");
+  saveCustomRecipe(recipe);
+  recipes = loadRecipes();
+  renderFilters();
+  renderRecipes();
+  closeGeneratorModal();
 
-  ideasList.querySelectorAll("[data-build-index]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const chosen = ideas[Number(btn.dataset.buildIndex)];
-      const recipe = smartRecipeFromIdea(chosen, ingredients);
-      const custom = readStore("chef_deluxe_custom_recipes");
-      custom.unshift(recipe);
-      writeStore("chef_deluxe_custom_recipes", custom);
-      recipes = loadRecipes();
-      renderFilters();
-      renderRecipes();
-      closeIdeasModal();
-      closeGeneratorModal();
-      ["gIngredients","gStyle","gCategory","gDifficulty","gTime","gServes"].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.value = "";
-      });
-      openRecipe(recipe.id);
-    });
+  ["gIngredients","gStyle","gCategory","gDifficulty","gTime","gServes"].forEach(id => {
+    document.getElementById(id).value = "";
   });
-}
 
+  openRecipe(recipe.id);
+}
 
 function saveNewRecipe() {
   const title = document.getElementById("fTitle").value.trim();
@@ -5004,15 +5061,7 @@ cancelAddBtn.addEventListener("click", closeAddModal);
 if (generatorBtn) generatorBtn.addEventListener("click", openGeneratorModal);
 if (closeGeneratorModalBtn) closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
 if (generatorModal) generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
-if (makeRecipeBtn) makeRecipeBtn.addEventListener("click", () => {
-  const ingredients = getLines("gIngredients");
-  const style = (document.getElementById("gStyle") || { value: "" }).value.trim() || "";
-  const providedCategory = (document.getElementById("gCategory") || { value: "" }).value.trim();
-  if (!ingredients.length) { alert("Add at least one ingredient first."); return; }
-  const ideas = buildDishIdeas(ingredients, style, providedCategory);
-  renderIdeas(ideas, ingredients);
-  openIdeasModal();
-});
+if (makeRecipeBtn) makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
 if (cancelGeneratorBtn) cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
 
 favouritesBtn.addEventListener("click", () => {
