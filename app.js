@@ -5115,3 +5115,123 @@ if (typeof starterRecipes !== "undefined") {
     ]
   });
 }
+// ===== DELUXE RECIPE FIX PATCH (SAFE) =====
+
+// Replace weak recipes with proper versions
+starterRecipes.forEach(r => {
+  if (r.ingredients.includes("Main sauce, glaze, or seasoning for this dish")) {
+    
+    if (r.category === "Chicken") {
+      r.ingredients = [
+        "500g chicken",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "1 tsp paprika",
+        "1 tbsp olive oil",
+        "2 garlic cloves",
+        "100ml chicken stock",
+        "50ml cream or sauce base"
+      ];
+    }
+
+    if (r.category === "Beef") {
+      r.ingredients = [
+        "500g beef",
+        "1 tsp salt",
+        "1/2 tsp black pepper",
+        "1 tbsp oil",
+        "1 garlic clove",
+        "1 small onion",
+        "Optional sauce or butter finish"
+      ];
+    }
+
+    // Better steps
+    r.steps = [
+      {
+        title: "Prep ingredients",
+        heat: "No heat",
+        time: "5 min",
+        body: "Measure and prepare everything before cooking. Cut evenly so it cooks properly."
+      },
+      {
+        title: "Heat pan properly",
+        heat: "Medium-high",
+        time: "2 min",
+        body: "Heat pan until oil shimmers. Do NOT add food to a cold pan."
+      },
+      {
+        title: "Cook main protein",
+        heat: "Medium-high",
+        time: "6-8 min",
+        body: "Cook without moving too much. Let colour develop before turning."
+      },
+      {
+        title: "Add flavour base",
+        heat: "Medium",
+        time: "3-4 min",
+        body: "Add garlic, onion, or sauce. Control heat so nothing burns."
+      },
+      {
+        title: "Finish properly",
+        heat: "Low-medium",
+        time: "3-5 min",
+        body: "Let everything come together and rest slightly before serving."
+      }
+    ];
+  }
+});
+
+
+// ===== ADD PORK CHOPS =====
+
+starterRecipes.push({
+  id: "garlic-butter-pork-chops",
+  title: "Garlic Butter Pork Chops",
+  category: "Pork",
+  difficulty: "Beginner",
+  time: "25 min",
+  serves: "2 people",
+  description: "Juicy pork chops with proper sear and garlic butter finish.",
+  ingredients: [
+    "2 pork chops (2–3cm thick)",
+    "1 tsp salt",
+    "1/2 tsp black pepper",
+    "1 tbsp oil",
+    "20g butter",
+    "2 garlic cloves",
+    "1 tsp thyme or rosemary"
+  ],
+  steps: [
+    {
+      title: "Season pork",
+      heat: "No heat",
+      time: "5 min",
+      body: "Pat dry and season evenly. Leave 5 minutes before cooking."
+    },
+    {
+      title: "Heat pan",
+      heat: "High",
+      time: "2 min",
+      body: "Pan must be hot before adding oil."
+    },
+    {
+      title: "Sear pork",
+      heat: "High",
+      time: "3-4 min each side",
+      body: "Do NOT move it. Let crust form."
+    },
+    {
+      title: "Add butter & garlic",
+      heat: "Medium",
+      time: "2-3 min",
+      body: "Add butter, garlic, herbs. Spoon over meat."
+    },
+    {
+      title: "Rest",
+      heat: "No heat",
+      time: "5 min",
+      body: "Let juices settle before cutting."
+    }
+  ]
+});
