@@ -113,20 +113,3 @@ body.modal-open{overflow:hidden}
   .recipe-hero{padding:16px}
   .panel{padding:14px; border-radius:20px}
 }
-
-
-.pan-oil-box{
-  background:rgba(255,255,255,.03);
-  border:1px solid var(--border);
-  border-radius:20px;
-  padding:14px;
-  margin-bottom:16px;
-}
-.pan-oil-box h4{
-  margin:0 0 10px;
-  font-size:18px;
-}
-.info-small{
-  font-size:14px;
-  line-height:1.35;
-}
