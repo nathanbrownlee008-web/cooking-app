@@ -5404,3 +5404,23 @@ starterRecipes.forEach(r => {
   }
 
 });
+// ===== FIX ICE CREAM STEP ORDER + TEXT =====
+
+starterRecipes.forEach(r => {
+
+  if (r.category === "Ice Cream" && r.steps.length >= 5) {
+
+    // STEP 3 - cook custard
+    r.steps[2].body =
+      "Cook gently on low heat, stirring constantly until it thickens slightly and coats the back of a spoon. Do NOT boil.";
+
+    // STEP 4 - COOL (NOT COOK)
+    r.steps[3].body =
+      "Remove from heat and let it cool completely at room temperature, then place in the fridge until fully chilled.";
+
+    // STEP 5 - FREEZE
+    r.steps[4].body =
+      "Pour into container or ice cream machine. Freeze or churn until thick and smooth. Stir every 30 minutes if freezing manually.";
+  }
+
+});
