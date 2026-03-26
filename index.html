@@ -22,8 +22,8 @@
 
       <div class="hero-stats">
         <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
-        <div class="stat-pill">Paste-only system</div>
-        <div class="stat-pill">Auto-sorts your notes</div>
+        <div class="stat-pill">Deluxe layout</div>
+        <div class="stat-pill">Fix Recipe mode</div>
       </div>
 
       <div class="toolbar">
@@ -62,36 +62,30 @@
     <div class="modal-backdrop"></div>
     <div class="modal-panel modal-small">
       <button id="closeAddModalBtn" class="close-btn" aria-label="Close">✕</button>
-      <div class="form-wrap paste-form-wrap">
-        <div class="hero-topline">Paste recipe</div>
-        <h2 class="form-title">Paste your full recipe block</h2>
-        <p class="form-copy">Paste straight from your notes. The app auto-sorts title, ingredients, steps, heat, and time.</p>
+      <div class="form-wrap">
+        <div class="hero-topline">Fix recipe</div>
+        <h2 class="form-title">Paste your recipe notes</h2>
+        <p class="form-copy">Paste the full recipe from your notes. Fix Recipe will turn it into a cleaner deluxe recipe card with ingredients, proper steps, times, and electric hob guidance where possible.</p>
 
-        <div class="paste-help">
-          <strong>Works best with labels, but messy notes also work.</strong>
-          <pre>Brownies With Sauce recipe
-Time: 55 min
-Heat: Oven 180C
-
-Ingredients:
-200g dark chocolate
-150g butter
-3 eggs
-150g sugar
-
-Steps:
-Make brownie mix | Low | 10 min | Melt the butter and chocolate gently.
-Bake | Oven 180C | 25 min | Bake until the middle is slightly soft.
-Make sauce | Low | 5 min | Warm the sauce ingredients until glossy.</pre>
+        <div class="form-grid paste-grid">
+          <label class="full paste-wrap">
+            <span>Paste full recipe</span>
+            <textarea id="pasteArea" class="paste-area" placeholder="Example:\n\nBrownies With Sauce\n\nIngredients:\n200g dark chocolate\n150g butter\n3 eggs\n\nMethod:\nPreheat oven to 180C (160 fan).\nMelt chocolate and butter gently.\nWhisk eggs and sugar for 2 minutes.\nBake 20 to 25 minutes."></textarea>
+          </label>
+          <div class="paste-help full">
+            <div class="info-card">
+              <span class="info-label">Best results</span>
+              <div class="info-value">Title + ingredients list + method lines</div>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Heat guide</span>
+              <div class="info-value">Hob 1–2 low • Hob 3–4 medium • Hob 5–6 high</div>
+            </div>
+          </div>
         </div>
 
-        <label class="paste-field" for="pasteArea">
-          <span>Full recipe block</span>
-          <textarea id="pasteArea" placeholder="Paste full recipe here..."></textarea>
-        </label>
-
         <div class="footer-actions">
-          <button id="saveRecipeBtn" class="primary-btn">Add Recipe</button>
+          <button id="fixRecipeBtn" class="secondary-btn">✨ Fix Recipe</button>
           <button id="cancelAddBtn" class="secondary-btn">Cancel</button>
         </div>
       </div>
