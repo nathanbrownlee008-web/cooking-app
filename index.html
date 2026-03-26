@@ -31,11 +31,7 @@
           <span>🔎</span>
           <input id="searchInput" type="text" placeholder="Search recipe, ingredient, category..." />
         </label>
-        <div class="toolbar-actions">
-          <button id="favouritesBtn" class="ghost-btn top-btn">⭐ Favourites</button>
-          <button id="generatorBtn" class="ghost-btn top-btn">✨ Recipe Generator</button>
-          <button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button>
-        </div>
+        <div class="toolbar-actions"><button id="favouritesBtn" class="ghost-btn top-btn">⭐ Favourites</button><button id="generatorBtn" class="ghost-btn top-btn">✨ Recipe Generator</button><button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button></div>
       </div>
 
       <div id="categoryFilters" class="chip-row"></div>
@@ -92,39 +88,27 @@
     </div>
   </div>
 
+
   <div id="generatorModal" class="modal hidden" aria-hidden="true">
     <div class="modal-backdrop"></div>
     <div class="modal-panel modal-small">
       <button id="closeGeneratorModalBtn" class="close-btn" aria-label="Close">✕</button>
       <div class="form-wrap">
-        <div class="hero-topline">Use what you have</div>
+        <div class="hero-topline">Create from ingredients</div>
         <h2 class="form-title">Recipe generator</h2>
-        <p class="form-copy">Type the ingredients you already have at home. The app will suggest dish ideas first, then build the one you choose.</p>
+        <p class="form-copy">Type in the ingredients you already have at home and the app will work out what kind of dish makes sense, then build a custom recipe in the same deluxe format and save it to your device.</p>
         <div class="form-grid">
-          <label class="full"><span>Ingredients you have</span><textarea id="gIngredients" placeholder="Banana&#10;Greek yogurt&#10;Honey&#10;Granola"></textarea></label>
-          <label><span>Style</span><input id="gStyle" placeholder="Optional: quick lunch, creamy pasta, traybake, dessert" /></label>
-          <label><span>Category</span><input id="gCategory" placeholder="Optional: Chicken, Pasta, Dessert" /></label>
+          <label class="full"><span>Ingredients you have</span><textarea id="gIngredients" placeholder="Strawberries&#10;Greek yogurt&#10;Honey&#10;Granola"></textarea></label>
+          <label><span>Style</span><input id="gStyle" placeholder="Optional style: quick lunch, creamy pasta, traybake, dessert" /></label>
+          <label><span>Category</span><input id="gCategory" placeholder="Example: Chicken, Pasta, Dessert" /></label>
           <label><span>Difficulty</span><input id="gDifficulty" placeholder="Example: Beginner" /></label>
           <label><span>Total time</span><input id="gTime" placeholder="Example: 25 min" /></label>
           <label><span>Serves</span><input id="gServes" placeholder="Example: 2 people" /></label>
         </div>
         <div class="footer-actions">
-          <button id="makeRecipeBtn" class="primary-btn">Show dish ideas</button>
+          <button id="makeRecipeBtn" class="primary-btn">Generate recipe</button>
           <button id="cancelGeneratorBtn" class="secondary-btn">Cancel</button>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="ideasModal" class="modal hidden" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-panel modal-small">
-      <button id="closeIdeasModalBtn" class="close-btn" aria-label="Close">✕</button>
-      <div class="form-wrap">
-        <div class="hero-topline">What can I make?</div>
-        <h2 class="form-title">Dish ideas from your ingredients</h2>
-        <p class="form-copy">Pick the option that makes the most sense and the app will build the full recipe for you.</p>
-        <div id="ideasList" class="ideas-list"></div>
       </div>
     </div>
   </div>
