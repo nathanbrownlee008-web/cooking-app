@@ -3799,12 +3799,12 @@ renderFilters();
 renderRecipes();
 
 
-// ===== BROWNIE INGREDIENTS + SECTIONS FIX =====
+// ===== USER BROWNIE RECIPE UPDATE PATCH =====
 (function () {
-  if (window.__chefBrownieIngredientSectionsFixDone) return;
-  window.__chefBrownieIngredientSectionsFixDone = true;
+  if (window.__chefBrownieUserRecipePatchDone) return;
+  window.__chefBrownieUserRecipePatchDone = true;
 
-  function patchBrownieRecipe(recipe) {
+  function applyUserBrownieRecipe(recipe) {
     if (!recipe || !recipe.title) return;
     const name = recipe.title.toLowerCase();
     if (!name.includes("brownie")) return;
@@ -3814,173 +3814,146 @@ renderRecipes();
     recipe.time = "25 min bake + 1-2 hr chill";
     recipe.serves = "9-12 squares";
     recipe.description = "Fudgy brownies finished with warm fudge sauce, then chilled in the tray so they cut into clean rich squares.";
-    recipe.pan = "20cm square brownie tin or square baking tin lined with baking paper";
-    recipe.oilType = "No oil needed; use butter in both the brownie batter and the fudge sauce";
-
-    // Proper measured ingredients with clear section headers
+    recipe.pan = "Brownie tray or square baking tin lined with baking paper";
+    recipe.oilType = "No oil needed; use butter in the brownie batter and fudge sauce";
     recipe.ingredients = [
-      "BROWNIE BATTER",
-      "180g unsalted butter",
-      "200g dark chocolate, chopped",
-      "250g caster sugar",
-      "3 eggs",
-      "90g plain flour",
-      "30g cocoa powder",
-      "1/2 tsp fine salt",
-      "FUDGE SAUCE",
-      "150ml double cream",
-      "120g dark or milk chocolate, chopped",
-      "20g butter",
-      "1 tbsp golden syrup"
+      "Brownie batter ingredients",
+      "Chocolate",
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Flour",
+      "Cocoa powder",
+      "Salt",
+      "Fudge sauce ingredients",
+      "Cream",
+      "Chocolate",
+      "Butter",
+      "Golden syrup"
     ];
-
     recipe.notes = [
       "Eggs go into the chocolate mixture, not the flour.",
       "Do NOT use foil when baking.",
       "Use the middle oven shelf.",
-      "A slight wobble in the centre means the brownies are still fudgy.",
-      "Sauce goes on before the fridge stage.",
-      "The brownies should be warm, not hot, before fridging."
+      "Slight wobble in the centre = perfect.",
+      "Sauce goes on BEFORE fridge.",
+      "Brownies should be warm, not hot, before fridging."
     ];
-
     recipe.steps = [
       {
         title: "Prep",
         heat: "180°C oven",
         time: "5 min",
-        body: "Preheat the oven to 180°C (160 fan). Line a 20cm square tin with baking paper, covering the base and sides and leaving some overhang so you can lift the brownies out later. Put the tin onto the middle oven shelf."
+        body: "Preheat oven to 180°C (160 fan). Line the tray with baking paper, covering the bottom and sides and leaving overhang. Place the tray on the middle oven shelf."
       },
       {
         title: "Melt chocolate + butter",
         heat: "Microwave / low heat",
         time: "2-3 min",
-        body: "Put 200g chopped dark chocolate and 180g butter into a bowl. Microwave in 20 second bursts, stirring every time, or melt gently on low heat. Stop as soon as the mixture is smooth."
+        body: "Add the chocolate and butter to a bowl. Microwave in 20 second bursts, stirring each time. Stop when smooth."
       },
       {
         title: "Cool slightly",
         heat: "No heat",
         time: "2-3 min",
-        body: "Leave the melted chocolate and butter mixture for 2-3 minutes. Do NOT add the eggs while it is still hot."
+        body: "Leave the chocolate and butter mixture for 2-3 minutes. Do NOT add eggs while it is hot."
       },
       {
         title: "Add sugar",
         heat: "No heat",
         time: "1 min",
-        body: "Stir 250g caster sugar into the chocolate mixture until fully combined."
+        body: "Stir the sugar into the chocolate mixture until combined."
       },
       {
         title: "Add eggs",
         heat: "No heat",
         time: "2 min",
-        body: "Add the 3 eggs one at a time, mixing well after each one so the wet mixture stays smooth and glossy."
+        body: "Add the eggs one at a time, mixing well after each one."
       },
       {
         title: "Add dry ingredients",
         heat: "No heat",
         time: "1-2 min",
-        body: "Add 90g plain flour, 30g cocoa powder, and 1/2 tsp fine salt. Fold gently until just combined. The batter should feel thick."
+        body: "Add the flour, cocoa powder, and salt. Fold gently until combined. The batter should be thick."
       },
       {
         title: "Into tray",
         heat: "No heat",
         time: "1 min",
-        body: "Pour the brownie mixture into the lined tray and spread it level."
+        body: "Pour the mixture into the lined tray and spread it evenly."
       },
       {
         title: "Bake",
         heat: "180°C oven",
         time: "20-25 min",
-        body: "Bake for 20-25 minutes and start checking at about 20 minutes. The middle should still have a slight wobble. Do NOT overbake."
+        body: "Bake for 20-25 minutes and start checking around 20 minutes. The middle should still have a slight wobble. Do NOT overbake."
       },
       {
         title: "Cool slightly",
         heat: "No heat",
         time: "10-15 min",
-        body: "Take the tray out of the oven and leave the brownies for 10-15 minutes. They should be warm, not hot."
+        body: "Remove from the oven and leave for 10-15 minutes. The brownies should be warm, not hot."
       },
       {
         title: "Heat cream",
         heat: "Hob level 3",
         time: "2-3 min",
-        body: "Pour 150ml double cream into a saucepan and heat it until hot but not boiling."
+        body: "Add the cream to a saucepan and heat until hot but not boiling."
       },
       {
         title: "Add chocolate",
         heat: "Hob level 1 / off",
         time: "1 min",
-        body: "Turn the hob down to level 1 or switch it off. Add 120g chopped chocolate and stir until smooth."
+        body: "Turn the hob to level 1 or OFF. Add the chocolate and stir until smooth."
       },
       {
         title: "Add butter + syrup",
         heat: "Low",
         time: "1 min",
-        body: "Add 20g butter and 1 tbsp golden syrup. Stir until the sauce turns thick and glossy."
+        body: "Add the butter and golden syrup. Stir until thick and glossy."
       },
       {
         title: "Add sauce",
         heat: "No heat",
         time: "1 min",
-        body: "Pour the fudge sauce over the brownies and spread it evenly across the top."
+        body: "Pour the sauce over the brownies and spread it evenly."
       },
       {
         title: "Fridge",
         heat: "Fridge",
         time: "1-2 hr",
-        body: "Put the whole tray, brownies and sauce, into the fridge for 1-2 hours. Do NOT cover airtight while warm. Leave it uncovered or loosely covered."
+        body: "Place the entire tray, brownies and sauce, into the fridge. Leave for 1-2 hours. Do NOT cover airtight while warm. Leave uncovered or loosely covered."
       },
       {
         title: "Slice",
         heat: "No heat",
         time: "5 min",
-        body: "Once fully cold, take the brownies from the fridge and cut into squares. For cleaner cuts, run a knife under hot water, wipe it dry, then cut."
+        body: "Once fully cold, remove from the fridge and cut into squares. For clean cuts, run the knife under hot water, wipe it dry, then cut."
       },
       {
         title: "Storage",
         heat: "Fridge",
         time: "3-5 days",
-        body: "Once fully cooled, store the brownies in an airtight container in the fridge for 3-5 days."
+        body: "Once fully cooled, store in an airtight container in the fridge. They last 3-5 days."
       }
     ];
-
     recipe.plating = [
       "Cut into neat squares once fully cold.",
-      "Use a hot clean knife for sharper edges.",
-      "Let the glossy fudge topping stay visible instead of burying it with extras."
+      "Use a hot clean knife for sharp edges.",
+      "Let the glossy fudge topping stay visible instead of adding too much extra on top."
     ];
-
     recipe.seasoning = {
-      core: ["1/2 tsp fine salt in the brownie batter"],
+      core: ["Salt in the brownie batter"],
       optional: [],
-      how: "Add the salt with the dry ingredients so it spreads evenly through the batter."
+      how: "Keep the salt in the dry ingredients so it spreads evenly through the batter."
     };
   }
 
-  const collections = [];
-  if (Array.isArray(starterRecipes)) collections.push(starterRecipes);
-  if (typeof recipes !== "undefined" && Array.isArray(recipes)) collections.push(recipes);
+  const allCollections = [];
+  if (Array.isArray(starterRecipes)) allCollections.push(starterRecipes);
+  if (typeof recipes !== "undefined" && Array.isArray(recipes)) allCollections.push(recipes);
 
-  collections.forEach(col => col.forEach(patchBrownieRecipe));
-
-  // Improve ingredient rendering so section headers like BROWNIE BATTER / FUDGE SAUCE stand out
-  if (typeof openRecipe === "function" && !window.__chefBrownieSectionRenderFixDone) {
-    const oldOpenRecipe = openRecipe;
-    openRecipe = function(recipeId) {
-      oldOpenRecipe(recipeId);
-
-      const recipe = (typeof recipes !== "undefined" ? recipes.find(r => r.id === recipeId) : null);
-      if (!recipe || !recipe.title || !recipe.title.toLowerCase().includes("brownie")) return;
-
-      const ingredientNodes = Array.from(document.querySelectorAll(".ingredient-item"));
-      ingredientNodes.forEach(node => {
-        const text = (node.textContent || "").trim();
-        if (text === "BROWNIE BATTER" || text === "FUDGE SAUCE") {
-          node.classList.add("ingredient-section-header");
-        }
-      });
-    };
-    window.openRecipe = openRecipe;
-    window.__chefBrownieSectionRenderFixDone = true;
-  }
+  allCollections.forEach(col => col.forEach(applyUserBrownieRecipe));
 
   if (typeof renderRecipes === "function") renderRecipes();
 })();
