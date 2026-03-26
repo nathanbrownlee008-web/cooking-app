@@ -5091,3 +5091,66 @@ window.toggleFavourite = toggleFavourite;
 
 renderFilters();
 renderRecipes();
+
+
+// ===== SAFE GENERATOR FIX (DO NOT TOUCH ANYTHING ABOVE) =====
+(function(){
+  const btn = document.getElementById("makeRecipeBtn");
+  if(!btn) return;
+
+  btn.onclick = () => {
+    const ingredients = (window.getLines ? getLines("gIngredients") : []);
+    const style = document.getElementById("gStyle")?.value || "";
+
+    if (!ingredients || !ingredients.length) {
+      alert("Add ingredients first");
+      return;
+    }
+
+    const items = ingredients.map(i => i.toLowerCase());
+    let ideas = [];
+
+    if (items.some(i => i.includes("chicken"))) {
+      ideas = ["Creamy Garlic Chicken","Chicken Stir Fry","Chicken Wrap Filling"];
+    } else if (items.some(i => i.includes("beef") || i.includes("steak"))) {
+      ideas = ["Beef Stir Fry","Steak & Garlic Butter","Beef Tacos"];
+    } else if (items.some(i => i.includes("pork"))) {
+      ideas = ["Garlic Butter Pork Chops","Pan Fried Pork Chops","Pork Chop Traybake"];
+    } else if (items.some(i => i.includes("pasta"))) {
+      ideas = ["Creamy Pasta","Garlic Butter Pasta","Pasta Bake"];
+    } else if (items.some(i => ["sugar","chocolate","fruit","strawberry","banana","yogurt","milk"].some(x => i.includes(x)))) {
+      ideas = ["Fruit Dessert Bowl","Chocolate Dessert Pot","Layered Yogurt Dessert"];
+    } else {
+      ideas = ["Custom Kitchen Dish","Quick Pan Meal","Simple Mixed Bowl"];
+    }
+
+    const pick = prompt("Choose a dish:\n\n" + ideas.map((x,i)=>`${i+1}. ${x}`).join("\n"));
+    if (!pick) return;
+
+    const chosen = ideas[Number(pick)-1] || ideas[0];
+
+    const recipe = {
+      id: "gen-" + Date.now(),
+      title: chosen,
+      category: "Generated",
+      ingredients,
+      steps: [
+        {title:"Prep ingredients",heat:"No heat",time:"5 min",body:"Prepare and organise everything."},
+        {title:"Cook base",heat:"Medium-high",time:"5-8 min",body:"Cook main ingredient properly."},
+        {title:"Add flavours",heat:"Medium",time:"3-5 min",body:"Add remaining ingredients."},
+        {title:"Finish",heat:"Low",time:"2-3 min",body:"Taste and adjust."}
+      ]
+    };
+
+    const custom = JSON.parse(localStorage.getItem("chef_deluxe_custom_recipes") || "[]");
+    custom.unshift(recipe);
+    localStorage.setItem("chef_deluxe_custom_recipes", JSON.stringify(custom));
+
+    if(typeof loadRecipes === "function"){
+      window.recipes = loadRecipes();
+      if(typeof renderRecipes === "function") renderRecipes();
+    }
+
+    alert("Recipe created: " + chosen);
+  };
+})();
