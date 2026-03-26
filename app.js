@@ -224,3 +224,77 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+/* =========================
+   🔥 PASTE RECIPE SYSTEM
+========================= */
+
+// basic parser
+function parseRecipeFromText(text) {
+
+  const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
+
+  let title = lines[0] || "Custom Recipe";
+
+  let ingredients = [];
+  let steps = [];
+
+  lines.forEach(line => {
+
+    // detect steps (1. 2. etc)
+    if (/^\d+\./.test(line)) {
+      steps.push({
+        title: line.replace(/^\d+\.\s*/, ""),
+        desc: "",
+        heat: "",
+        time: ""
+      });
+    }
+
+    // detect ingredients (g, ml, tsp, tbsp etc)
+    else if (
+      line.match(/\d+/) ||
+      line.toLowerCase().includes("g") ||
+      line.toLowerCase().includes("ml") ||
+      line.toLowerCase().includes("tsp") ||
+      line.toLowerCase().includes("tbsp")
+    ) {
+      ingredients.push(line);
+    }
+
+  });
+
+  return {
+    title,
+    category: "Custom",
+    ingredients,
+    steps
+  };
+}
+
+
+// click handler (FIXED VERSION)
+document.addEventListener("click", function(e) {
+
+  if (e.target && e.target.id === "pasteRecipeBtn") {
+
+    const input = document.querySelector("#recipePasteInput");
+
+    if (!input || !input.value.trim()) {
+      alert("Paste a recipe first");
+      return;
+    }
+
+    const raw = input.value.trim();
+
+    const recipe = parseRecipeFromText(raw);
+
+    recipes.push(recipe);
+    saveRecipes();
+    renderRecipes();
+
+    input.value = "";
+
+    alert("Recipe added ✅");
+  }
+
+});
