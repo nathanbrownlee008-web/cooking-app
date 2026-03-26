@@ -5424,3 +5424,21 @@ starterRecipes.forEach(r => {
   }
 
 });
+// ===== FIX ICE CREAM HEAT LABELS =====
+
+starterRecipes.forEach(r => {
+
+  if (r.category === "Ice Cream" && r.steps.length >= 5) {
+
+    // STEP 3 = COOK (should NOT be no heat)
+    r.steps[2].heat = "Low";
+
+    // STEP 4 = COOL (no heat is correct)
+    r.steps[3].heat = "No heat";
+
+    // STEP 5 = FREEZE
+    r.steps[4].heat = "Freezer";
+
+  }
+
+});
