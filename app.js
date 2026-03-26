@@ -56,3 +56,81 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFilters();
   renderRecipes();
 });
+// ===== PASTE SYSTEM =====
+
+// detect heat
+function detectHeat(text) {
+  text = text.toLowerCase();
+
+  if (text.includes("oven")) return "180°C oven";
+  if (text.includes("fry") || text.includes("pan")) return "medium heat";
+  if (text.includes("boil")) return "high heat";
+  if (text.includes("fridge")) return "fridge";
+  if (text.includes("freeze")) return "freezer";
+
+  return "no heat";
+}
+
+// detect time
+function detectTime(text) {
+  const match = text.match(/\d+\s?(min|minutes|hr|hours)/i);
+  return match ? match[0] : "";
+}
+
+// parse recipe
+function parseRecipeFromText(text) {
+  const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
+
+  let title = lines[0];
+  let ingredients = [];
+  let steps = [];
+
+  lines.forEach(line => {
+
+    // ingredients (grams etc)
+    if (line.match(/\d+(g|ml|tsp|tbsp)/i)) {
+      ingredients.push(line);
+      return;
+    }
+
+    // steps
+    if (line.match(/^\d+\./)) {
+      const clean = line.replace(/^\d+\.\s*/, "");
+
+      steps.push({
+        title: clean,
+        body: clean,
+        heat: detectHeat(clean),
+        time: detectTime(clean)
+      });
+    }
+
+  });
+
+  return {
+    id: "r_" + Date.now(),
+    title: title,
+    category: "Custom",
+    ingredients,
+    steps
+  };
+}
+
+// button click
+document.getElementById("pasteRecipeBtn")?.addEventListener("click", () => {
+  const raw = document.getElementById("recipePasteInput").value.trim();
+
+  if (!raw) {
+    alert("Paste a recipe first");
+    return;
+  }
+
+  const recipe = parseRecipeFromText(raw);
+
+  recipes.push(recipe);
+  saveRecipes();
+
+  renderRecipes();
+
+  document.getElementById("recipePasteInput").value = "";
+});
