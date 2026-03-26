@@ -23,7 +23,7 @@
       <div class="hero-stats">
         <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
         <div class="stat-pill">Deluxe layout</div>
-        <div class="stat-pill">Add your own recipes</div>
+        <div class="stat-pill">Add recipes + pro tips</div>
       </div>
 
       <div class="toolbar">
@@ -31,7 +31,11 @@
           <span>🔎</span>
           <input id="searchInput" type="text" placeholder="Search recipe, ingredient, category..." />
         </label>
-        <div class="toolbar-actions"><button id="favouritesBtn" class="ghost-btn top-btn">⭐ Favourites</button><button id="generatorBtn" class="ghost-btn top-btn">✨ Recipe Generator</button><button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button></div>
+        <div class="toolbar-actions">
+          <button id="favouritesBtn" class="ghost-btn top-btn">⭐ Favourites</button>
+          <button id="generatorBtn" class="ghost-btn top-btn">✨ Recipe Generator</button>
+          <button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button>
+        </div>
       </div>
 
       <div id="categoryFilters" class="chip-row"></div>
@@ -76,7 +80,7 @@
           <label class="full"><span>Short description</span><textarea id="fDescription" placeholder="What makes this recipe good?"></textarea></label>
           <label class="full"><span>Tags (comma separated)</span><input id="fTags" placeholder="Quick, Garlic, Creamy" /></label>
           <label class="full"><span>Ingredients (one per line)</span><textarea id="fIngredients" placeholder="200g pasta&#10;2 garlic cloves&#10;1 tbsp butter"></textarea></label>
-          <label class="full"><span>Chef notes (one per line)</span><textarea id="fNotes" placeholder="Keep the heat low when the cream goes in&#10;Save some pasta water"></textarea></label>
+          <label class="full"><span>Pro tips (one per line)</span><textarea id="fNotes" placeholder="Lower the heat before garlic goes in&#10;Sauce should lightly coat the back of a spoon"></textarea></label>
           <label class="full"><span>Steps (one per line: Title | Heat | Time | Instruction)</span><textarea id="fSteps" placeholder="Prep ingredients | No heat | 5 min | Measure and prep everything first&#10;Cook sauce | Low | 6 min | Stir gently until glossy"></textarea></label>
         </div>
 
@@ -87,8 +91,6 @@
       </div>
     </div>
   </div>
-
-  <script src="app.js"></script>
 
   <div id="generatorModal" class="modal hidden" aria-hidden="true">
     <div class="modal-backdrop"></div>
@@ -126,6 +128,7 @@
       </div>
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
