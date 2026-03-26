@@ -5244,3 +5244,97 @@ starterRecipes.forEach(r => {
   });
 
 });
+// ===== FORCE ADD PORK CHOPS =====
+
+starterRecipes.push({
+  title: "Pan-Seared Pork Chops",
+  category: "Pork",
+  difficulty: "Intermediate",
+  time: "20 min",
+  serves: "2",
+  ingredients: [
+    "2 pork chops (250g each)",
+    "1 tsp salt",
+    "1/2 tsp black pepper",
+    "1 tbsp oil",
+    "20g butter",
+    "2 garlic cloves"
+  ],
+  steps: [
+    {
+      title: "Prep the chops",
+      heat: "No heat",
+      time: "5 min",
+      body: "Pat pork chops dry. Season both sides evenly with salt and pepper. Let sit 5 minutes."
+    },
+    {
+      title: "Heat the pan",
+      heat: "Medium-high",
+      time: "2 min",
+      body: "Heat pan and add oil. Wait until oil shimmers."
+    },
+    {
+      title: "Sear the chops",
+      heat: "Medium-high",
+      time: "4-5 min",
+      body: "Place chops in pan. Do NOT move for 4–5 minutes until golden crust forms."
+    },
+    {
+      title: "Flip and baste",
+      heat: "Medium",
+      time: "3-4 min",
+      body: "Flip chops. Add butter + garlic. Spoon butter over chops continuously."
+    },
+    {
+      title: "Rest and serve",
+      heat: "No heat",
+      time: "3 min",
+      body: "Remove from pan and rest before cutting to keep juices inside."
+    }
+  ]
+});
+// ===== CHEF MODE =====
+
+let currentStep = 0;
+let activeRecipe = null;
+
+function startCooking(recipe) {
+  activeRecipe = recipe;
+  currentStep = 0;
+  showStep();
+}
+
+function showStep() {
+  const step = activeRecipe.steps[currentStep];
+
+  const modal = document.createElement("div");
+  modal.className = "chef-mode";
+
+  modal.innerHTML = `
+    <div class="chef-card">
+      <h2>Step ${currentStep + 1}</h2>
+      <h3>${step.title}</h3>
+      <p>${step.body}</p>
+
+      <div class="chef-controls">
+        <button onclick="nextStep()">Next</button>
+        <button onclick="closeChefMode()">Exit</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+}
+
+function nextStep() {
+  document.querySelector(".chef-mode").remove();
+  currentStep++;
+
+  if (currentStep < activeRecipe.steps.length) {
+    showStep();
+  }
+}
+
+function closeChefMode() {
+  document.querySelector(".chef-mode").remove();
+}
