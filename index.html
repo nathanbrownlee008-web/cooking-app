@@ -1,21 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Ultimate</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef At Home Deluxe</title>
+  <meta name="description" content="Premium chef-at-home cookbook app with 50+ recipes and add-recipe system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-topline">Chef training at home</div>
+      <h1>👨‍🍳 Chef At Home</h1>
+      <p class="hero-copy">
+        Premium home cooking guides with real step-by-step detail, timings, heat guidance, textures to look for, and enough recipes to actually use every week.
+      </p>
 
-<header>
-<h1>👨‍🍳 Chef Ultimate</h1>
-<button onclick="addRecipe()">+ Add Recipe</button>
-</header>
+      <div class="hero-stats">
+        <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
+        <div class="stat-pill">Chef-style instructions</div>
+        <div class="stat-pill">Add your own recipes</div>
+      </div>
 
-<input id="search" placeholder="Search..." oninput="render()">
+      <div class="toolbar">
+        <label class="search-wrap">
+          <span>🔎</span>
+          <input id="searchInput" type="text" placeholder="Search recipe, ingredient, category..." />
+        </label>
+        <button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button>
+      </div>
 
-<div id="recipes"></div>
+      <div id="categoryFilters" class="chip-row"></div>
+    </header>
 
-<script src="app.js"></script>
+    <main>
+      <section class="section-header">
+        <div>
+          <p class="eyebrow">Cookbook</p>
+          <h2>Pick your next dish</h2>
+        </div>
+        <button id="surpriseBtn" class="ghost-btn">🎲 Surprise me</button>
+      </section>
+
+      <section id="recipeGrid" class="recipe-grid"></section>
+    </main>
+  </div>
+
+  <div id="recipeModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button id="closeModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div id="addModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel modal-small">
+      <button id="closeAddModalBtn" class="close-btn" aria-label="Close">✕</button>
+      <div class="form-wrap">
+        <div class="hero-topline">Create recipe</div>
+        <h2 class="form-title">Add your own recipe</h2>
+        <p class="form-copy">This saves on your device so your recipe stays there after refresh.</p>
+
+        <div class="form-grid">
+          <label><span>Recipe name</span><input id="fTitle" placeholder="Example: Garlic Prawns" /></label>
+          <label><span>Category</span><input id="fCategory" placeholder="Example: Seafood" /></label>
+          <label><span>Difficulty</span><input id="fDifficulty" placeholder="Example: Beginner" /></label>
+          <label><span>Total time</span><input id="fTime" placeholder="Example: 20 min" /></label>
+          <label><span>Serves</span><input id="fServes" placeholder="Example: 2 people" /></label>
+          <label class="full"><span>Short description</span><textarea id="fDescription" placeholder="What makes this recipe good?"></textarea></label>
+          <label class="full"><span>Tags (comma separated)</span><input id="fTags" placeholder="Quick, Garlic, Creamy" /></label>
+          <label class="full"><span>Ingredients (one per line)</span><textarea id="fIngredients" placeholder="200g pasta&#10;2 garlic cloves&#10;1 tbsp butter"></textarea></label>
+          <label class="full"><span>Chef notes (one per line)</span><textarea id="fNotes" placeholder="Keep the heat low when the cream goes in&#10;Save some pasta water"></textarea></label>
+          <label class="full"><span>Steps (one per line in this format: Title | Heat | Time | Instruction)</span><textarea id="fSteps" placeholder="Prep ingredients | No heat | 5 min | Measure and prep everything first&#10;Cook sauce | Low | 6 min | Stir gently until glossy"></textarea></label>
+        </div>
+
+        <div class="footer-actions">
+          <button id="saveRecipeBtn" class="primary-btn">Save recipe</button>
+          <button id="cancelAddBtn" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
