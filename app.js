@@ -4259,10 +4259,10 @@ saveRecipeBtn.addEventListener("click", saveNewRecipe);
 cancelAddBtn.addEventListener("click", closeAddModal);
 
 generatorBtn.addEventListener("click", openGeneratorModal);
-if (closeGeneratorModalBtn) closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
-if (generatorModal) generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
-if (makeRecipeBtn) makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
-if (cancelGeneratorBtn) cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
+closeGeneratorModalBtn.addEventListener("click", closeGeneratorModal);
+generatorModal.querySelector(".modal-backdrop").addEventListener("click", closeGeneratorModal);
+makeRecipeBtn.addEventListener("click", buildGeneratedRecipe);
+cancelGeneratorBtn.addEventListener("click", closeGeneratorModal);
 
 favouritesBtn.addEventListener("click", () => {
   state.favouritesOnly = !state.favouritesOnly;
