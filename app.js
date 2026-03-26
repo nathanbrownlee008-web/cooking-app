@@ -5442,3 +5442,71 @@ starterRecipes.forEach(r => {
   }
 
 });
+
+
+// ===== AUTO PATCH: REMOVE GENERATOR BUTTON =====
+document.addEventListener("DOMContentLoaded", () => {
+  const genBtn = document.getElementById("generatorBtn");
+  if(genBtn) genBtn.style.display = "none";
+});
+
+// ===== NEW RECIPES =====
+
+// CHOPS
+starterRecipes.push({
+  title:"Juicy Pork Chops",
+  category:"Pork",
+  difficulty:"Easy",
+  time:"20 min",
+  serves:"2",
+  ingredients:["2 pork chops (250g each)","1 tsp salt","1/2 tsp pepper","1 tbsp oil","20g butter"],
+  steps:[
+    {title:"Season",heat:"No heat",time:"5 min",body:"Season chops and rest 5–10 min."},
+    {title:"Sear",heat:"Medium-high",time:"5 min",body:"Cook until golden crust."},
+    {title:"Finish",heat:"Medium",time:"4 min",body:"Add butter and baste."}
+  ]
+});
+
+// KIDS
+starterRecipes.push({
+  title:"Chicken Nuggets",
+  category:"Kids",
+  difficulty:"Easy",
+  time:"15 min",
+  serves:"2",
+  ingredients:["300g chicken","1 egg","breadcrumbs"],
+  steps:[
+    {title:"Prep",heat:"No heat",time:"5 min",body:"Cut chicken small."},
+    {title:"Coat",heat:"No heat",time:"3 min",body:"Egg then crumbs."},
+    {title:"Cook",heat:"Medium",time:"7 min",body:"Cook until golden."}
+  ]
+});
+
+// DRINK
+starterRecipes.push({
+  title:"Strawberry Lemonade",
+  category:"Drinks",
+  difficulty:"Easy",
+  time:"5 min",
+  serves:"2",
+  ingredients:["strawberries","lemon","water","sugar"],
+  steps:[
+    {title:"Blend",heat:"No heat",time:"2 min",body:"Blend all."},
+    {title:"Serve",heat:"Cold",time:"1 min",body:"Pour over ice."}
+  ]
+});
+
+// BATTERED FOOD
+starterRecipes.push({
+  title:"Crispy Battered Chicken",
+  category:"Fried",
+  difficulty:"Intermediate",
+  time:"25 min",
+  serves:"2",
+  ingredients:["300g chicken","100g flour","1 egg","oil"],
+  steps:[
+    {title:"Make batter",heat:"No heat",time:"5 min",body:"Mix flour, egg, water."},
+    {title:"Coat",heat:"No heat",time:"3 min",body:"Dip chicken."},
+    {title:"Fry",heat:"Medium-high",time:"10 min",body:"Fry until crispy."}
+  ]
+});
