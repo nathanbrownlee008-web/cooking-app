@@ -22,23 +22,17 @@
 
       <div class="hero-stats">
         <div class="stat-pill"><span id="recipeCount">0</span> Recipes</div>
-        <div class="stat-pill">Deluxe layout</div>
-        <div class="stat-pill">Add your own recipes</div>
+        <div class="stat-pill">Paste-first system</div>
+        <div class="stat-pill">Auto-sort recipe notes</div>
       </div>
 
       <div class="toolbar">
-  <label class="search-wrap">
-    <span>🔍</span>
-    <input id="searchInput" type="text">
-  </label>
-  <button id="addRecipeBtn" class="primary-btn">
-</div>
-
-<!-- 🔥 ADD THIS RIGHT HERE -->
-<div class="recipe-paste-box">
-  <textarea id="recipePasteInput" placeholder="Paste your full recipe here..."></textarea>
-  <button id="pasteRecipeBtn" class="primary-btn">Add Recipe</button>
-</div>
+        <label class="search-wrap">
+          <span>🔎</span>
+          <input id="searchInput" type="text" placeholder="Search recipe, ingredient, category..." />
+        </label>
+        <button id="addRecipeBtn" class="primary-btn top-btn">+ Add Recipe</button>
+      </div>
 
       <div id="categoryFilters" class="chip-row"></div>
     </header>
@@ -68,26 +62,40 @@
     <div class="modal-backdrop"></div>
     <div class="modal-panel modal-small">
       <button id="closeAddModalBtn" class="close-btn" aria-label="Close">✕</button>
-      <div class="form-wrap">
-        <div class="hero-topline">Create recipe</div>
-        <h2 class="form-title">Add your own recipe</h2>
-        <p class="form-copy">This saves on your device so it stays after refresh.</p>
+      <div class="form-wrap paste-form-wrap">
+        <div class="hero-topline">Paste recipe</div>
+        <h2 class="form-title">Paste your full recipe block</h2>
+        <p class="form-copy">Paste straight from your notes. The app auto-sorts title, ingredients, steps, heat, and time.</p>
 
-        <div class="form-grid">
-          <label><span>Recipe name</span><input id="fTitle" placeholder="Example: Garlic Prawns" /></label>
-          <label><span>Category</span><input id="fCategory" placeholder="Example: Seafood" /></label>
-          <label><span>Difficulty</span><input id="fDifficulty" placeholder="Example: Beginner" /></label>
-          <label><span>Total time</span><input id="fTime" placeholder="Example: 20 min" /></label>
-          <label><span>Serves</span><input id="fServes" placeholder="Example: 2 people" /></label>
-          <label class="full"><span>Short description</span><textarea id="fDescription" placeholder="What makes this recipe good?"></textarea></label>
-          <label class="full"><span>Tags (comma separated)</span><input id="fTags" placeholder="Quick, Garlic, Creamy" /></label>
-          <label class="full"><span>Ingredients (one per line)</span><textarea id="fIngredients" placeholder="200g pasta&#10;2 garlic cloves&#10;1 tbsp butter"></textarea></label>
-          <label class="full"><span>Chef notes (one per line)</span><textarea id="fNotes" placeholder="Keep the heat low when the cream goes in&#10;Save some pasta water"></textarea></label>
-          <label class="full"><span>Steps (one per line: Title | Heat | Time | Instruction)</span><textarea id="fSteps" placeholder="Prep ingredients | No heat | 5 min | Measure and prep everything first&#10;Cook sauce | Low | 6 min | Stir gently until glossy"></textarea></label>
+        <div class="paste-help">
+          <strong>Best format example:</strong>
+          <pre>Chicken Pasta
+Category: Meats
+Time: 25 min
+Heat: Medium
+
+Ingredients:
+2 chicken breasts
+200g pasta
+1 tbsp oil
+2 garlic cloves
+100ml cream
+
+Steps:
+Prep chicken | No heat | 5 min | Slice and season the chicken.
+Cook pasta | Medium | 10 min | Boil until tender.
+Cook chicken | Medium-high | 8 min | Brown until cooked through.
+Make sauce | Low | 5 min | Stir in garlic and cream.
+Combine | Low | 2 min | Toss everything together and serve.</pre>
         </div>
 
+        <label class="paste-field" for="pasteArea">
+          <span>Full recipe block</span>
+          <textarea id="pasteArea" placeholder="Paste full recipe here..."></textarea>
+        </label>
+
         <div class="footer-actions">
-          <button id="saveRecipeBtn" class="primary-btn">Save recipe</button>
+          <button id="saveRecipeBtn" class="primary-btn">Add Recipe</button>
           <button id="cancelAddBtn" class="secondary-btn">Cancel</button>
         </div>
       </div>

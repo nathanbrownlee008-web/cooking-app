@@ -1,300 +1,449 @@
-/* =========================
-   CLEAN APP BASE (NO RECIPES)
-========================= */
+const STORAGE_KEY = "chef-at-home-paste-recipes-v1";
+const DEFAULT_CATEGORIES = ["All", "Meats", "Salads", "Desserts", "Drinks", "Kids Menu"];
 
-// empty starter recipes
-const starterRecipes = [];
+let recipes = [];
+let activeCategory = "All";
+let activeSearch = "";
 
-// load from storage
-let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+const els = {
+  recipeCount: document.getElementById("recipeCount"),
+  categoryFilters: document.getElementById("categoryFilters"),
+  searchInput: document.getElementById("searchInput"),
+  surpriseBtn: document.getElementById("surpriseBtn"),
+  recipeGrid: document.getElementById("recipeGrid"),
+  recipeModal: document.getElementById("recipeModal"),
+  modalContent: document.getElementById("modalContent"),
+  closeModalBtn: document.getElementById("closeModalBtn"),
+  addRecipeBtn: document.getElementById("addRecipeBtn"),
+  addModal: document.getElementById("addModal"),
+  closeAddModalBtn: document.getElementById("closeAddModalBtn"),
+  cancelAddBtn: document.getElementById("cancelAddBtn"),
+  saveRecipeBtn: document.getElementById("saveRecipeBtn"),
+  pasteArea: document.getElementById("pasteArea")
+};
 
-// save
-function saveRecipes() {
-  localStorage.setItem("recipes", JSON.stringify(recipes));
+function slugify(text) {
+  return String(text || "recipe")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "") || `recipe-${Date.now()}`;
 }
 
-// render recipes
-function renderRecipes() {
-  const container = document.getElementById("recipesContainer");
-  if (!container) return;
+function escapeHtml(text) {
+  return String(text ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
-  if (recipes.length === 0) {
-    container.innerHTML = `
-      <div style="opacity:0.6; text-align:center; padding:40px;">
-        No recipes yet.<br>
-        Paste one to get started.
-      </div>
-    `;
+function openModal(modal) {
+  modal.classList.remove("hidden");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeModal(modal) {
+  modal.classList.add("hidden");
+  modal.setAttribute("aria-hidden", "true");
+  if (document.querySelectorAll(".modal:not(.hidden)").length === 0) {
+    document.body.classList.remove("modal-open");
+  }
+}
+
+function saveRecipes() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(recipes));
+}
+
+function loadRecipes() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+    recipes = Array.isArray(saved) ? saved : [];
+  } catch {
+    recipes = [];
+  }
+}
+
+function getVisibleRecipes() {
+  return recipes.filter((recipe) => {
+    const categoryMatch = activeCategory === "All" || recipe.category === activeCategory;
+    const searchText = [
+      recipe.title,
+      recipe.category,
+      recipe.time,
+      recipe.heat,
+      ...(recipe.ingredients || []),
+      ...(recipe.steps || []).map((step) => `${step.title} ${step.body} ${step.heat} ${step.time}`)
+    ].join(" ").toLowerCase();
+    const searchMatch = !activeSearch || searchText.includes(activeSearch);
+    return categoryMatch && searchMatch;
+  });
+}
+
+function renderCategories() {
+  els.categoryFilters.innerHTML = DEFAULT_CATEGORIES.map((cat) => `
+    <button class="chip ${cat === activeCategory ? "active" : ""}" data-category="${escapeHtml(cat)}">${escapeHtml(cat)}</button>
+  `).join("");
+
+  els.categoryFilters.querySelectorAll(".chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCategory = btn.dataset.category;
+      renderCategories();
+      renderRecipes();
+    });
+  });
+}
+
+function renderRecipes() {
+  const visible = getVisibleRecipes();
+  els.recipeCount.textContent = String(visible.length);
+
+  if (!visible.length) {
+    els.recipeGrid.innerHTML = `<div class="empty-state">No recipes yet. Tap <strong>+ Add Recipe</strong> and paste your first recipe block 👨‍🍳</div>`;
     return;
   }
 
-  container.innerHTML = recipes.map(r => `
-    <div class="card">
-      <h3>${r.title}</h3>
-      <p>${r.category || "Custom"}</p>
+  els.recipeGrid.innerHTML = visible.map((recipe) => {
+    const preview = recipe.steps?.[0]?.body || recipe.ingredients?.slice(0, 3).join(", ") || "Chef-style recipe ready to open.";
+    return `
+      <article class="recipe-card">
+        <div class="recipe-top">
+          <span class="category-badge">${escapeHtml(recipe.category)}</span>
+          <span class="time-badge">${escapeHtml(recipe.time || "No time")}</span>
+        </div>
+        <h3>${escapeHtml(recipe.title)}</h3>
+        <p class="recipe-desc">${escapeHtml(preview)}</p>
+        <div class="recipe-meta-row">
+          <span class="level-badge">🔥 ${escapeHtml(recipe.heat || "No heat")}</span>
+          <span class="serving-badge">🥘 ${(recipe.ingredients || []).length} ingredients</span>
+        </div>
+        <button class="primary-btn" data-open-id="${escapeHtml(recipe.id)}">View Recipe</button>
+      </article>
+    `;
+  }).join("");
+
+  els.recipeGrid.querySelectorAll("[data-open-id]").forEach((btn) => {
+    btn.addEventListener("click", () => openRecipe(btn.dataset.openId));
+  });
+}
+
+function buildBulletList(items) {
+  if (!items?.length) {
+    return `<div class="note-item"><span class="bullet"></span><div>None added.</div></div>`;
+  }
+
+  return items.map((item) => `
+    <div class="ingredient-item">
+      <span class="bullet"></span>
+      <div>${escapeHtml(item)}</div>
     </div>
   `).join("");
 }
 
-// render categories (your menus)
-function renderFilters() {
-  const wrap = document.getElementById("categoryFilters");
-  if (!wrap) return;
+function buildSteps(steps) {
+  if (!steps?.length) {
+    return `<div class="step-card"><div class="step-body">No steps found in this recipe.</div></div>`;
+  }
 
-  const categories = ["All", "Meats", "Salads", "Desserts", "Drinks", "Kids Menu"];
-
-  wrap.innerHTML = categories.map((cat, i) => `
-    <button class="chip ${i === 0 ? "active" : ""}">
-      ${cat}
-    </button>
+  return steps.map((step, index) => `
+    <div class="step-card">
+      <div class="step-head">
+        <div class="step-number">${index + 1}</div>
+        <div class="step-title">${escapeHtml(step.title || `Step ${index + 1}`)}</div>
+        <div class="step-badges">
+          <span class="badge">${escapeHtml(step.heat || "No heat")}</span>
+          <span class="badge">${escapeHtml(step.time || "No time")}</span>
+        </div>
+      </div>
+      <div class="step-body">${escapeHtml(step.body || "")}</div>
+    </div>
   `).join("");
 }
 
-// init
-document.addEventListener("DOMContentLoaded", () => {
-  recipes = JSON.parse(localStorage.getItem("recipes")) || [];
-  renderFilters();
-  renderRecipes();
-});
-// ===== PASTE SYSTEM =====
+function openRecipe(id) {
+  const recipe = recipes.find((item) => item.id === id);
+  if (!recipe) return;
 
-// detect heat
-function detectHeat(text) {
-  text = text.toLowerCase();
+  els.modalContent.innerHTML = `
+    <div class="recipe-hero">
+      <div class="hero-topline">${escapeHtml(recipe.category)}</div>
+      <h2>${escapeHtml(recipe.title)}</h2>
+      <p>${escapeHtml(recipe.description || "Clean paste-imported recipe.")}</p>
+      <div class="quick-info-grid">
+        <div class="info-card">
+          <span class="info-label">Category</span>
+          <span class="info-value">${escapeHtml(recipe.category)}</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Total Time</span>
+          <span class="info-value">${escapeHtml(recipe.time || "Not set")}</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Main Heat</span>
+          <span class="info-value">${escapeHtml(recipe.heat || "Not set")}</span>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Steps</span>
+          <span class="info-value">${recipe.steps?.length || 0}</span>
+        </div>
+      </div>
+    </div>
 
-  if (text.includes("oven")) return "180°C oven";
-  if (text.includes("fry") || text.includes("pan")) return "medium heat";
-  if (text.includes("boil")) return "high heat";
-  if (text.includes("fridge")) return "fridge";
-  if (text.includes("freeze")) return "freezer";
+    <div class="recipe-layout">
+      <section class="panel">
+        <h3>Ingredients</h3>
+        ${buildBulletList(recipe.ingredients)}
+      </section>
 
-  return "no heat";
-}
+      <section class="panel">
+        <h3>Steps</h3>
+        <div class="steps-list">${buildSteps(recipe.steps)}</div>
+      </section>
+    </div>
 
-// detect time
-function detectTime(text) {
-  const match = text.match(/\d+\s?(min|minutes|hr|hours)/i);
-  return match ? match[0] : "";
-}
+    <div class="recipe-actions">
+      <button class="danger-btn" data-delete-id="${escapeHtml(recipe.id)}">Delete Recipe</button>
+    </div>
+  `;
 
-// parse recipe
-function parseRecipeFromText(text) {
-  const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
-
-  let title = lines[0];
-  let ingredients = [];
-  let steps = [];
-
-  lines.forEach(line => {
-
-    // ingredients (grams etc)
-    if (line.match(/\d+(g|ml|tsp|tbsp)/i)) {
-      ingredients.push(line);
-      return;
-    }
-
-    // steps
-    if (line.match(/^\d+\./)) {
-      const clean = line.replace(/^\d+\.\s*/, "");
-
-      steps.push({
-        title: clean,
-        body: clean,
-        heat: detectHeat(clean),
-        time: detectTime(clean)
-      });
-    }
-
+  const deleteBtn = els.modalContent.querySelector("[data-delete-id]");
+  deleteBtn?.addEventListener("click", () => {
+    deleteRecipe(recipe.id);
   });
 
-  return {
-    id: "r_" + Date.now(),
-    title: title,
-    category: "Custom",
-    ingredients,
-    steps
-  };
+  openModal(els.recipeModal);
 }
 
-// button click
-document.getElementById("pasteRecipeBtn")?.addEventListener("click", () => {
-  const raw = document.getElementById("recipePasteInput").value.trim();
-
-  if (!raw) {
-    alert("Paste a recipe first");
-    return;
-  }
-
-  const recipe = parseRecipeFromText(raw);
-
-  recipes.push(recipe);
+function deleteRecipe(id) {
+  recipes = recipes.filter((recipe) => recipe.id !== id);
   saveRecipes();
-
   renderRecipes();
+  closeModal(els.recipeModal);
+}
 
-  document.getElementById("recipePasteInput").value = "";
-});
-/* =========================
-   PASTE RECIPE SYSTEM
-========================= */
+function normalizeCategory(value) {
+  const raw = String(value || "").trim().toLowerCase();
+  if (!raw) return "Meats";
 
-document.addEventListener("DOMContentLoaded", () => {
+  if (raw.includes("salad")) return "Salads";
+  if (raw.includes("dessert") || raw.includes("sweet") || raw.includes("cake") || raw.includes("brownie")) return "Desserts";
+  if (raw.includes("drink") || raw.includes("cocktail") || raw.includes("juice") || raw.includes("smoothie") || raw.includes("coffee")) return "Drinks";
+  if (raw.includes("kid")) return "Kids Menu";
+  return "Meats";
+}
 
-  // ===== DETECT HEAT =====
-  function detectHeat(text) {
-    text = text.toLowerCase();
+function stripListPrefix(line) {
+  return line
+    .replace(/^[-*•]+\s*/, "")
+    .replace(/^\d+[.)-]\s*/, "")
+    .trim();
+}
 
-    if (text.includes("oven")) return "180°C oven";
-    if (text.includes("fry") || text.includes("pan")) return "medium heat";
-    if (text.includes("boil")) return "high heat";
-    if (text.includes("fridge")) return "fridge";
-    if (text.includes("freeze")) return "freezer";
+function isLikelyIngredient(line) {
+  return /\b(g|kg|ml|l|tbsp|tsp|cup|cups|oz|lb|clove|cloves|breast|breasts|fillet|fillets|egg|eggs|onion|onions|butter|oil|flour|sugar|salt|pepper|cream|milk|water|pasta|rice|chicken|beef|lettuce|tomato|tomatoes|cheese|chocolate)\b/i.test(line) || /^\d/.test(line);
+}
 
-    return "no heat";
-  }
-
-  // ===== DETECT TIME =====
-  function detectTime(text) {
-    const match = text.match(/\d+\s?(min|minutes|hr|hours)/i);
-    return match ? match[0] : "";
-  }
-
-  // ===== PARSER =====
-  function parseRecipeFromText(text) {
-    const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
-
-    let title = lines[0];
-    let ingredients = [];
-    let steps = [];
-
-    lines.forEach(line => {
-
-      // ingredients
-      if (line.match(/\d+(g|ml|tsp|tbsp)/i)) {
-        ingredients.push(line);
-        return;
-      }
-
-      // steps
-      if (line.match(/^\d+\./)) {
-        const clean = line.replace(/^\d+\.\s*/, "");
-
-        steps.push({
-          title: clean,
-          body: clean,
-          heat: detectHeat(clean),
-          time: detectTime(clean)
-        });
-      }
-
-    });
-
+function parseStepLine(line, index) {
+  const cleaned = stripListPrefix(line);
+  const pipeParts = cleaned.split("|").map((part) => part.trim()).filter(Boolean);
+  if (pipeParts.length >= 4) {
     return {
-      id: "r_" + Date.now(),
-      title,
-      category: "Custom",
-      ingredients,
-      steps
+      title: pipeParts[0],
+      heat: pipeParts[1],
+      time: pipeParts[2],
+      body: pipeParts.slice(3).join(" | ")
     };
   }
 
-  // ===== BUTTON =====
-  const pasteBtn = document.getElementById("pasteRecipeBtn");
-
-  if (!pasteBtn) return;
-
-  pasteBtn.addEventListener("click", () => {
-
-    const input = document.getElementById("recipePasteInput");
-    const raw = input.value.trim();
-
-    if (!raw) {
-      alert("Paste a recipe first");
-      return;
-    }
-
-    const recipe = parseRecipeFromText(raw);
-
-    recipes.push(recipe);
-    saveRecipes();
-    renderRecipes();
-
-    input.value = "";
-
-  });
-
-});
-/* =========================
-   🔥 PASTE RECIPE SYSTEM
-========================= */
-
-// basic parser
-function parseRecipeFromText(text) {
-
-  const lines = text.split("\n").map(l => l.trim()).filter(Boolean);
-
-  let title = lines[0] || "Custom Recipe";
-
-  let ingredients = [];
-  let steps = [];
-
-  lines.forEach(line => {
-
-    // detect steps (1. 2. etc)
-    if (/^\d+\./.test(line)) {
-      steps.push({
-        title: line.replace(/^\d+\.\s*/, ""),
-        desc: "",
-        heat: "",
-        time: ""
-      });
-    }
-
-    // detect ingredients (g, ml, tsp, tbsp etc)
-    else if (
-      line.match(/\d+/) ||
-      line.toLowerCase().includes("g") ||
-      line.toLowerCase().includes("ml") ||
-      line.toLowerCase().includes("tsp") ||
-      line.toLowerCase().includes("tbsp")
-    ) {
-      ingredients.push(line);
-    }
-
-  });
+  const sentenceParts = cleaned.split(/\s+-\s+/).map((part) => part.trim()).filter(Boolean);
+  if (sentenceParts.length >= 3) {
+    return {
+      title: sentenceParts[0],
+      heat: sentenceParts[1],
+      time: sentenceParts[2],
+      body: sentenceParts.slice(3).join(" - ") || sentenceParts[0]
+    };
+  }
 
   return {
-    title,
-    category: "Custom",
-    ingredients,
-    steps
+    title: `Step ${index + 1}`,
+    heat: "See note",
+    time: "See note",
+    body: cleaned
   };
 }
 
+function parseRecipeBlock(rawText) {
+  const text = String(rawText || "").replace(/\r/g, "").trim();
+  if (!text) throw new Error("Paste a recipe first.");
 
-// click handler (FIXED VERSION)
-document.addEventListener("click", function(e) {
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
+  if (!lines.length) throw new Error("Paste a recipe first.");
 
-  if (e.target && e.target.id === "pasteRecipeBtn") {
+  const recipe = {
+    id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    title: lines[0],
+    category: "Meats",
+    time: "",
+    heat: "",
+    description: "Imported from your pasted recipe notes.",
+    ingredients: [],
+    steps: []
+  };
 
-    const input = document.querySelector("#recipePasteInput");
+  let section = "";
+  const freeLines = [];
 
-    if (!input || !input.value.trim()) {
-      alert("Paste a recipe first");
-      return;
+  for (let i = 1; i < lines.length; i += 1) {
+    const line = lines[i];
+    const lower = line.toLowerCase();
+
+    if (/^ingredients?\s*:/i.test(line) || lower === "ingredients") {
+      section = "ingredients";
+      const after = line.split(":").slice(1).join(":").trim();
+      if (after) recipe.ingredients.push(stripListPrefix(after));
+      continue;
     }
 
-    const raw = input.value.trim();
+    if (/^(steps?|method|instructions?)\s*:/i.test(line) || lower === "steps" || lower === "method" || lower === "instructions") {
+      section = "steps";
+      const after = line.split(":").slice(1).join(":").trim();
+      if (after) recipe.steps.push(parseStepLine(after, recipe.steps.length));
+      continue;
+    }
 
-    const recipe = parseRecipeFromText(raw);
+    if (/^category\s*:/i.test(line)) {
+      recipe.category = normalizeCategory(line.split(":").slice(1).join(":").trim());
+      continue;
+    }
 
-    recipes.push(recipe);
-    saveRecipes();
-    renderRecipes();
+    if (/^time\s*:/i.test(line) || /^cook\s*time\s*:/i.test(line) || /^total\s*time\s*:/i.test(line)) {
+      recipe.time = line.split(":").slice(1).join(":").trim();
+      continue;
+    }
 
-    input.value = "";
+    if (/^heat\s*:/i.test(line)) {
+      recipe.heat = line.split(":").slice(1).join(":").trim();
+      continue;
+    }
 
-    alert("Recipe added ✅");
+    if (/^description\s*:/i.test(line)) {
+      recipe.description = line.split(":").slice(1).join(":").trim() || recipe.description;
+      continue;
+    }
+
+    if (section === "ingredients") {
+      recipe.ingredients.push(stripListPrefix(line));
+      continue;
+    }
+
+    if (section === "steps") {
+      recipe.steps.push(parseStepLine(line, recipe.steps.length));
+      continue;
+    }
+
+    freeLines.push(line);
   }
 
-});
+  if (!recipe.ingredients.length || !recipe.steps.length) {
+    const possibleIngredients = [];
+    const possibleSteps = [];
+
+    freeLines.forEach((line) => {
+      if (isLikelyIngredient(line) && possibleSteps.length === 0) {
+        possibleIngredients.push(stripListPrefix(line));
+      } else {
+        possibleSteps.push(parseStepLine(line, possibleSteps.length));
+      }
+    });
+
+    if (!recipe.ingredients.length) recipe.ingredients = possibleIngredients;
+    if (!recipe.steps.length) recipe.steps = possibleSteps;
+  }
+
+  if (!recipe.time && recipe.steps.length) {
+    const stepTimes = recipe.steps.map((step) => step.time).filter(Boolean);
+    recipe.time = stepTimes[0] || "Not set";
+  }
+
+  if (!recipe.heat && recipe.steps.length) {
+    const stepHeats = recipe.steps.map((step) => step.heat).filter(Boolean);
+    recipe.heat = stepHeats[0] || "Not set";
+  }
+
+  recipe.category = normalizeCategory(recipe.category);
+  recipe.title = recipe.title || "Untitled Recipe";
+  recipe.ingredients = recipe.ingredients.filter(Boolean);
+  recipe.steps = recipe.steps.filter((step) => step.body || step.title);
+
+  if (!recipe.ingredients.length && !recipe.steps.length) {
+    throw new Error("Could not detect ingredients or steps from that paste.");
+  }
+
+  recipe.id = slugify(`${recipe.title}-${recipe.id}`);
+  return recipe;
+}
+
+function handleSaveRecipe() {
+  try {
+    const parsed = parseRecipeBlock(els.pasteArea.value);
+    recipes.unshift(parsed);
+    saveRecipes();
+    renderRecipes();
+    closeModal(els.addModal);
+    els.pasteArea.value = "";
+  } catch (error) {
+    alert(error.message || "Could not parse recipe.");
+  }
+}
+
+function handleSurprise() {
+  const visible = getVisibleRecipes();
+  if (!visible.length) {
+    alert("No recipes to choose from yet.");
+    return;
+  }
+
+  const randomRecipe = visible[Math.floor(Math.random() * visible.length)];
+  openRecipe(randomRecipe.id);
+}
+
+function wireEvents() {
+  els.searchInput.addEventListener("input", (event) => {
+    activeSearch = event.target.value.trim().toLowerCase();
+    renderRecipes();
+  });
+
+  els.surpriseBtn.addEventListener("click", handleSurprise);
+  els.addRecipeBtn.addEventListener("click", () => openModal(els.addModal));
+  els.closeModalBtn.addEventListener("click", () => closeModal(els.recipeModal));
+  els.closeAddModalBtn.addEventListener("click", () => closeModal(els.addModal));
+  els.cancelAddBtn.addEventListener("click", () => closeModal(els.addModal));
+  els.saveRecipeBtn.addEventListener("click", handleSaveRecipe);
+
+  document.querySelectorAll(".modal").forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target.classList.contains("modal-backdrop")) {
+        closeModal(modal);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeModal(els.recipeModal);
+      closeModal(els.addModal);
+    }
+  });
+}
+
+function init() {
+  loadRecipes();
+  renderCategories();
+  renderRecipes();
+  wireEvents();
+}
+
+init();
