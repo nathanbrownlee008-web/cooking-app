@@ -1,5 +1,10 @@
-const STORAGE_KEY = "chef-at-home-paste-recipes-v2";
-const LEGACY_KEYS = ["myRecipes", "chef-at-home-paste-recipes-v1"];
+
+const STORAGE_KEY = "chef-at-home-paste-recipes-v3";
+const LEGACY_KEYS = [
+  "myRecipes",
+  "chef-at-home-paste-recipes-v1",
+  "chef-at-home-paste-recipes-v2"
+];
 const CATEGORIES = ["All", "Meats", "Salads", "Desserts", "Drinks", "Kids Menu"];
 
 let recipes = [];
@@ -77,9 +82,9 @@ function normalizeCategory(value, title = "", raw = "") {
   const joined = `${value} ${title} ${raw}`.toLowerCase();
 
   if (/(salad|slaw|caesar|coleslaw)/.test(joined)) return "Salads";
-  if (/(dessert|sweet|cake|brownie|cookie|cookies|ice cream|cheesecake|pudding|trifle|muffin|cupcake)/.test(joined)) return "Desserts";
-  if (/(drink|juice|smoothie|shake|coffee|tea|cocktail|mocktail|lemonade|milkshake)/.test(joined)) return "Drinks";
-  if (/(kids|kid|children|child|toddler|nuggets|fish fingers|mini pizza)/.test(joined)) return "Kids Menu";
+  if (/(dessert|sweet|cake|brownie|cookie|cookies|ice cream|cheesecake|pudding|trifle|muffin|cupcake|fudge|blondie)/.test(joined)) return "Desserts";
+  if (/(drink|juice|smoothie|shake|coffee|tea|cocktail|mocktail|lemonade|milkshake|mojito)/.test(joined)) return "Drinks";
+  if (/(kids|kid|children|child|toddler|nuggets|fish fingers|mini pizza|mini burgers)/.test(joined)) return "Kids Menu";
   return "Meats";
 }
 
@@ -94,62 +99,125 @@ function cleanLine(line) {
   return stripListPrefix(String(line || "").replace(/\s+/g, " ").trim());
 }
 
+function cleanTitleLine(line) {
+  return cleanLine(line).replace(/\s*recipe\s*$/i, "").trim() || "Untitled Recipe";
+}
+
 function isMetadataLine(line) {
   return /^(category|time|total time|cook time|prep time|heat|main heat|serves|difficulty|description)\s*:/i.test(line);
+}
+
+function isGenericSectionLabel(line) {
+  return /^(ingredients?|steps?|method|instructions?|directions?)\s*:?$/i.test(cleanLine(line));
+}
+
+function isShortHeading(line) {
+  const cleaned = cleanLine(line);
+  return cleaned.endsWith(":") && cleaned.length <= 30 && !isMetadataLine(cleaned);
+}
+
+function actionVerbRegex() {
+  return /^(preheat|line|grease|melt|mix|stir|whisk|beat|fold|add|pour|bake|cook|fry|grill|boil|simmer|leave|rest|serve|chill|cool|microwave|remove|put|place|spread|sprinkle|top|combine|make|warm|bring|let|turn|flip|toast|slice|season|pat|drizzle|blend|shake|garnish|reduce|cover|uncover|scrape|knead|roll|press|coat|marinate|drain|rinse|set|keep|stop|check|transfer)\b/i;
 }
 
 function looksLikeIngredient(line) {
   const cleaned = cleanLine(line);
   if (!cleaned) return false;
-  if (cleaned.length > 120) return false;
-  if (/^(method|instructions?|steps?)\s*:?$/i.test(cleaned)) return false;
-  if (/[|]/.test(cleaned)) return false;
-  if (/^(preheat|mix|stir|cook|bake|boil|fry|add|pour|whisk|simmer|leave|rest|serve|melt|fold|combine|beat|grease|line)\b/i.test(cleaned)) return false;
-  if (/\b(preheat|mix|stir|cook|bake|boil|fry|add|pour|whisk|simmer|leave|rest|serve|melt|fold|combine|beat|grease|line)\b/i.test(cleaned) && cleaned.length > 28) return false;
+  if (cleaned.length > 110) return false;
+  if (isMetadataLine(cleaned) || isGenericSectionLabel(cleaned) || isShortHeading(cleaned)) return false;
+  if (cleaned.includes("|")) return false;
+  if (actionVerbRegex().test(cleaned)) return false;
+  if (/\bfor\s+\d+\s*(seconds?|mins?|minutes?|hours?)\b/i.test(cleaned)) return false;
+  if (/\buntil\b/i.test(cleaned)) return false;
 
   return /^\d/.test(cleaned)
+    || /^\d+\/?\d*\s/.test(cleaned)
     || /\b(\d+\s?(g|kg|ml|l|tbsp|tsp|oz|lb|cm)|half|quarter|pinch|handful)\b/i.test(cleaned)
-    || /\b(clove|cloves|egg|eggs|breast|breasts|fillet|fillets|onion|onions|butter|oil|flour|sugar|salt|pepper|cream|milk|water|pasta|rice|chicken|beef|lettuce|tomato|tomatoes|cheese|chocolate|cocoa|vanilla|strawberries|blueberries)\b/i.test(cleaned);
+    || /\b(clove|cloves|egg|eggs|breast|breasts|fillet|fillets|onion|onions|butter|oil|flour|sugar|salt|pepper|cream|milk|water|pasta|rice|chicken|beef|lettuce|tomato|tomatoes|cheese|chocolate|cocoa|vanilla|strawberries|blueberries|powder|sauce|vinegar|mustard|honey|garlic)\b/i.test(cleaned);
+}
+
+function looksLikeInstruction(line) {
+  const cleaned = cleanLine(line);
+  if (!cleaned) return false;
+  if (isMetadataLine(cleaned) || isGenericSectionLabel(cleaned)) return false;
+  if (actionVerbRegex().test(cleaned)) return true;
+  if (/\b(until|then|once|when|while|after|before|stirring|mixing)\b/i.test(cleaned) && cleaned.length > 18) return true;
+  if (/[.!?]/.test(cleaned) && cleaned.length > 18 && !looksLikeIngredient(cleaned)) return true;
+  return false;
 }
 
 function looksLikeTimeValue(line) {
-  return /\b\d+\s?(min|mins|minutes|hr|hrs|hour|hours)\b/i.test(line);
+  return /\b\d+\s?(min|mins|minutes|sec|secs|seconds|hr|hrs|hour|hours)\b/i.test(line)
+    || /\b\d+\s?-\s?\d+\s?(min|mins|minutes|sec|secs|seconds|hr|hrs|hour|hours)\b/i.test(line);
 }
 
 function looksLikeHeatValue(line) {
-  return /\b(low|medium|high|medium-high|medium high|medium-low|medium low|oven|hob|air fryer|grill|gas mark|fan oven|electric hob)\b/i.test(line);
+  return /\b(low|medium|high|medium-high|medium high|medium-low|medium low|oven|hob|air fryer|grill|gas mark|fan oven|electric hob|180c|190c|200c|160c|170c|350f|375f|400f)\b/i.test(line);
 }
 
-function parseInlineStep(line, index) {
-  const cleaned = cleanLine(line);
+function extractTime(text) {
+  const cleaned = cleanLine(text);
+  const match = cleaned.match(/\b(\d+\s?-\s?\d+\s?(?:sec|secs|seconds|min|mins|minutes|hr|hrs|hour|hours)|\d+\s?(?:sec|secs|seconds|min|mins|minutes|hr|hrs|hour|hours))\b/i);
+  return match ? match[1].replace(/\s+/g, " ") : "";
+}
+
+function inferHeat(text, fallback = "") {
+  const cleaned = cleanLine(text).toLowerCase();
+  const explicit = cleaned.match(/\b(oven\s*\d{2,3}\s?[cf]?|fan oven\s*\d{2,3}\s?[cf]?|gas mark\s*\d+|air fryer\s*\d{2,3}\s?[cf]?|medium-high|medium high|medium-low|medium low|low|medium|high|hob|grill)\b/i);
+  if (explicit) return explicit[1].replace(/\s+/g, " ");
+  if (/\b(bake|roast)\b/i.test(cleaned)) return fallback || "Oven";
+  if (/\b(melt|warm|simmer|cool|chill|rest|leave|set)\b/i.test(cleaned)) return "Low";
+  if (/\b(boil)\b/i.test(cleaned)) return "High";
+  if (/\b(fry|cook|toast|brown|sear|grill)\b/i.test(cleaned)) return fallback || "Medium";
+  if (/\b(mix|whisk|beat|fold|combine|add|pour)\b/i.test(cleaned)) return fallback || "No heat";
+  return fallback || "As needed";
+}
+
+function inferTime(text) {
+  const explicit = extractTime(text);
+  if (explicit) return explicit;
+  const cleaned = cleanLine(text).toLowerCase();
+  if (/\b(preheat)\b/.test(cleaned)) return "5 min";
+  if (/\b(melt|warm)\b/.test(cleaned)) return "2-3 min";
+  if (/\b(whisk|mix|beat|fold|combine)\b/.test(cleaned)) return "1-2 min";
+  if (/\b(bake|roast)\b/.test(cleaned)) return "As needed";
+  if (/\b(rest|cool|chill|leave|set)\b/.test(cleaned)) return "As needed";
+  if (/\b(fry|cook|simmer|boil|grill)\b/.test(cleaned)) return "As needed";
+  return "As needed";
+}
+
+function createStepTitle(body, heading, index) {
+  const cleaned = cleanLine(body);
+  let text = cleaned.replace(/\bfor\s+\d+\s?(sec|secs|seconds|min|mins|minutes|hr|hrs|hour|hours)\b/ig, "").trim();
+  text = text.replace(/\b(until|then|once|while|when)\b.*$/i, "").trim();
+  text = text.replace(/[.,;:]$/, "").trim();
+  if (heading && heading.length <= 24) {
+    const titleTail = text ? text.split(/[,.]/)[0] : `Step ${index + 1}`;
+    const shortTail = titleTail.split(" ").slice(0, 5).join(" ").trim();
+    return `${heading} — ${shortTail || `Step ${index + 1}`}`;
+  }
+  const basic = text.split(/[,.]/)[0].split(" ").slice(0, 6).join(" ").trim();
+  return basic || `Step ${index + 1}`;
+}
+
+function parseStepLine(text, heading, index, recipeHeat) {
+  const cleaned = cleanLine(text);
   const pipeParts = cleaned.split("|").map((part) => part.trim()).filter(Boolean);
 
   if (pipeParts.length >= 4) {
     return {
       title: pipeParts[0],
-      heat: pipeParts[1],
-      time: pipeParts[2],
+      heat: pipeParts[1] || recipeHeat || "As needed",
+      time: pipeParts[2] || "As needed",
       body: pipeParts.slice(3).join(" | ")
     };
   }
 
-  const numbered = cleaned.match(/^(step\s*\d+|\d+[.)-]?)\s*(.*)$/i);
-  const baseText = numbered ? numbered[2].trim() : cleaned;
-
-  const timeMatch = baseText.match(/\b(\d+\s?(?:min|mins|minutes|hr|hrs|hour|hours))\b/i);
-  const heatMatch = baseText.match(/\b(low|medium|high|medium-high|medium high|medium-low|medium low|oven|hob|air fryer|grill|gas mark \d+)\b/i);
-
-  let title = `Step ${index + 1}`;
-  const titleSplit = baseText.split(/[:.-]\s+/);
-  if (titleSplit.length > 1 && titleSplit[0].length <= 40) {
-    title = titleSplit[0];
-  }
-
   return {
-    title,
-    heat: heatMatch ? heatMatch[1] : "See note",
-    time: timeMatch ? timeMatch[1] : "See note",
-    body: baseText
+    title: createStepTitle(cleaned, heading, index),
+    heat: inferHeat(cleaned, recipeHeat),
+    time: inferTime(cleaned),
+    body: cleaned
   };
 }
 
@@ -163,17 +231,55 @@ function dedupeStrings(items) {
   });
 }
 
+function shouldMergeStep(previous, current) {
+  if (!previous || !current) return false;
+  const cleaned = cleanLine(current.text);
+  if (!cleaned) return false;
+  if (extractTime(cleaned)) return false;
+  if (looksLikeIngredient(cleaned)) return false;
+  return cleaned.length < 34 || /^(then|and|until|once|when|while|stirring|mixing|stop|leave|let|cool|rest)\b/i.test(cleaned);
+}
+
+function sumStepTimes(steps) {
+  let totalMinutes = 0;
+  let counted = 0;
+  steps.forEach((step) => {
+    const value = String(step.time || "");
+    const match = value.match(/(\d+)\s?-\s?(\d+)\s?(sec|secs|seconds|min|mins|minutes|hr|hrs|hour|hours)|(\d+)\s?(sec|secs|seconds|min|mins|minutes|hr|hrs|hour|hours)/i);
+    if (!match) return;
+    let amount = 0;
+    let unit = "min";
+    if (match[1] && match[2] && match[3]) {
+      amount = (Number(match[1]) + Number(match[2])) / 2;
+      unit = match[3].toLowerCase();
+    } else if (match[4] && match[5]) {
+      amount = Number(match[4]);
+      unit = match[5].toLowerCase();
+    }
+    if (/sec/.test(unit)) totalMinutes += amount / 60;
+    else if (/hr|hour/.test(unit)) totalMinutes += amount * 60;
+    else totalMinutes += amount;
+    counted += 1;
+  });
+  if (!counted) return "";
+  if (totalMinutes >= 60) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = Math.round(totalMinutes % 60);
+    return minutes ? `${hours} hr ${minutes} min` : `${hours} hr`;
+  }
+  return `${Math.max(1, Math.round(totalMinutes))} min`;
+}
+
 function parseRecipeBlock(rawText) {
   const text = String(rawText || "").replace(/\r/g, "").trim();
   if (!text) throw new Error("Paste a recipe first.");
 
-  const rawLines = text.split("\n");
-  const lines = rawLines.map((line) => line.trim()).filter(Boolean);
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
   if (!lines.length) throw new Error("Paste a recipe first.");
 
   const recipe = {
     id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-    title: cleanLine(lines[0]) || "Untitled Recipe",
+    title: cleanTitleLine(lines[0]),
     category: "Meats",
     time: "",
     heat: "",
@@ -182,137 +288,116 @@ function parseRecipeBlock(rawText) {
     steps: []
   };
 
-  let section = "";
-  const looseLines = [];
+  let mode = "unknown";
+  let currentHeading = "";
+  const rawStepCandidates = [];
 
   for (let i = 1; i < lines.length; i += 1) {
     const line = lines[i];
-    const lower = line.toLowerCase();
+    const cleaned = cleanLine(line);
+    if (!cleaned) continue;
 
-    if (/^ingredients?\s*:?$/i.test(line) || /^ingredients?\s*:/i.test(line)) {
-      section = "ingredients";
-      const after = line.split(":").slice(1).join(":").trim();
-      if (after) recipe.ingredients.push(cleanLine(after));
+    if (/^category\s*:/i.test(cleaned)) {
+      recipe.category = normalizeCategory(cleaned.split(":").slice(1).join(":").trim(), recipe.title, text);
       continue;
     }
-
-    if (/^(steps?|method|instructions?)\s*:?$/i.test(line) || /^(steps?|method|instructions?)\s*:/i.test(line)) {
-      section = "steps";
-      const after = line.split(":").slice(1).join(":").trim();
-      if (after) recipe.steps.push(parseInlineStep(after, recipe.steps.length));
-      continue;
-    }
-
-    if (/^category\s*:/i.test(line)) {
-      recipe.category = normalizeCategory(line.split(":").slice(1).join(":").trim(), recipe.title, text);
-      continue;
-    }
-
-    if (/^(time|total time|cook time|prep time)\s*:/i.test(line)) {
-      const value = line.split(":").slice(1).join(":").trim();
+    if (/^(time|total time|cook time|prep time)\s*:/i.test(cleaned)) {
+      const value = cleaned.split(":").slice(1).join(":").trim();
       if (value) recipe.time = value;
       continue;
     }
-
-    if (/^(heat|main heat)\s*:/i.test(line)) {
-      const value = line.split(":").slice(1).join(":").trim();
+    if (/^(heat|main heat)\s*:/i.test(cleaned)) {
+      const value = cleaned.split(":").slice(1).join(":").trim();
       if (value) recipe.heat = value;
       continue;
     }
-
-    if (/^description\s*:/i.test(line)) {
-      const value = line.split(":").slice(1).join(":").trim();
+    if (/^description\s*:/i.test(cleaned)) {
+      const value = cleaned.split(":").slice(1).join(":").trim();
       if (value) recipe.description = value;
       continue;
     }
-
-    if (/^serves\s*:/i.test(line) || /^difficulty\s*:/i.test(line)) {
+    if (/^ingredients?\s*:?$/i.test(cleaned)) {
+      mode = "ingredients";
+      currentHeading = "";
+      continue;
+    }
+    if (/^(steps?|method|instructions?|directions?)\s*:?$/i.test(cleaned)) {
+      mode = "steps";
+      currentHeading = "";
       continue;
     }
 
-    if (section === "ingredients") {
-      if (/^(steps?|method|instructions?)\s*:?$/i.test(line)) {
-        section = "steps";
+    if (isShortHeading(cleaned)) {
+      currentHeading = cleaned.replace(/:$/, "").trim();
+      continue;
+    }
+
+    if (mode === "ingredients") {
+      if (looksLikeInstruction(cleaned)) {
+        mode = "steps";
       } else {
-        recipe.ingredients.push(cleanLine(line));
+        recipe.ingredients.push(cleaned);
         continue;
       }
     }
 
-    if (section === "steps") {
-      recipe.steps.push(parseInlineStep(line, recipe.steps.length));
+    if (mode === "steps") {
+      rawStepCandidates.push({ text: cleaned, heading: currentHeading });
       continue;
     }
 
-    looseLines.push(line);
-  }
-
-  const looseIngredients = [];
-  const looseSteps = [];
-
-  for (const line of looseLines) {
-    const cleaned = cleanLine(line);
-    if (!cleaned) continue;
-
-    if (!recipe.time && looksLikeTimeValue(cleaned) && /^(about|around|takes|ready in|bake for|cook for|time)/i.test(cleaned)) {
-      recipe.time = cleaned.replace(/^(time\s*:?)/i, "").trim();
-      continue;
-    }
-
-    if (!recipe.heat && looksLikeHeatValue(cleaned) && /^(heat|hob|oven|cook on|bake at|fry on|air fryer)/i.test(cleaned)) {
-      recipe.heat = cleaned.replace(/^(heat\s*:?)/i, "").trim();
-      continue;
-    }
-
-    if (looksLikeIngredient(cleaned) && looseSteps.length === 0) {
-      looseIngredients.push(cleaned);
-      continue;
-    }
-
-    looseSteps.push(parseInlineStep(cleaned, looseSteps.length));
-  }
-
-  if (!recipe.ingredients.length) recipe.ingredients = looseIngredients;
-  if (!recipe.steps.length) recipe.steps = looseSteps;
-
-  // Fallback split for big messy blocks with ingredient lines followed by instruction lines.
-  if (!recipe.ingredients.length && !recipe.steps.length) {
-    const bodyLines = lines.slice(1).map(cleanLine).filter(Boolean);
-    const ingredientBucket = [];
-    const stepBucket = [];
-    let switchedToSteps = false;
-
-    bodyLines.forEach((line) => {
-      if (!switchedToSteps && looksLikeIngredient(line)) {
-        ingredientBucket.push(line);
-      } else {
-        switchedToSteps = true;
-        if (!isMetadataLine(line)) stepBucket.push(parseInlineStep(line, stepBucket.length));
+    if (mode === "unknown") {
+      if (!recipe.ingredients.length && !looksLikeInstruction(cleaned) && looksLikeIngredient(cleaned)) {
+        recipe.ingredients.push(cleaned);
+        continue;
       }
-    });
 
-    recipe.ingredients = ingredientBucket;
-    recipe.steps = stepBucket;
+      if (recipe.ingredients.length && !looksLikeInstruction(cleaned) && looksLikeIngredient(cleaned)) {
+        recipe.ingredients.push(cleaned);
+        continue;
+      }
+
+      if (looksLikeInstruction(cleaned)) {
+        mode = "steps";
+        rawStepCandidates.push({ text: cleaned, heading: currentHeading });
+        continue;
+      }
+
+      if (looksLikeIngredient(cleaned)) {
+        recipe.ingredients.push(cleaned);
+        continue;
+      }
+
+      rawStepCandidates.push({ text: cleaned, heading: currentHeading });
+    }
   }
+
+  const mergedCandidates = [];
+  rawStepCandidates.forEach((candidate) => {
+    const previous = mergedCandidates[mergedCandidates.length - 1];
+    if (shouldMergeStep(previous, candidate)) {
+      previous.text = `${previous.text}. ${candidate.text}`.replace(/\.\./g, ".");
+    } else {
+      mergedCandidates.push({ ...candidate });
+    }
+  });
 
   recipe.ingredients = dedupeStrings(recipe.ingredients.map(cleanLine).filter(Boolean));
-  recipe.steps = recipe.steps
+  recipe.steps = mergedCandidates
+    .filter((item) => item.text && !looksLikeIngredient(item.text))
+    .map((item, index) => parseStepLine(item.text, item.heading, index, recipe.heat))
     .map((step, index) => ({
       title: cleanLine(step.title) || `Step ${index + 1}`,
-      heat: cleanLine(step.heat) || "See note",
-      time: cleanLine(step.time) || "See note",
+      heat: cleanLine(step.heat) || "As needed",
+      time: cleanLine(step.time) || "As needed",
       body: cleanLine(step.body)
     }))
     .filter((step) => step.body);
 
-  if (!recipe.time) {
-    const firstTimedStep = recipe.steps.find((step) => step.time && step.time !== "See note");
-    recipe.time = firstTimedStep?.time || "Not set";
-  }
-
+  if (!recipe.time) recipe.time = sumStepTimes(recipe.steps) || "Not set";
   if (!recipe.heat) {
-    const firstHeatedStep = recipe.steps.find((step) => step.heat && step.heat !== "See note");
-    recipe.heat = firstHeatedStep?.heat || "Not set";
+    const heatedStep = recipe.steps.find((step) => step.heat && step.heat !== "As needed");
+    recipe.heat = heatedStep?.heat || "Not set";
   }
 
   recipe.category = normalizeCategory(recipe.category, recipe.title, text);
@@ -413,8 +498,8 @@ function renderSteps(steps) {
         <div class="step-number">${index + 1}</div>
         <div class="step-title">${escapeHtml(step.title || `Step ${index + 1}`)}</div>
         <div class="step-badges">
-          <span class="badge">${escapeHtml(step.heat || "See note")}</span>
-          <span class="badge">${escapeHtml(step.time || "See note")}</span>
+          <span class="badge">${escapeHtml(step.heat || "As needed")}</span>
+          <span class="badge">${escapeHtml(step.time || "As needed")}</span>
         </div>
       </div>
       <div class="step-body">${escapeHtml(step.body || "")}</div>
