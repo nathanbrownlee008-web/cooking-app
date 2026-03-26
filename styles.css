@@ -114,13 +114,6 @@ body.modal-open{overflow:hidden}
   .panel{padding:14px; border-radius:20px}
 }
 
-.toolbar-actions{display:flex;gap:10px;flex-wrap:wrap}
-.recipe-card-actions{display:flex;gap:10px;flex-wrap:wrap}
-.favorite-btn.active{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#111;border-color:transparent}
-.favorite-btn{background:rgba(255,255,255,.05);color:#fff;border:1px solid var(--border)}
-.recipe-desc.short{min-height:0}
-@media (max-width:860px){.toolbar-actions{width:100%}}
-
 
 .pan-oil-box{
   background:rgba(255,255,255,.03);
