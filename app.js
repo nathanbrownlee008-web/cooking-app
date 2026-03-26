@@ -5338,3 +5338,42 @@ function nextStep() {
 function closeChefMode() {
   document.querySelector(".chef-mode").remove();
 }
+// ===== FIX STEP 1 (REAL PREP INSTRUCTIONS) =====
+
+starterRecipes.forEach(r => {
+
+  if (!r.steps || !r.ingredients) return;
+
+  const ing = r.ingredients.join(" ").toLowerCase();
+
+  // CHICKEN
+  if (ing.includes("chicken")) {
+    r.steps[0].body =
+      "Pat the chicken dry with paper towels. Season evenly with 1 tsp salt, 1/2 tsp black pepper, and any spices (e.g. paprika). Rub it in well. Let it sit for 5–10 minutes to absorb flavour before cooking.";
+  }
+
+  // BEEF
+  if (ing.includes("beef")) {
+    r.steps[0].body =
+      "Bring beef to room temperature. Season with salt and pepper just before cooking. Pat dry so it sears properly.";
+  }
+
+  // PORK (CHOPS)
+  if (ing.includes("pork")) {
+    r.steps[0].body =
+      "Pat pork chops dry. Season both sides with salt and pepper. Let rest for 5 minutes so seasoning sticks and meat relaxes.";
+  }
+
+  // DESSERT
+  if (r.category === "Dessert") {
+    r.steps[0].body =
+      "Measure all ingredients exactly. For mixtures, separate wet and dry ingredients first before combining.";
+  }
+
+  // ICE CREAM
+  if (r.category === "Ice Cream") {
+    r.steps[0].body =
+      "Measure milk, cream, sugar, and eggs precisely. Keep ingredients cold until needed. Prepare whisk and pan before starting.";
+  }
+
+});
