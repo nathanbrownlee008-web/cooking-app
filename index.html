@@ -88,6 +88,7 @@
     </div>
   </div>
 
+  <script src="app.js"></script>
 
   <div id="generatorModal" class="modal hidden" aria-hidden="true">
     <div class="modal-backdrop"></div>
@@ -96,10 +97,10 @@
       <div class="form-wrap">
         <div class="hero-topline">Create from ingredients</div>
         <h2 class="form-title">Recipe generator</h2>
-        <p class="form-copy">Type in the ingredients you already have at home and the app will work out what kind of dish makes sense, then build a custom recipe in the same deluxe format and save it to your device.</p>
+        <p class="form-copy">Type in what you have and the app will build a custom recipe in the same deluxe format and save it to your device.</p>
         <div class="form-grid">
-          <label class="full"><span>Ingredients you have</span><textarea id="gIngredients" placeholder="Strawberries&#10;Greek yogurt&#10;Honey&#10;Granola"></textarea></label>
-          <label><span>Style</span><input id="gStyle" placeholder="Optional style: quick lunch, creamy pasta, traybake, dessert" /></label>
+          <label class="full"><span>Main ingredients</span><textarea id="gIngredients" placeholder="Chicken thighs&#10;Garlic&#10;Double cream&#10;Mushrooms"></textarea></label>
+          <label><span>Style</span><input id="gStyle" placeholder="Example: Creamy pasta, spicy traybake, quick lunch" /></label>
           <label><span>Category</span><input id="gCategory" placeholder="Example: Chicken, Pasta, Dessert" /></label>
           <label><span>Difficulty</span><input id="gDifficulty" placeholder="Example: Beginner" /></label>
           <label><span>Total time</span><input id="gTime" placeholder="Example: 25 min" /></label>
@@ -113,6 +114,5 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
 </body>
 </html>
