@@ -5377,3 +5377,30 @@ starterRecipes.forEach(r => {
   }
 
 });
+// ===== FIX STEP 2 (PROPER HEAT + START COOKING) =====
+
+starterRecipes.forEach(r => {
+
+  if (!r.steps || r.steps.length < 2) return;
+
+  const ing = r.ingredients.join(" ").toLowerCase();
+
+  // MEAT (chicken / beef / pork)
+  if (ing.includes("chicken") || ing.includes("beef") || ing.includes("pork")) {
+    r.steps[1].body =
+      "Place pan on medium-high heat for 1–2 minutes. Add 1 tbsp oil. Wait until the oil looks loose and slightly shimmering (not smoking). Add the meat and listen for a strong sizzle — this means proper heat. Do not move it for the first few minutes so it forms a crust.";
+  }
+
+  // DESSERT
+  if (r.category === "Dessert") {
+    r.steps[1].body =
+      "Prepare your base depending on the recipe: either mix dry ingredients together first, or gently warm liquids if needed. Do not rush — smooth mixing at this stage prevents lumps later.";
+  }
+
+  // ICE CREAM
+  if (r.category === "Ice Cream") {
+    r.steps[1].body =
+      "Pour milk and cream into a pan and heat on low-medium. Do NOT boil. You want it hot enough to steam slightly, not bubble. This prepares it for mixing with eggs without scrambling them.";
+  }
+
+});
