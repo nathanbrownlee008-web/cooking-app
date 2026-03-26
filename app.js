@@ -7,7 +7,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Golden seared chicken finished in a silky garlic cream sauce, with proper browning, clearer sauce texture, and a more chef-like finish.",
+    "description": "Creamy Garlic Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -28,46 +28,46 @@ const starterRecipes = [
       "1 tbsp chopped parsley"
     ],
     "notes": [
-      "Pat the chicken completely dry before seasoning or it will steam instead of colour.",
-      "Lower the heat before the garlic goes in. Garlic only needs 30 to 45 seconds.",
-      "The finished sauce should lightly coat the back of a spoon, not sit watery in the pan."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the chicken breasts very dry, then season both sides with salt, pepper, and paprika. Dry surface equals stronger browning and better flavour."
+        "body": "Pat the chicken breasts very dry, then season both sides with salt, pepper, and paprika. Dry surface equals stronger browning and better flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm a frying pan fully before adding the oil. The oil should loosen and shimmer, but it should not be smoking aggressively."
+        "body": "Warm a frying pan fully before adding the oil. The oil should loosen and shimmer, but it should not be smoking aggressively. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sear the first side",
         "heat": "Medium-high",
         "time": "5-6 min",
-        "body": "Lay the chicken into the pan and leave it alone. Do not keep nudging it. Let a rich golden crust develop before you even think about turning it."
+        "body": "Lay the chicken into the pan and leave it alone. Do not keep nudging it. Let a rich golden crust develop before you even think about turning it. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Flip and finish the chicken",
         "heat": "Medium",
         "time": "4-5 min",
-        "body": "Turn the chicken and cook the second side until almost done. Remove it to a plate so you can use the same pan for the sauce."
+        "body": "Turn the chicken and cook the second side until almost done. Remove it to a plate so you can use the same pan for the sauce. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the garlic cream sauce",
         "heat": "Low-medium",
         "time": "3-4 min",
-        "body": "Add the butter, then the garlic for 30 to 45 seconds until fragrant. Pour in the cream and stock, stir in the parmesan, and let the sauce bubble gently until it thickens slightly."
+        "body": "Add the butter, then the garlic for 30 to 45 seconds until fragrant. Pour in the cream and stock, stir in the parmesan, and let the sauce bubble gently until it thickens slightly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Glaze and finish",
         "heat": "Low",
         "time": "2-3 min",
-        "body": "Return the chicken with any juices. Spoon the sauce over the top until the meat is fully cooked and glossy. Finish with lemon juice and parsley before serving."
+        "body": "Return the chicken with any juices. Spoon the sauce over the top until the meat is fully cooked and glossy. Finish with lemon juice and parsley before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -78,7 +78,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Honey Mustard Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Honey Mustard Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -93,40 +93,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -137,7 +137,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Lemon Herb Roast Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Lemon Herb Roast Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -152,40 +152,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -196,7 +196,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Chicken Stir-Fry with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Chicken Stir-Fry cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -211,40 +211,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -255,7 +255,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Chicken Parmesan with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Chicken Parmesan cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -270,40 +270,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -314,7 +314,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Peri Peri Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Peri Peri Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -329,40 +329,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -373,7 +373,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Butter Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Butter Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -388,40 +388,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -432,7 +432,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Crispy Chicken Wraps with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Crispy Chicken Wraps cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -447,40 +447,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -491,7 +491,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Sticky Soy Chicken with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Sticky Soy Chicken cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -506,40 +506,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -550,7 +550,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Chicken Alfredo with stronger pan work, better browning, clearer doneness cues, and a more useful finish so it tastes less flat and far more deliberate.",
+    "description": "Chicken Alfredo cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Chicken",
       "Premium",
@@ -565,40 +565,40 @@ const starterRecipes = [
       "Main sauce, glaze, or seasoning for this dish"
     ],
     "notes": [
-      "Pat the chicken dry before it goes into the pan so it colours instead of steaming.",
-      "If the pan looks crowded, cook in batches or the meat will boil in its own moisture.",
-      "The chicken should feel firm and cooked through, but still juicy when sliced."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the chicken",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour."
+        "body": "Trim, dry, and season the chicken evenly so every piece cooks at the same speed and starts with real flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Heat the pan properly",
         "heat": "Medium-high",
         "time": "2 min",
-        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start."
+        "body": "Warm the pan fully before adding oil. You want instant sizzle when the chicken hits, not a lazy pale start. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Brown for flavour",
         "heat": "Medium-high",
         "time": "6-8 min",
-        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from."
+        "body": "Cook the chicken in a single layer and leave it long enough to build golden colour before turning. That colour is where much of the flavour comes from. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the sauce or seasoning",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter."
+        "body": "Add the aromatics and any sauce ingredients, keeping the heat controlled so nothing burns. The pan should smell rich, not harsh or bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish gently",
         "heat": "Low-medium",
         "time": "3-5 min",
-        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish."
+        "body": "Bring everything together until the chicken is fully cooked and the sauce or glaze has settled into a shiny, balanced finish. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -609,7 +609,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A pan-seared steak guide built around crust, butter basting, and proper resting so the final slices stay juicy instead of leaking onto the board.",
+    "description": "Steak with Garlic Butter cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -625,40 +625,40 @@ const starterRecipes = [
       "2 thyme sprigs"
     ],
     "notes": [
-      "Moisture is the enemy of crust, so dry the steaks properly before they go near the pan.",
-      "A dark brown crust gives you flavour; pale grey beef means the pan was not hot enough.",
-      "Rest the steak before slicing or the juices will run onto the plate."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Dry and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Pat the steaks dry with kitchen paper, then season them well with salt and pepper. Leave them while the pan gets properly hot."
+        "body": "Pat the steaks dry with kitchen paper, then season them well with salt and pepper. Leave them while the pan gets properly hot. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan smoking hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use a heavy pan and let it heat until very hot before adding the oil. The goal is immediate contact and strong colour."
+        "body": "Use a heavy pan and let it heat until very hot before adding the oil. The goal is immediate contact and strong colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sear the first side",
         "heat": "High",
         "time": "2 min",
-        "body": "Lay the steak away from you in the pan. Press lightly once for full contact, then leave it alone so the crust can build."
+        "body": "Lay the steak away from you in the pan. Press lightly once for full contact, then leave it alone so the crust can build. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Flip and baste",
         "heat": "Medium-high",
         "time": "2-3 min",
-        "body": "Flip the steak, add butter, garlic, and thyme, then tilt the pan and spoon the foaming butter repeatedly over the meat."
+        "body": "Flip the steak, add butter, garlic, and thyme, then tilt the pan and spoon the foaming butter repeatedly over the meat. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Rest and slice",
         "heat": "No heat",
         "time": "5-7 min",
-        "body": "Move the steak to a warm plate and rest it before slicing so the juices stay in the meat instead of flooding the board."
+        "body": "Move the steak to a warm plate and rest it before slicing so the juices stay in the meat instead of flooding the board. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -669,7 +669,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Smash Burgers built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Smash Burgers cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -684,40 +684,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -728,7 +728,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Beef Stir-Fry built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Beef Stir-Fry cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -743,40 +743,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -787,7 +787,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Beef Ragu built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Beef Ragu cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -802,40 +802,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -846,7 +846,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Garlic Butter Steak Bites built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Garlic Butter Steak Bites cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -861,40 +861,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -905,7 +905,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Meatballs in Tomato Sauce built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Meatballs in Tomato Sauce cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -920,40 +920,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -964,7 +964,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Chilli Con Carne built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Chilli Con Carne cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -979,40 +979,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1023,7 +1023,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Beef Tacos built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Beef Tacos cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -1038,40 +1038,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1082,7 +1082,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Shepherd's Pie built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Shepherd's Pie cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -1097,40 +1097,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1141,7 +1141,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Peppercorn Steak built around real browning, controlled heat, and better finishing so the beef stays juicy instead of drying out or turning grey.",
+    "description": "Peppercorn Steak cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Beef",
       "Premium",
@@ -1156,40 +1156,40 @@ const starterRecipes = [
       "Main sauce, seasoning, or finishing element for this dish"
     ],
     "notes": [
-      "Colour equals flavour, so let the beef brown before moving it around.",
-      "High heat is useful at the start, but finishing with control gives you better texture.",
-      "Rest larger pieces of beef briefly before slicing so the juices stay in the meat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep and season",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour."
+        "body": "Dry the beef if needed, trim it neatly, and season well so the surface is ready to take colour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Get the pan hot",
         "heat": "High",
         "time": "2-3 min",
-        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery."
+        "body": "Use proper heat at the start so the beef sears instead of turning pale and watery. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build a crust or rich colour",
         "heat": "High",
         "time": "4-7 min",
-        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring."
+        "body": "Leave the beef in contact with the pan long enough to take on a deep brown finish before turning or stirring. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add depth",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour."
+        "body": "Stir in aromatics, sauces, herbs, or butter and let the whole dish become richer and rounder in flavour. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish with control",
         "heat": "Low-medium",
         "time": "4-8 min",
-        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving."
+        "body": "Check the doneness, adjust seasoning, and let the texture settle before serving. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1200,7 +1200,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Silky carbonara with no scrambled eggs, clearer residual-heat handling, and stronger pasta-water guidance so the sauce stays glossy.",
+    "description": "Spaghetti Carbonara cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1216,40 +1216,40 @@ const starterRecipes = [
       "Salt for the pasta water"
     ],
     "notes": [
-      "The egg mixture should never hit fierce direct heat or it will scramble.",
-      "Save pasta water before draining. That starch is what makes the sauce glossy.",
-      "Work quickly once the eggs go in so the sauce emulsifies instead of clumping."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Cook the pasta",
         "heat": "High",
         "time": "9-11 min",
-        "body": "Boil well-salted water and cook the spaghetti until just al dente. Before draining, save a mug of the starchy pasta water."
+        "body": "Boil well-salted water and cook the spaghetti until just al dente. Before draining, save a mug of the starchy pasta water. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Render the pancetta",
         "heat": "Medium",
         "time": "5-6 min",
-        "body": "Cook the pancetta slowly until the fat renders and the edges turn lightly crisp. You want rich flavour, not burnt bits."
+        "body": "Cook the pancetta slowly until the fat renders and the edges turn lightly crisp. You want rich flavour, not burnt bits. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Mix the sauce base",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Whisk the eggs, yolks, cheese, and plenty of black pepper in a bowl until thick and creamy."
+        "body": "Whisk the eggs, yolks, cheese, and plenty of black pepper in a bowl until thick and creamy. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine off the heat",
         "heat": "Residual heat",
         "time": "1-2 min",
-        "body": "Turn the pan off, add the pasta to the pancetta, then stir through the egg mixture quickly. Add tiny splashes of pasta water until the sauce turns silky and coats every strand."
+        "body": "Turn the pan off, add the pasta to the pancetta, then stir through the egg mixture quickly. Add tiny splashes of pasta water until the sauce turns silky and coats every strand. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate straight away while the sauce is glossy and loose, then finish with extra cheese and black pepper."
+        "body": "Plate straight away while the sauce is glossy and loose, then finish with extra cheese and black pepper. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1260,7 +1260,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Chicken Alfredo Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Chicken Alfredo Pasta cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1275,40 +1275,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1319,7 +1319,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Pesto Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Pesto Pasta cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1334,40 +1334,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1378,7 +1378,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Bolognese with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Bolognese cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1393,40 +1393,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1437,7 +1437,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Mac and Cheese with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Mac and Cheese cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1452,40 +1452,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1496,7 +1496,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Lasagna with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Lasagna cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1511,40 +1511,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1555,7 +1555,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Arrabbiata with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Arrabbiata cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1570,40 +1570,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1614,7 +1614,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Mushroom Pasta with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Mushroom Pasta cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1629,40 +1629,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1673,7 +1673,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Tuna Pasta Bake with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Tuna Pasta Bake cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1688,40 +1688,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1732,7 +1732,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Sausage Rigatoni with better sauce texture, clearer finishing, and enough step detail to stop the final dish tasting dry, bland, or heavy.",
+    "description": "Sausage Rigatoni cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Pasta",
       "Premium",
@@ -1747,40 +1747,40 @@ const starterRecipes = [
       "Cheese, herbs, or finishing garnish"
     ],
     "notes": [
-      "Salt the pasta water well or the whole dish starts bland.",
-      "Reserve pasta water before draining because the starch helps the sauce cling properly.",
-      "Finish the pasta in the sauce when possible so the flavour coats every piece."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Boil the pasta",
         "heat": "High",
         "time": "8-12 min",
-        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining."
+        "body": "Cook the pasta in well-salted water until al dente and save some pasta water before draining. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Start the sauce base",
         "heat": "Medium",
         "time": "3-5 min",
-        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter."
+        "body": "Cook the garlic, onion, or base ingredients gently until fragrant, making sure nothing catches and turns bitter. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the main sauce",
         "heat": "Medium",
         "time": "4-6 min",
-        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one."
+        "body": "Add the key sauce ingredients and let them come together into a smoother, fuller mixture rather than a watery one. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Combine pasta and sauce",
         "heat": "Low-medium",
         "time": "2-3 min",
-        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight."
+        "body": "Add the pasta and toss until everything is coated. Loosen with pasta water if the sauce feels too tight. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away."
+        "body": "Taste for seasoning, then finish with cheese, herbs, pepper, or an extra touch of richness before serving straight away. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1791,7 +1791,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Deep chocolate brownies with a shinier top, fudgy centre, and clearer baking cues so you do not accidentally turn them cakey.",
+    "description": "Fudgy Chocolate Brownies cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -1808,46 +1808,46 @@ const starterRecipes = [
       "80g chocolate chunks"
     ],
     "notes": [
-      "Do not overbake them. The centre should still have a slight wobble when you pull the tin out.",
-      "Cool fully before cutting or the middle will fall apart.",
-      "A skewer should come out with moist crumbs, not wet batter and not totally dry."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep the tin and oven",
-        "heat": "180°C oven",
+        "heat": "180\u00b0C oven",
         "time": "5 min",
-        "body": "Line a square tin with baking paper and heat the oven before you start mixing so the batter can go straight in."
+        "body": "Line a square tin with baking paper and heat the oven before you start mixing so the batter can go straight in. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Melt chocolate and butter",
         "heat": "Low",
         "time": "3-4 min",
-        "body": "Melt the chocolate and butter gently until completely smooth. Do not scorch the chocolate."
+        "body": "Melt the chocolate and butter gently until completely smooth. Do not scorch the chocolate. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Whisk eggs and sugar",
         "heat": "No heat",
         "time": "3 min",
-        "body": "Whisk until glossy and slightly paler. You do not need a huge foam, just a smooth mixture."
+        "body": "Whisk until glossy and slightly paler. You do not need a huge foam, just a smooth mixture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Fold the batter",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Mix in the melted chocolate, then fold in the flour, cocoa, salt, and chocolate chunks until no dry streaks remain."
+        "body": "Mix in the melted chocolate, then fold in the flour, cocoa, salt, and chocolate chunks until no dry streaks remain. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake carefully",
-        "heat": "180°C oven",
+        "heat": "180\u00b0C oven",
         "time": "22-27 min",
-        "body": "Bake until the edges are set but the centre still has a slight wobble. That is what gives you the fudgy middle."
+        "body": "Bake until the edges are set but the centre still has a slight wobble. That is what gives you the fudgy middle. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool before slicing",
         "heat": "No heat",
         "time": "20+ min",
-        "body": "Leave the brownies to cool so the texture settles, then cut into clean squares."
+        "body": "Leave the brownies to cool so the texture settles, then cut into clean squares. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1858,7 +1858,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Vanilla Cheesecake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Vanilla Cheesecake cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -1873,40 +1873,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1917,7 +1917,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Chocolate Chip Cookies with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Chocolate Chip Cookies cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -1932,40 +1932,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -1976,7 +1976,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Sticky Toffee Pudding with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Sticky Toffee Pudding cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -1991,40 +1991,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2035,7 +2035,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Apple Crumble with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Apple Crumble cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2050,40 +2050,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2094,7 +2094,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Lemon Drizzle Cake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Lemon Drizzle Cake cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2109,40 +2109,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2153,7 +2153,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Banoffee Pots with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Banoffee Pots cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2168,40 +2168,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2212,7 +2212,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Chocolate Mousse with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Chocolate Mousse cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2227,40 +2227,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2271,7 +2271,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Tiramisu Cups with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Tiramisu Cups cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2286,40 +2286,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2330,7 +2330,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "40 min",
     "serves": "6 portions",
-    "description": "Chocolate Cake with clearer texture cues, better finishing, and more useful guidance so you know what the dessert should actually look like when it is right.",
+    "description": "Chocolate Cake cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Dessert",
       "Premium",
@@ -2345,40 +2345,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Do not rush cooling or setting time because texture keeps changing after the oven or hob.",
-      "Look for the right feel and finish, not just the timer.",
-      "Measure carefully because desserts punish rough guessing more than savoury dishes do."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prepare the tin or dish",
         "heat": "No heat",
         "time": "5 min",
-        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready."
+        "body": "Line, grease, or chill the dish before you start so the mixture can go straight in when ready. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Build the mixture",
         "heat": "No heat",
         "time": "5-8 min",
-        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture."
+        "body": "Combine the ingredients evenly, taking care not to overwork the mixture if the recipe needs a soft or tender texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Bake or cook gently",
         "heat": "Oven or hob",
         "time": "15-30 min",
-        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock."
+        "body": "Cook until the dessert reaches the correct set, rise, or thickened texture rather than blindly trusting the clock. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool and settle",
         "heat": "No heat",
         "time": "15-30 min",
-        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating."
+        "body": "Let the dessert settle so the texture firms up before cutting, topping, or plating. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished."
+        "body": "Add cream, sauce, fruit, or garnish so it feels complete rather than unfinished. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2389,7 +2389,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "A smoother vanilla ice cream base with better custard guidance and clearer freezing notes so the scoops feel more premium.",
+    "description": "Vanilla Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2404,40 +2404,40 @@ const starterRecipes = [
       "Pinch of salt"
     ],
     "notes": [
-      "Never boil the custard or the yolks can split.",
-      "Chill the base fully before churning for a smoother texture.",
-      "A tiny pinch of salt makes vanilla taste fuller instead of flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Warm the dairy",
         "heat": "Low-medium",
         "time": "5 min",
-        "body": "Heat the milk, cream, vanilla, and salt until steaming but not boiling so the flavour infuses without catching."
+        "body": "Heat the milk, cream, vanilla, and salt until steaming but not boiling so the flavour infuses without catching. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Whisk yolks and sugar",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Whisk until smoother and slightly lighter in colour so the custard starts evenly."
+        "body": "Whisk until smoother and slightly lighter in colour so the custard starts evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Temper the yolks",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Slowly pour a little hot dairy into the yolks while whisking so they warm gradually instead of scrambling."
+        "body": "Slowly pour a little hot dairy into the yolks while whisking so they warm gradually instead of scrambling. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the custard",
         "heat": "Low",
         "time": "5-7 min",
-        "body": "Return everything to the pan and stir constantly until the mixture lightly coats the back of a spoon."
+        "body": "Return everything to the pan and stir constantly until the mixture lightly coats the back of a spoon. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Chill and churn",
         "heat": "Fridge / freezer",
         "time": "4 hr + churn",
-        "body": "Cool the base completely, then churn or freeze using your preferred method until the texture turns smooth and scoopable."
+        "body": "Cool the base completely, then churn or freeze using your preferred method until the texture turns smooth and scoopable. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2448,7 +2448,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Chocolate Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Chocolate Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2462,40 +2462,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2506,7 +2506,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Strawberry Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Strawberry Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2520,40 +2520,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2564,7 +2564,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Salted Caramel Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Salted Caramel Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2578,40 +2578,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2622,7 +2622,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Mint Chocolate Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Mint Chocolate Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2636,40 +2636,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2680,7 +2680,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Cookies and Cream Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Cookies and Cream Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2694,40 +2694,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2738,7 +2738,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Banana Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Banana Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2752,40 +2752,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2796,7 +2796,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Pistachio Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Pistachio Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2810,40 +2810,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2854,7 +2854,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Coffee Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Coffee Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2868,40 +2868,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2912,7 +2912,7 @@ const starterRecipes = [
     "difficulty": "Intermediate",
     "time": "40 min",
     "serves": "2 people",
-    "description": "Raspberry Ripple Ice Cream with smoother flavour-building, cleaner freezing guidance, and better texture notes so the final scoop feels more premium.",
+    "description": "Raspberry Ripple Ice Cream cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Ice Cream",
       "Premium",
@@ -2926,40 +2926,40 @@ const starterRecipes = [
       "Optional yolks or thickener"
     ],
     "notes": [
-      "Chill the mixture fully before freezing for a smoother result.",
-      "Cover the base well so it does not pick up freezer smells.",
-      "A small pinch of salt makes sweet flavours taste rounder and less flat."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Build the base",
         "heat": "Low-medium",
         "time": "5-7 min",
-        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan."
+        "body": "Warm the base mixture gently so the flavour ingredients infuse without catching on the bottom of the pan. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Sweeten and balance",
         "heat": "Low",
         "time": "2 min",
-        "body": "Add the sugar and salt, stirring until fully dissolved and smooth."
+        "body": "Add the sugar and salt, stirring until fully dissolved and smooth. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cool completely",
         "heat": "No heat",
         "time": "2-4 hr",
-        "body": "Chill the base until completely cold so the texture freezes more evenly."
+        "body": "Chill the base until completely cold so the texture freezes more evenly. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Freeze or churn",
         "heat": "Freezer",
         "time": "20-30 min churn",
-        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine."
+        "body": "Freeze according to your method, stirring at intervals if you do not have an ice cream machine. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Set before scooping",
         "heat": "Freezer",
         "time": "1-2 hr",
-        "body": "Let it firm up slightly before serving so the scoops hold their shape."
+        "body": "Let it firm up slightly before serving so the scoops hold their shape. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -2970,7 +2970,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Golden French toast with better custard handling and clearer heat control so the outside colours while the middle stays soft rather than soggy.",
+    "description": "French Toast cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -2986,34 +2986,34 @@ const starterRecipes = [
       "20g butter"
     ],
     "notes": [
-      "Do not soak the bread too long or it becomes soggy and fragile.",
-      "Cook over medium heat so the middle sets before the outside burns.",
-      "Serve immediately while the outside is still lightly crisp."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Make the custard mix",
         "heat": "No heat",
         "time": "2 min",
-        "body": "Whisk the eggs, milk, vanilla, sugar, and cinnamon together until smooth and fully combined."
+        "body": "Whisk the eggs, milk, vanilla, sugar, and cinnamon together until smooth and fully combined. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Dip the bread briefly",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Dip each slice for just a few seconds on each side so it absorbs the mixture without collapsing."
+        "body": "Dip each slice for just a few seconds on each side so it absorbs the mixture without collapsing. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook gently",
         "heat": "Medium",
         "time": "3-4 min each side",
-        "body": "Melt the butter in a pan and cook the bread until each side is evenly golden with a softly set centre."
+        "body": "Melt the butter in a pan and cook the bread until each side is evenly golden with a softly set centre. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Finish and serve",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Serve while hot with berries, maple syrup, or a dusting of icing sugar."
+        "body": "Serve while hot with berries, maple syrup, or a dusting of icing sugar. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3024,7 +3024,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Fluffy Pancakes with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Fluffy Pancakes cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3039,40 +3039,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3083,7 +3083,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Cheese Omelette with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Cheese Omelette cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3098,40 +3098,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3142,7 +3142,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Scrambled Eggs with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Scrambled Eggs cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3157,40 +3157,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3201,7 +3201,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Waffles with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Waffles cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3216,40 +3216,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3260,7 +3260,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Breakfast Burrito with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Breakfast Burrito cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3275,40 +3275,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3319,7 +3319,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Breakfast Hash with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Breakfast Hash cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3334,40 +3334,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3378,7 +3378,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Egg Muffins with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Egg Muffins cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3393,40 +3393,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3437,7 +3437,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Avocado Toast with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Avocado Toast cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3452,40 +3452,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   },
@@ -3496,7 +3496,7 @@ const starterRecipes = [
     "difficulty": "Beginner",
     "time": "30 min",
     "serves": "2 people",
-    "description": "Breakfast Quesadilla with steadier heat, better texture cues, and a cleaner finish so breakfast feels deliberate instead of rushed.",
+    "description": "Breakfast Quesadilla cooked with full chef-level control, including precise heat management, visual cues, and proper finishing technique so the dish turns out restaurant-quality.",
     "tags": [
       "Breakfast",
       "Premium",
@@ -3511,40 +3511,40 @@ const starterRecipes = [
       "Fresh topping or garnish"
     ],
     "notes": [
-      "Breakfast dishes move quickly, so prep everything before the heat goes on.",
-      "Medium heat usually gives a better finish than blasting the pan too hard.",
-      "Serve straight away while the texture is at its best."
+      "If something is browning too fast, your heat is too high \u2014 lower it slightly and regain control.",
+      "Taste as you go. Small adjustments early stop big problems later.",
+      "Look for texture and smell \u2014 they tell you more than the timer ever will."
     ],
     "steps": [
       {
         "title": "Prep everything first",
         "heat": "No heat",
         "time": "3-5 min",
-        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started."
+        "body": "Measure, slice, and organise the ingredients before cooking because breakfast dishes usually move fast once started. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Warm the pan or griddle",
         "heat": "Medium",
         "time": "2 min",
-        "body": "Use a steady heat so the outside colours at the same pace the middle cooks."
+        "body": "Use a steady heat so the outside colours at the same pace the middle cooks. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Cook the main dish",
         "heat": "Medium",
         "time": "5-8 min",
-        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early."
+        "body": "Cook until the texture is golden, fluffy, or softly set, depending on the dish, rather than chasing maximum colour too early. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Add the finish",
         "heat": "Low",
         "time": "1-2 min",
-        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced."
+        "body": "Add fillings, syrup, herbs, fruit, or cheese right at the end so they stay fresh and balanced. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       },
       {
         "title": "Serve immediately",
         "heat": "No heat",
         "time": "1 min",
-        "body": "Plate and eat straight away while the dish still has its best texture."
+        "body": "Plate and eat straight away while the dish still has its best texture. Watch for visual changes \u2014 colour, smell, and texture \u2014 as your main indicators rather than relying only on time."
       }
     ]
   }
