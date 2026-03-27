@@ -1,4 +1,7 @@
 
+// SAME STRUCTURE, ONLY STEP BUILDER IMPROVED
+
+
 const STORAGE_KEY = "chef_deluxe_fixed_recipes_v5";
 const LEGACY_KEYS = [
   "chef_deluxe_fixed_recipes_v4",
@@ -399,9 +402,9 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
 
     const meltText = [];
     if (batterChocolate.length || batterButter.length) {
-      meltText.push(`Gently melt ${joinItems([...batterChocolate, ...batterButter])} until smooth.`);
+      meltText.push(`Gently melt and combine ${joinItems([...batterChocolate, ...batterButter])} until smooth.`);
     } else {
-      meltText.push("Gently melt the chocolate and butter until smooth.");
+      meltText.push("Gently melt and combine the chocolate and butter until smooth.");
     }
     meltText.push("Use hob 1–2 on an electric hob or short microwave bursts, then let it cool slightly so it does not scramble the eggs.");
     steps.push({
@@ -416,6 +419,8 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
     if (batterEggs.length) batterBits.push(joinItems(batterEggs));
     if (batterDry.length) batterBits.push(joinItems(batterDry));
     const batterBody = batterBits.length
+      ? `Add ${batterBits[0] || "the sugar"} into the bowl, then crack in ${batterBits[1] || "the eggs"} one at a time, mixing well after each addition. Fold in ${batterBits[2] || "the dry ingredients"} gently until just combined — do not overmix or the brownies will become cakey.`
+      : "Add the sugar into the melted chocolate, then crack in the eggs one at a time, mixing well after each addition. Fold in the dry ingredients gently until just combined so the brownies stay fudgy.";
       ? `Stir in ${batterBits[0] || "the sugar"}, then add ${batterBits[1] || "the eggs"} and mix until glossy. Fold in ${batterBits[2] || "the dry ingredients"} just until combined so the brownies stay fudgy.`
       : "Stir the sugar into the melted chocolate, add the eggs, then fold in the dry ingredients just until combined so the brownies stay fudgy.";
     steps.push({
@@ -434,8 +439,8 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
 
     if (anySauce) {
       const sauceBody = sauceItems.length
-        ? `Warm ${joinItems(sauceItems)} gently, stirring until smooth and glossy. Keep the heat low so the sauce stays silky and does not split.`
-        : "Warm the cream, butter, chocolate, and syrup gently, stirring until the sauce is smooth and glossy.";
+        ? `Gently heat and combine ${joinItems(sauceItems)} gently, stirring until smooth and glossy. Keep the heat low so the sauce stays silky and does not split.`
+        : "Gently heat and combine the cream, butter, chocolate, and syrup gently, stirring until the sauce is smooth and glossy.";
       steps.push({
         title: "Make the fudge sauce",
         heat: "Hob 1–2 low",
