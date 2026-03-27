@@ -1,8 +1,5 @@
 
-// SAME STRUCTURE, ONLY STEP BUILDER IMPROVED
-
-
-const STORAGE_KEY = "chef_deluxe_fixed_recipes_v5";
+const STORAGE_KEY = "chef_deluxe_fixed_recipes_v6";
 const LEGACY_KEYS = [
   "chef_deluxe_fixed_recipes_v4",
   "chef_deluxe_custom_recipes",
@@ -402,9 +399,9 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
 
     const meltText = [];
     if (batterChocolate.length || batterButter.length) {
-      meltText.push(`Gently melt and combine ${joinItems([...batterChocolate, ...batterButter])} until smooth.`);
+      meltText.push(`Gently melt ${joinItems([...batterChocolate, ...batterButter])} together until smooth and glossy.`);
     } else {
-      meltText.push("Gently melt and combine the chocolate and butter until smooth.");
+      meltText.push("Gently melt the chocolate and butter together until smooth and glossy.");
     }
     meltText.push("Use hob 1–2 on an electric hob or short microwave bursts, then let it cool slightly so it does not scramble the eggs.");
     steps.push({
@@ -418,15 +415,14 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
     if (batterSugar.length) batterBits.push(joinItems(batterSugar));
     if (batterEggs.length) batterBits.push(joinItems(batterEggs));
     if (batterDry.length) batterBits.push(joinItems(batterDry));
-    const batterBody = batterBits.length
-      ? `Add ${batterBits[0] || "the sugar"} into the bowl, then crack in ${batterBits[1] || "the eggs"} one at a time, mixing well after each addition. Fold in ${batterBits[2] || "the dry ingredients"} gently until just combined — do not overmix or the brownies will become cakey.`
-      : "Add the sugar into the melted chocolate, then crack in the eggs one at a time, mixing well after each addition. Fold in the dry ingredients gently until just combined so the brownies stay fudgy.";
-      ? `Stir in ${batterBits[0] || "the sugar"}, then add ${batterBits[1] || "the eggs"} and mix until glossy. Fold in ${batterBits[2] || "the dry ingredients"} just until combined so the brownies stay fudgy.`
-      : "Stir the sugar into the melted chocolate, add the eggs, then fold in the dry ingredients just until combined so the brownies stay fudgy.";
+    const batterSugarText = batterSugar.length ? joinItems(batterSugar) : "200g sugar";
+    const batterEggText = batterEggs.length ? joinItems(batterEggs) : "3 eggs";
+    const batterDryText = batterDry.length ? joinItems(batterDry) : "100g plain flour, 30g cocoa powder, a pinch of salt, and 1 tsp vanilla";
+    const batterBody = `Add ${batterSugarText} to the cooled chocolate mixture and stir until combined. Crack in ${batterEggText} one at a time, mixing well after each addition so the batter stays smooth and glossy. Fold in ${batterDryText} gently until just combined — do not overmix or the brownies can turn cakey instead of fudgy.`;
     steps.push({
       title: "Make the brownie batter",
       heat: "No heat",
-      time: "3–4 min",
+      time: "4–5 min",
       body: batterBody
     });
 
@@ -439,8 +435,8 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
 
     if (anySauce) {
       const sauceBody = sauceItems.length
-        ? `Gently heat and combine ${joinItems(sauceItems)} gently, stirring until smooth and glossy. Keep the heat low so the sauce stays silky and does not split.`
-        : "Gently heat and combine the cream, butter, chocolate, and syrup gently, stirring until the sauce is smooth and glossy.";
+        ? `Add ${joinItems(sauceItems)} to a small pan or heatproof bowl and warm gently, stirring until the sauce turns smooth, glossy, and pourable. Keep the heat low so it stays silky and does not split.`
+        : "Add the cream, butter, chocolate, and syrup to a small pan or bowl and warm gently, stirring until the sauce is smooth, glossy, and pourable.";
       steps.push({
         title: "Make the fudge sauce",
         heat: "Hob 1–2 low",
@@ -454,8 +450,8 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
       heat: "No heat",
       time: "30–60 min",
       body: anySauce
-        ? "Let the brownies cool before slicing so the centre sets properly, then spoon over the warm sauce when serving."
-        : "Let the brownies cool before slicing so the centre sets properly and the texture turns fudgy."
+        ? "Let the brownies cool in the tin before slicing so the centre sets properly and the texture turns fudgy, then spoon over the warm sauce when serving."
+        : "Let the brownies cool in the tin before slicing so the centre sets properly and the texture turns fudgy."
     });
 
     return steps;
