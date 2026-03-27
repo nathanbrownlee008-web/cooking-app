@@ -454,7 +454,15 @@ function buildMergedSteps(title, ingredientSections, methodLines, category) {
         : "Let the brownies cool in the tin before slicing so the centre sets properly and the texture turns fudgy."
     });
 
-    return steps;
+    
+    steps.push({
+      title: "Optional: Thicker fudge finish",
+      heat: "Fridge",
+      time: "1–2 hours",
+      body: "For a thicker sauce and more fudgy texture, place the brownies in the fridge for 1–2 hours after cooling. This firms up the centre and makes them extra dense and rich."
+    });
+
+  return steps;
   }
 
   const genericSteps = [];
