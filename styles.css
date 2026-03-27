@@ -118,3 +118,8 @@ body.modal-open{overflow:hidden}
   .panel{padding:14px; border-radius:20px}
   .paste-area{min-height:260px !important}
 }
+
+
+.recipe-actions .secondary-btn:last-child{
+  border-color: rgba(255,255,255,.14);
+}

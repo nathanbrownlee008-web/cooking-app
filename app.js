@@ -1,5 +1,5 @@
 
-const STORAGE_KEY = "chef_deluxe_fixed_recipes_v6";
+const STORAGE_KEY = "chef_deluxe_fixed_recipes_v7";
 const LEGACY_KEYS = [
   "chef_deluxe_fixed_recipes_v4",
   "chef_deluxe_custom_recipes",
@@ -57,6 +57,23 @@ function writeStore(key, value) {
 function saveRecipe(recipe) {
   recipes.unshift(recipe);
   writeStore(STORAGE_KEY, recipes);
+}
+
+function persistRecipes() {
+  writeStore(STORAGE_KEY, recipes);
+}
+
+function updateRecipeTitle(id, newTitle) {
+  const recipe = recipes.find(item => item.id === id);
+  if (!recipe) return;
+  recipe.title = newTitle.trim();
+  recipe.description = `${recipe.title} cleaned up with Fix Recipe mode and saved into your ${recipe.category.toLowerCase()} cookbook.`;
+  persistRecipes();
+}
+
+function deleteRecipe(id) {
+  recipes = recipes.filter(item => item.id !== id);
+  persistRecipes();
 }
 
 function escapeHtml(text = "") {
@@ -177,6 +194,10 @@ function openRecipe(id) {
       <div class="hero-topline">${escapeHtml(recipe.category)}</div>
       <h2>${escapeHtml(recipe.title)}</h2>
       <p>${escapeHtml(recipe.description || "Imported from your pasted recipe notes.")}</p>
+      <div class="recipe-actions" style="display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 0;">
+        <button class="secondary-btn" id="editRecipeNameBtn">Edit name</button>
+        <button class="secondary-btn" id="deleteRecipeBtn">Remove recipe</button>
+      </div>
       <div class="quick-info-grid">
         <div class="info-card">
           <span class="info-label">Category</span>
@@ -232,6 +253,29 @@ function openRecipe(id) {
       </section>
     </div>
   `;
+
+  const editBtn = document.getElementById("editRecipeNameBtn");
+  const deleteBtn = document.getElementById("deleteRecipeBtn");
+
+  if (editBtn) {
+    editBtn.addEventListener("click", () => {
+      const nextTitle = prompt("Edit recipe name", recipe.title || "");
+      if (!nextTitle || !nextTitle.trim()) return;
+      updateRecipeTitle(recipe.id, nextTitle);
+      renderRecipes();
+      openRecipe(recipe.id);
+    });
+  }
+
+  if (deleteBtn) {
+    deleteBtn.addEventListener("click", () => {
+      const confirmed = confirm(`Remove "${recipe.title}" from your cookbook?`);
+      if (!confirmed) return;
+      deleteRecipe(recipe.id);
+      closeModal(modal);
+      renderRecipes();
+    });
+  }
 
   openModal(modal);
 }
